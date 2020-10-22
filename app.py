@@ -19,6 +19,7 @@ app = dash.Dash(
     server=server,
     routes_pathname_prefix='/dash/')
 
+
 app.layout = dash_table.DataTable(
     id="table",
     data=DataFrame.to_dict('records'),
