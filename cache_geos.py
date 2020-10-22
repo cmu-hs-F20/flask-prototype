@@ -1,5 +1,4 @@
 import json
-from typing import Dict
 
 import censusdata
 from tqdm import tqdm
@@ -12,7 +11,7 @@ def build_states_cache(cache_path):
     states_dict = {key: state.params()[0][1] for key, state in states.items()}
     states_json = json.dumps(states_dict, indent=4)
 
-    counties_dict: Dict[Dict[str]] = dict()
+    counties_dict = dict()
     
     for state_name, state in tqdm(states.items(), desc='Building counties cache'):
         counties = censusdata.geographies(censusdata.censusgeo([state.geo[0], ('county', '*')]), 'acs5', 2018)

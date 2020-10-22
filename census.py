@@ -1,5 +1,4 @@
 import json
-from typing import List
 
 import pandas as pd
 import censusdata
@@ -39,7 +38,7 @@ def get_data(geo_names, census_vars, key):
         if geos: 
             state_data = state_data.filter(geos, axis=0)
 
-        county_data = county_data.append(state_data)
+        county_data = county_data.append(state_data).reset_index()
 
     return county_data
 
