@@ -1,0 +1,60 @@
+
+.pure-u-1-2 {
+    border: solid lightgray 1px;
+    border-radius: 8px;
+    margin: 6px;
+    padding: 16px;
+
+}
+
+#left {
+    width: auto;
+    margin-left: 36px;
+}
+
+.title {
+    margin: 20px;
+}
+.pure-button {
+    border-radius: 6px;
+}
+#keyword {
+    border-radius: 6px;
+}
+
+#geo-type {
+    color: #616161;
+    padding: 1px;
+}
+
+.pure-button {
+    background-color: #0097a7;
+}
+
+
+.selected-state {
+    background-color: #7f8587;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: .5em 1em;
+    box-sizing: content-box;
+    margin: 15 0;
+    display: table
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

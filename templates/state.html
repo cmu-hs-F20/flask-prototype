@@ -1,0 +1,93 @@
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{
+  url_for('static', filename='jquery.js') }}">\x3C/script>')</script>
+<script type=text/javascript>
+  $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+</script>
+<script type="text/javascript" src="/static/main.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://cdn.staticfile.org/pure/1.0.0/pure-min.css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
+    <link href="https://code.jquery.com/ui/1.12.1/themes/blitzer/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    <title>homepage</title>
+</head>
+<body>
+<div class="title">
+    <h1>Capstone Draft</h1>
+</div>
+<div class="pure-g">
+	<div class="pure-u-1-2" id="left">
+        <legend>Geography Selection Box</legend>
+            {% with messages = get_flashed_messages(with_categories = true) %}
+            {% if messages %}
+            <ul>
+            {% for message in messages %}
+            <li>{{ message[1] }}</li>
+            
+            
+            {% endfor %}
+            </ul>
+            {% endif %}
+            {% endwith %}
+            <form id="addgeo" action="">
+                {{ form.csrf_token }}
+
+                <div class="input text">
+                    {{ form.state.label }}
+                    {{ form.state }}
+                </div>
+                <div class="input submit">
+                <input type="submit" value="Add State"></div>
+            </form>
+            <div id="statesList">
+                {% if selected_states %}
+                {% for state in selected_states %}
+                    {{ state }}
+                {% endfor %}
+                {% endif %}
+            </div>
+            </div>
+            <form id="submitgeos" action="">
+                <div class="input submit">
+                    <input type="submit" value="Refresh View">
+                </div>
+            </form>
+    <div id="right" class="pure-u-1-2">
+        <table class="pure-table">
+        <tr>
+            {% for col in column_names %}
+            <th>{{ col }}</th>
+            {% endfor %}
+        </tr>
+        {% for row in row_data %}
+        
+        <tr>
+            {% for col, row_ in zip(column_names, row) %}
+            <td>{{ row_ }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+            <button type="submit" class="pure-button pure-button-primary">Download</button>
+        </fieldset>
+    </form>
+
+</div>
+
+
+
+</body>
+</html>
