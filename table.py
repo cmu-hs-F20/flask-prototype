@@ -18,7 +18,8 @@ def generate_table(dataframe, max_rows = 1000):
             html.Tr([
                 html.Td(dataframe.iloc[i][col]) for col in dataframe.columns
             ]) for i in range(min(len(dataframe), max_rows))
-        ])
+        ]),
+
     ])
 
 
