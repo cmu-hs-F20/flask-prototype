@@ -1,22 +1,40 @@
-from flask import Flask, render_template, flash, request, session, Markup
-from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
+from flask import Flask, render_template, request, session, Markup
+from wtforms import Form, TextField, validators
 from flask_debugtoolbar import DebugToolbarExtension
-from jinja2.ext import debug
 from census import get_pop, get_data, get_state_fips, states
+
+import pandas as pd
+import dash_table
+import dash
 
 import secrets
 
+server = Flask(__name__)
+server.secret_key = secrets.app_secret
 
-app = Flask(__name__)
-app.debug=True
-app.secret_key = secrets.app_secret
 
-toolbar = DebugToolbarExtension(app)
+# DataFrame = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/solar.csv")
+DataFrame = pd.read_csv('iris.csv')
+
+app = dash.Dash(
+    __name__,
+    server=server,
+    routes_pathname_prefix='/dash/')
+
+
+app.layout = dash_table.DataTable(
+    id="table",
+    data=DataFrame.to_dict('records'),
+    columns=[{'id': c, 'name': c} for c in DataFrame.columns],
+    page_action='none',
+    style_table={'height': '300px', 'overflowY': 'auto'}
+)
+
 
 class StateForm(Form):
     state = TextField('State:', validators = [validators.DataRequired()])
 
-    @app.route('/', methods = ['GET', 'POST'])
+    @server.route('/', methods = ['GET', 'POST'])
     def dashboard():
         form = StateForm(request.form)
 
@@ -53,7 +71,7 @@ class StateForm(Form):
             zip=zip
         )
 
-    @app.route('/register-geo', methods = ['POST'])
+    @server.route('/register-geo', methods = ['POST'])
     def register_geo():
 
         saved_states = session.get('states')
@@ -71,7 +89,7 @@ class StateForm(Form):
         return render_selected_state(request.form['id'], request.form['state'])
 
 
-    @app.route('/drop-geo', methods = ['POST'])
+    @server.route('/drop-geo', methods = ['POST'])
     def drop_geo():
 
         saved_states = session.get('states')
@@ -86,7 +104,9 @@ def render_selected_state(id, state):
     rendered = render_template('selected_state.html', state = state, id = id)
     return Markup(rendered)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
 
-    states = [render_selected_state(1, 'Pennsylvania')]
+
+if __name__ == '__main__':
+    server.run(debug=True)
