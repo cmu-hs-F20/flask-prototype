@@ -83,14 +83,14 @@ class StateForm(Form):
                 geo['county_name'],
                 id
             ))
-
         return render_template(
             'state.html', 
             form=form,
             selected_states=selected_states,
             column_names = colnames,
             row_data = row_data,
-            zip=zip
+            zip=zip,
+            data_available=len(session['geos']) > 0
         )
 
     @server.route('/register-geo', methods = ['POST'])
