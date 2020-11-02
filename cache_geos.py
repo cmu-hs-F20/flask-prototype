@@ -32,11 +32,7 @@ def build_states_cache(db_name):
             # extracting county name from string formatted as "county, state"
             county_name = county.split(',')[:-1][0] 
             county_fips = county_geo.geo[1][1]
-            
-            if 'Brien' in county:
-                print(county)
-                print(county_name)
-            
+          
             c.execute(
                 'INSERT INTO counties VALUES (?, ?, ?)', 
                 (state_name, county_name, county_fips)
