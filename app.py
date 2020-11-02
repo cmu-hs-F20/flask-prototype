@@ -102,13 +102,14 @@ class StateForm(Form):
         state_name = form.state.data
         county_name = form.county.data
 
-        # breakpoint()
-
         if state_name not in geoDB.get_states():
             return f"No such state: {state_name}", 500
 
         if county_name not in geoDB.get_counties(state_name):
             return f"No such county {county_name} in state {state_name}", 500
+
+        if (state_name, county_name) in [(geo['state_name'], geo['county_name']) for geo in saved_geos.values()]:
+            return f"{county_name}, {state_name} already selected", 500
        
         saved_geos[request.form['id']] = {
             'state_name': state_name,

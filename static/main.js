@@ -68,14 +68,17 @@ function initPage(){
         $(this).parent().hide();
     });
 
-    // todo: less ugly, please
+    // todo: less ugly, please:
+    // - hover color
+    // - X color
+    // - X and button alignment stuff
     $('#statesList').on(
         {
             mouseenter: function(){
-                $(this).css('background-color', '#ff0000');
+                $(this).css('background-color', '#616769');
             },
             mouseleave: function(){
-                $(this).css('background-color', '#ffffff');
+                $(this).css('background-color', '#7f8587');
             }
         }, 'a');
 }
