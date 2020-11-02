@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, session, Markup, json
+from flask import Flask, render_template, request, session, Markup, json, make_response
 from wtforms import Form, TextField, validators
 from flask_debugtoolbar import DebugToolbarExtension
 from census import get_data, GeoDB
@@ -136,6 +136,22 @@ class StateForm(Form):
         print(request.form['state'])
         return json.dumps(counties_list)
     
+    @server.route('/download-data')
+    def return_download():
+        form = StateForm(request.form)
+
+        data = get_data(
+            [[geo['state_name'], geo['county_name']] for id, geo in session['geos'].items()],
+            CENSUS_VARS,
+            secrets.census_key,
+        )
+
+        response = make_response(data.to_csv(index=False))
+        response.headers["Content-Disposition"] = "attachment; filename=county_acs_data.csv"
+        response.headers["Content-Type"] = "text/csv"
+
+        return response
+
 def render_selected_geo(state, county, id):
     rendered = render_template('selected_geo.html', state = state, county = county, id = id)
     return Markup(rendered)
