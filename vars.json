@@ -1,3 +1,6 @@
-{
-    "Population": "B01001_001E"
-}
+[
+    {
+        "id": "B01001_001E",
+        "name": "Population"
+    }
+]

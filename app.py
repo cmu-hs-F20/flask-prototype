@@ -14,7 +14,9 @@ server.secret_key = secrets.app_secret
 
 geoDB = GeoDB('geos.db')
 
-# DataFrame = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/solar.csv")
+with open('vars.json', 'r') as f:
+    CENSUS_VARS = json.loads(f.read())
+
 DataFrame = pd.read_csv('iris.csv')
 
 app = dash.Dash(
@@ -52,6 +54,7 @@ class StateForm(Form):
         }
     )
 
+
     @server.route('/', methods = ['GET', 'POST'])
     def dashboard():
         form = StateForm(request.form)
@@ -64,7 +67,7 @@ class StateForm(Form):
             print(session['geos'])
             data = get_data(
                 [[geo['state_name'], geo['county_name']] for id, geo in session['geos'].items()],
-                ['B01001_001E'],
+                CENSUS_VARS,
                 secrets.census_key,
             )
   
