@@ -1,32 +1,48 @@
-import json
+import sqlite3
 
 import censusdata
 from tqdm import tqdm
 
 
-def build_states_cache(cache_path):
+def build_states_cache(db_name):
     
-    print('Building states cache\n')
+    conn = sqlite3.connect(db_name)
+    c = conn.cursor()
+
+    c.executescript('''
+        DROP TABLE IF EXISTS STATES;
+        DROP TABLE IF EXISTS COUNTIES;
+        CREATE TABLE STATES (state text, state_fips text);
+        CREATE TABLE COUNTIES (state text, county text, county_fips text);
+    ''')
+
     states = censusdata.geographies(censusdata.censusgeo([('state', '*')]), 'acs5', 2018)
-    states_dict = {key: state.params()[0][1] for key, state in states.items()}
-    states_json = json.dumps(states_dict, indent=4)
 
-    counties_dict = dict()
-    
-    for state_name, state in tqdm(states.items(), desc='Building counties cache'):
-        counties = censusdata.geographies(censusdata.censusgeo([state.geo[0], ('county', '*')]), 'acs5', 2018)
-        
-        state_counties = {}
-        for key, county in counties.items():
-            county_name = key.split(',')[:-1][0]
-            state_counties[county_name] = county.geo[1][1]
-        counties_dict[state_name] = state_counties
+    for state, state_geo in states.items():
+        state_fips = state_geo.params()[0][1]
 
-    counties_json = json.dumps(counties_dict, indent=4)
+        c.execute(f'''
+            INSERT INTO states VALUES ('{state}', '{state_fips}')
+        ''')
 
-    with open(cache_path, 'w') as f:
-        f.write('states = ' + states_json + '\n')
-        f.write('counties = ' + counties_json)
+    for state_name, state_geo in tqdm(states.items(), desc='Building counties cache'):
+        counties = censusdata.geographies(censusdata.censusgeo([state_geo.geo[0], ('county', '*')]), 'acs5', 2018)
+
+        for county, county_geo in counties.items():
+            # extracting county name from string formatted as "county, state"
+            county_name = county.split(',')[:-1][0] 
+            county_fips = county_geo.geo[1][1]
+            
+            if 'Brien' in county:
+                print(county)
+                print(county_name)
+            
+            c.execute(
+                'INSERT INTO counties VALUES (?, ?, ?)', 
+                (state_name, county_name, county_fips)
+            )
+
+    conn.commit()
 
 if __name__ == '__main__':
-    build_states_cache('states.py')
+    build_states_cache('geos.db')
