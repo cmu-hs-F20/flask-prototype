@@ -1,7 +1,7 @@
-from flask import Flask, render_template, request, session, Markup
+from flask import Flask, render_template, request, session, Markup, json
 from wtforms import Form, TextField, validators
 from flask_debugtoolbar import DebugToolbarExtension
-from census import get_pop, get_data, get_state_fips, states
+from census import get_data, GeoDB
 
 import pandas as pd
 import dash_table
@@ -12,6 +12,7 @@ import secrets
 server = Flask(__name__)
 server.secret_key = secrets.app_secret
 
+geoDB = GeoDB('geos.db')
 
 # DataFrame = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/solar.csv")
 DataFrame = pd.read_csv('iris.csv')
@@ -32,20 +33,37 @@ app.layout = dash_table.DataTable(
 
 
 class StateForm(Form):
-    state = TextField('State:', validators = [validators.DataRequired()])
+    state = TextField(
+        'State:', 
+        validators = [validators.DataRequired()],
+        render_kw = {
+            'class': 'geo_input',
+            'autocomplete_list': json.dumps(geoDB.get_states()),
+        }
+    )
+
+    county = TextField(
+        'County:', 
+        validators = [validators.DataRequired()], 
+        render_kw= {
+            'class': 'geo_input',
+            'disabled':'true',
+            'autocomplete_list': json.dumps([''])
+        }
+    )
 
     @server.route('/', methods = ['GET', 'POST'])
     def dashboard():
         form = StateForm(request.form)
 
-        if 'states' not in session:
-            session['states'] = {}
+        if 'geos' not in session:
+            session['geos'] = {}
             colnames = ['No column data!']
             row_data = ['No row data!']
         else:
-            print(session['states'])
+            print(session['geos'])
             data = get_data(
-                [[state['fips'], '*'] for id, state in session['states'].items()],
+                [[geo['state_name'], geo['county_name']] for id, geo in session['geos'].items()],
                 ['B01001_001E'],
                 secrets.census_key,
             )
@@ -56,10 +74,11 @@ class StateForm(Form):
         print(form.errors)
 
         selected_states = []
-        for id, state in session['states'].items():
-            selected_states.append(render_selected_state(
-                id,
-                state['state']
+        for id, geo in session['geos'].items():
+            selected_states.append(render_selected_geo(
+                geo['state_name'],
+                geo['county_name'],
+                id
             ))
 
         return render_template(
@@ -74,37 +93,51 @@ class StateForm(Form):
     @server.route('/register-geo', methods = ['POST'])
     def register_geo():
 
-        saved_states = session.get('states')
-        try:
-            fips = get_state_fips(request.form['state'])
-        except KeyError:
-            return f"No such state: {request.form['state']}", 500
-        
-        saved_states[request.form['id']] = {
-            'state': request.form['state'],
-            'fips': fips
-        }
-        session['states'] = saved_states
+        saved_geos = session.get('geos')
 
-        return render_selected_state(request.form['id'], request.form['state'])
+        form = StateForm(request.form)
+        state_name = form.state.data
+        county_name = form.county.data
+
+        # breakpoint()
+
+        if state_name not in geoDB.get_states():
+            return f"No such state: {state_name}", 500
+
+        if county_name not in geoDB.get_counties(state_name):
+            return f"No such county {county_name} in state {state_name}", 500
+       
+        saved_geos[request.form['id']] = {
+            'state_name': state_name,
+            'county_name': county_name,
+        }
+        session['geos'] = saved_geos
+
+        return render_selected_geo(state_name, county_name, request.form['id'])
 
 
     @server.route('/drop-geo', methods = ['POST'])
-    def drop_geo():
+    def dropGeo():
 
-        saved_states = session.get('states')
+        saved_geos = session.get('geos')
         try:
-            saved_states.pop(request.form['id'])
-            session['states'] = saved_states
+            saved_geos.pop(request.form['id'])
+            session['geos'] = saved_geos
             return f"state dropped: {request.form['id']}"
         except KeyError:
             return f"no such state: {request.form['id']}", 500
 
-def render_selected_state(id, state):
-    rendered = render_template('selected_state.html', state = state, id = id)
+    @server.route('/counties-list', methods = ['POST'])
+    def counties_list():
+        counties_list = geoDB.get_counties(request.form['state'])
+        print(request.form['state'])
+        return json.dumps(counties_list)
+    
+def render_selected_geo(state, county, id):
+    rendered = render_template('selected_geo.html', state = state, county = county, id = id)
     return Markup(rendered)
 
-# if __name__ == '__main__':
+# if _Name__ == '_Main__':
 #     app.run(debug=True)
 
 

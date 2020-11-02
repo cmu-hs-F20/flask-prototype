@@ -6,6 +6,9 @@
   $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
 </script>
 <script type="text/javascript" src="/static/main.js"></script>
+<script>
+    $(document).ready(initPage);
+</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +21,7 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
     <!--<![endif]-->
     <link href="https://code.jquery.com/ui/1.12.1/themes/blitzer/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="/static/main.css">
     <title>homepage</title>
 </head>
@@ -43,11 +47,18 @@
                 {{ form.csrf_token }}
 
                 <div class="input text">
-                    {{ form.state.label }}
-                    {{ form.state }}
+                    <div class>
+                        {{ form.state.label }}
+                        {{ form.state }}
+                    </div>
+                    <br>
+                    <div>
+                        {{ form.county.label }}
+                        {{ form.county }}
+                    </div>
                 </div>
                 <div class="input submit">
-                <input type="submit" value="Add State"></div>
+                <input type="submit" value="Register geography"></div>
             </form>
             <div id="statesList">
                 {% if selected_states %}
@@ -59,10 +70,10 @@
             </div>
             <form id="submitgeos" action="">
                 <div class="input submit">
-                    <input type="submit" value="Refresh View">
+                    <input type="submit" value="View Data">
                 </div>
             </form>
-    <div id="right" class="pure-u-1-2">
+    <div id="right" class="pure-u-1-2" style="overflow:scroll">
         <table class="pure-table">
         <tr>
             {% for col in column_names %}
