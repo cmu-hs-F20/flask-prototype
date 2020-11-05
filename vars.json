@@ -2,5 +2,13 @@
     {
         "id": "B01001_001E",
         "name": "Population"
+    },
+    {
+        "id": "B19001_001E",
+        "name": "Household Income in the Past 12 Months"
+    },
+    {
+        "id": "B01002_001E",
+        "name": "Median Age"
     }
 ]
