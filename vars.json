@@ -30,6 +30,24 @@
     {
         "id": "B28010_002E",
         "name": "Has one or more types of computing devices"
-    }
+    },
+    {
+        "id": "B23025_004E",
+        "name": "Employed"
+    },
+     {
+        "id": "B23025_005E",
+        "name": "Unemployed"
+    },
+    {
+        "id": "B08006_017E",
+        "name": "Worked at home"
+    },
+    {
+        "id": "C24070_070E",
+        "name": "Working in ublic administration"
+    },
+    
+    
     
 ]
