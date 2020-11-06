@@ -46,75 +46,75 @@
     {
         "id": "C24070_070E",
         "name": "Working in public administration"
-    }
+    },
     {
         "id": "B19001",
         "name": "Income & Benefits (Total Households)"
-    }
+    },
     {
         "id": "C27001A-I",
         "name": "Health Insurance Coverage"
-    }
+    },
     {
-        "id": "B17002_002E“, "B17002_003E", "B17002_004E“
+        "id": "B17002_002E“,
         "name": "Total Below Poverty Level"
-    }
+    },
     {
         "id": "B17001_001E",
         "name": "Total Below Poverty Level, by Age"
-    }
+    },
     {
         "id": "B17001A-I",
         "name": "Total Below Poverty Level, by Race"
-    }
+    },
     {
         "id": "not found",
         "name": "Emergency and transitional shelters"
-    }
+    },
     {
         "id": "B25001_001E",
         "name": "Total Housing Units "
-    }
+    },
     {
         "id": "C24070_070E",
         "name": "Occupied Housing Units"
-    }
+    },
     {
         "id": "B25080",
         "name": "Housing Value"
-    }
+    },
     {
         "id": "B25031",
         "name": "Gross rent"
-    }
+    },
     {
         "id": "B25105",
         "name": "Median monthly housing cost"
-    }
+    },
     {
         "id": "B08201",
         "name": "Vehicles Available"
-    }
+    },
     {
         "id": "B08141",
         "name": "Commuting to Work"
-    }
+    },
     {
         "id": "B08303",
         "name": "Travel Time to Work"
-    }
+    },
     {
         "id": "B23008_013E",
         "name": "Age of Own Children - Under 6"
-    }
+    },
     {
         "id": "B19058_001E",
         "name": "Food Stamps / SNAP"
-    }
+    },
     {
         "id": "C18130_002E",
         "name": "Number of children with disabilities"
-    }
+    },
     {
         "id": "B19001",
         "name": "Median income level"
