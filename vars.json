@@ -11,4 +11,25 @@
         "id": "B01002_001E",
         "name": "Median Age"
     }
+    {
+        "id": "B02001_001E",
+        "name": "Total Race"
+    },
+     {
+        "id": "B09005_003E",
+        "name": "Married-couple family"
+    },
+    {
+        "id": "B06009_004E",
+        "name": "College or associate's degree"
+    },
+    {
+        "id": "B06007PR_002E",
+        "name": "Speak only English"
+    },
+    {
+        "id": "B28010_002E",
+        "name": "Has one or more types of computing devices"
+    }
+    
 ]
