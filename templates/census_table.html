@@ -1,0 +1,22 @@
+<div id="right" class="pure-u-1-2" style="overflow:scroll">
+    <table class="pure-table">
+        <tr>
+            {% for col in column_names %}
+            <th>{{ col }}</th>
+            {% endfor %}
+        </tr>
+        {% for category in categories %}
+        <tr>
+            <th colspan="3" style="text-align: center;">{{ category }}</th>
+        </tr>
+        {% for row in rows[category] %}
+
+        <tr>
+            {% for col, row_ in zip(column_names, row) %}
+            <td>{{ row_ }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+        {% endfor %}
+    </table>
+</div>
