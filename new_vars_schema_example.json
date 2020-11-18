@@ -1,0 +1,17 @@
+[
+    {
+        "name":"some other name",
+        "vars":["B01003_001E"],
+        "definition": "B01003_001E",
+        "category": "another category"
+    },
+    {
+        "name":"some_name",
+        "vars":[
+            "B01001_001E",
+            "B19001_001E"
+        ],
+        "definition": "(B01001_001E + B01001_001E) / B19001_001E",
+        "category": "test category"
+    }
+]
