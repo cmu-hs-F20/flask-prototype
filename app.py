@@ -13,7 +13,7 @@ import secrets
 server = Flask(__name__)
 server.secret_key = secrets.app_secret
 
-with open("vars_new_schema.json", "r") as f:
+with open("new_vars_schema_example.json", "r") as f:
     vars_config = json.loads(f.read())
 
 geoDB = GeoDB("geos.db")
@@ -79,6 +79,9 @@ class StateForm(Form):
 
         print(form.errors)
 
+        available_vars = censusViewer.available_vars
+        available_categories = censusViewer.available_categories
+
         selected_states = []
         for id, geo in session["geos"].items():
             selected_states.append(
@@ -91,6 +94,8 @@ class StateForm(Form):
             selected_states=selected_states,
             rendered_table=rendered_table,
             data_available=len(session["geos"]) > 0,
+            available_vars=available_vars,
+            available_categories=available_categories,
         )
 
     @server.route("/register-geo", methods=["POST"])
@@ -162,7 +167,6 @@ def render_selected_geo(state, county, id):
 
 
 def render_output_table(categories, column_names, rows):
-    breakpoint()
     rendered = render_template(
         "census_table.html",
         categories=categories,

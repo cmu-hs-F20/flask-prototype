@@ -272,6 +272,14 @@ class CensusViewer:
         colnames = ["Column Name"] + formatted_county_names
         return county_data_dict, colnames
 
+    @property
+    def available_vars(self):
+        return self.vars_config
+
+    @property
+    def available_categories(self):
+        return set([var["category"] for var in self.vars_config])
+
 
 if __name__ == "__main__":
     db = GeoDB("geos.db")

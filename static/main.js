@@ -1,68 +1,67 @@
-function initPage(){
+function initPage() {
 
-    $('.geo_input').each(function(){
+    $('.geo_input').each(function () {
         $(this).autocomplete({
             source: JSON.parse($(this).attr('autocomplete_list')),
             autoFocus: true
         });
     });
 
-    $('#state').keyup(function(){
+    $('#state').keyup(function () {
         var matches_state = $.inArray($(this).val(), JSON.parse($(this).attr('autocomplete_list'))) > -1;
         // alert('Test messsage!' + matches_state)
-        
+
         $('#county').attr('disabled', !matches_state);
-        if(!matches_state){
+        if (!matches_state) {
             $('#county').val('');
         }
-        
-        if(matches_state){
+
+        if (matches_state) {
             $.post('counties-list',
-            {
-                state: $(this).val()
-            }, function(response){
-                $('#county').autocomplete("option", {source: JSON.parse(response)});
-            });
+                {
+                    state: $(this).val()
+                }, function (response) {
+                    $('#county').autocomplete("option", { source: JSON.parse(response) });
+                });
         }
 
     });
 
 
-    $("#addgeo").submit(function(event){
+    $("#addgeo").submit(function (event) {
         event.preventDefault();
-    
-        var id = function(){
-            var ids = $('#statesList').children().map(function(){
+
+        var id = function () {
+            var ids = $('#statesList').children().map(function () {
                 return parseInt($(this).attr('id'));
             }).get();
-    
+
             var id = Math.max(...ids, 0) + 1;
 
             return String(id);
         }();
-        
+
         // todo: don't add if request fails
         $.post('register-geo', {
             state: $('#state').val(),
             county: $('#county').val(),
             id: id
-        }, function(response){
+        }, function (response) {
             $('#statesList').append(response);
             $('#state').val('').focus();
             $('#county').val('');
             // $('#state').focus()
-        })
-        .fail(function(response){
+        }).fail(function (response) {
             alert('Error: ' + response.responseText);
         });
     });
 
-    $("#statesList").on('click', 'a', function(event){
+    $("#statesList").on('click', 'a', function (event) {
         var id = $(this).parent().attr('id');
 
         $.post('drop-geo',
             {
-                id:id
+                id: id
             });
 
         $(this).parent().hide();
@@ -74,11 +73,18 @@ function initPage(){
     // - X and button alignment stuff
     $('#statesList').on(
         {
-            mouseenter: function(){
+            mouseenter: function () {
                 $(this).css('background-color', '#616769');
             },
-            mouseleave: function(){
+            mouseleave: function () {
                 $(this).css('background-color', '#7f8587');
             }
         }, 'a');
+
+    // initialize searchable feature menu
+    $('#my-select').searchableOptionList({
+        maxHeight: '250px',
+        multiple: true
+    });
+
 }
