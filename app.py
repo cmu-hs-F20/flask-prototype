@@ -162,7 +162,7 @@ def render_selected_geo(state, county, id):
 
 
 def render_output_table(categories, column_names, rows):
-    breakpoint()
+    # breakpoint()
     rendered = render_template(
         "census_table.html",
         categories=categories,
