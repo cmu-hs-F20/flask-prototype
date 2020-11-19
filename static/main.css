@@ -1,3 +1,26 @@
+.banner {
+    background: transparent url('https://lh3.googleusercontent.com/proxy/vmwEt_PQzPw5F-C3nbgygmKD1D32VkQznNQH0-dovFbCwYs62-4E8e2061-OUn1EOwyM9tgl-adbFUwEaCXuscdcMGnLJTtLzJygtzQNUk-xiMlYwEwFFdoqjMSreyZcukB_KcvpIfoIxg') 0 0 no-repeat fixed;
+    text-align: center;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://lh3.googleusercontent.com/proxy/vmwEt_PQzPw5F-C3nbgygmKD1D32VkQznNQH0-dovFbCwYs62-4E8e2061-OUn1EOwyM9tgl-adbFUwEaCXuscdcMGnLJTtLzJygtzQNUk-xiMlYwEwFFdoqjMSreyZcukB_KcvpIfoIxg', sizingMethod='scale');
+
+    height: 200px;
+    width: 100%;
+    margin-bottom: 3em;
+    display: table;
+}
+
+    .banner-head {
+        display: table-cell;
+        vertical-align: middle;
+        margin-bottom: 0;
+        font-size: 2em;
+        color: white;
+        font-weight: 500;
+        text-shadow: 0 1px 1px black;
+    }
+
+
 
 .pure-u-1-2 {
     border: solid lightgray 1px;
@@ -10,14 +33,32 @@
 #left {
     width: auto;
     margin-left: 36px;
+    text-align: center;
 }
+
+#right {
+    color: #424242;
+    width: 66%;
+}
+
+#table {
+    width: auto;
+}
+
+#left-form {
+    /*background-color: #b2dfdb;*/
+    padding: 8px;
+    border: solid #cfd8dc 1px;
+
+
+}
+
+
 
 .title {
     margin: 20px;
 }
-.pure-button {
-    border-radius: 6px;
-}
+
 #keyword {
     border-radius: 6px;
 }
@@ -27,8 +68,20 @@
     padding: 1px;
 }
 
+
+
 .pure-button {
-    background-color: #0097a7;
+    background-color: #80cbc4;
+    color: white;
+    border-radius: 7px;
+}
+
+.choose-button {
+    margin-right: 0;
+    margin-top: 16px;
+    color: white;
+    background-color: #78909c;
+    border-color: grey;
 }
 
 
@@ -38,7 +91,7 @@
     border-radius: 6px;
     padding: .5em 1em;
     box-sizing: content-box;
-    margin: 15 0;
+    margin: 15px;
     display: table
 }
 
@@ -57,4 +110,19 @@ td, th {
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+#addgeo, #submitgeos {
+    text-align: center;
+}
+
+#submitgeos {
+    padding-top: 12px;
+}
+
+legend {
+    color: #424242;
+    font-size: x-large;
+    font-weight:800;
+    background:#fff;
 }

@@ -31,24 +31,26 @@
 </head>
 
 <body>
-    <div class="title">
-        <h1>Capstone Draft</h1>
+    <div class="banner">
+        <h1 class="banner-head">Dashboard <br> Capstone 2020 Fall</h1>
     </div>
     <div class="pure-g">
-        <form id="submitcounties" action="">
-            <div class="pure-u-1-2" id="left">
-                <div>
-                    <legend>Geography Selection Box</legend>
-                    {% with messages = get_flashed_messages(with_categories = true) %}
-                    {% if messages %}
-                    <ul>
-                        {% for message in messages %}
-                        <li>{{ message[1] }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                    {% endwith %}
-                    <form id="addgeo" action="">
+        <div class="pure-u-1-2" id="left">
+            <legend>Geography Selection Box</legend>
+            <div id="left-form">
+                {% with messages = get_flashed_messages(with_categories = true) %}
+                {% if messages %}
+                <ul>
+                    {% for message in messages %}
+                    <li>{{ message[1] }}</li>
+
+
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% endwith %}
+                <form class="pure-form" id="addgeo" action="">
+                    <fieldset>
                         {{ form.csrf_token }}
 
                         <div class="input text">
@@ -62,47 +64,69 @@
                                 {{ form.county }}
                             </div>
                         </div>
-                        <div class="input submit">
-                            <input type="submit" value="Register geography"></div>
-                    </form>
-                    <div id="statesList">
-                        {% if selected_states %}
-                        {% for state in selected_states %}
-                        {{ state }}
-                        {% endfor %}
+                        <button type="submit" class="pure-button choose-button">Register geography</button>
+                        {#                <div class="input submit">#}
+                        {#                    <input type="submit" value="Register geography"></div>#}
+                    </fieldset>
+                    {#                {{ form.csrf_token }}#}
+                    {##}
+                    {#                <div class="input text">#}
+                    {#                    <div class>#}
+                    {#                        {{ form.state.label }}#}
+                    {#                        {{ form.state }}#}
+                    {#                    </div>#}
+                    {#                    <br>#}
+                    {#                    <div>#}
+                    {#                        {{ form.county.label }}#}
+                    {#                        {{ form.county }}#}
+                    {#                    </div>#}
+                    {#                </div>#}
+                    {#                <div class="input submit">#}
+                    {#                    <input type="submit" value="Register geography"></div>#}
+                </form>
+                <div id="statesList">
+                    {% if selected_states %}
+                    {% for state in selected_states %}
+                    {{ state }}
+                    {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+            <form class="pure-form" id="submitgeos" action="">
+                <fieldset>
+                    <button type="submit" class="pure-button">View Data</button>
+                </fieldset>
+                {#            <div class="input submit">#}
+                {#                <input type="submit" value="View Data">#}
+                {#            </div>#}
+            </form>
+            <div>
+                <select id="my-select" name="character">
+                    {% for category in available_categories %}
+                    <optgroup label="{{ category }}">
+                        {% for var in available_vars %}
+                        {% if var['category'] == category %}
+                        <option value="{{ var['name'] }}">{{ var['name'] }}</option>
                         {% endif %}
-                    </div>
-                </div>
-                <div>
-                    <select id="my-select" name="character">
-                        {% for category in available_categories %}
-                        <optgroup label="{{ category }}">
-                            {% for var in available_vars %}
-                            {% if var['category'] == category %}
-                            <option value="{{ var['name'] }}">{{ var['name'] }}</option>
-                            {% endif %}
-                            {% endfor %}
-                        </optgroup>
                         {% endfor %}
-                    </select>
-                </div>
+                    </optgroup>
+                    {% endfor %}
+                </select>
             </div>
-            <div class="input submit">
-                <input type="submit" value="test button">
-            </div>
-        </form>
-        <form id="submitgeos" action="">
-            <div class="input submit">
-                <input type="submit" value="View Data">
-            </div>
-        </form>
-        {{ rendered_table }}
-        <form class="pure-form pure-form-stacked" action="download-data">
-            <fieldset>
-                <button type="submit" class="pure-button pure-button-primary" {% if not data_available %} disabled
-                    {% endif %}>Download</button>
-            </fieldset>
-        </form>
+
+        </div>
+
+        <div class="pure-u-1-2" id="right">
+            {{ rendered_table }}
+            <form class="pure-form pure-form-stacked" action="download-data">
+                <fieldset>
+                    <button type="submit" id="download-btn" class="pure-button pure-button-primary"
+                        {% if not data_available %} disabled {% endif %}>Download</button>
+                </fieldset>
+            </form>
+        </div>
+
+
 
     </div>
 
