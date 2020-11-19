@@ -4,3 +4,4 @@ __pycache__/*
 .mypy_cache/
 .pylintrc
 node_modules/*
+vars_new_schema.json
