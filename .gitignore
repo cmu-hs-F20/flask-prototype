@@ -1,0 +1,6 @@
+secrets.py
+.vscode
+__pycache__/*
+.mypy_cache/
+.pylintrc
+node_modules/*
