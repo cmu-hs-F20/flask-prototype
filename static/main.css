@@ -32,7 +32,7 @@
 #left {
     width: auto;
     margin-left: 36px;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 #right {
@@ -97,6 +97,7 @@ h2 {
     background-color: #e0e0e0;
     color: #455a64;
     border-radius: 6px;
+    border: solid #90a4ae 1px;
     padding: .5em 1em;
     box-sizing: content-box;
     margin: 15px;
