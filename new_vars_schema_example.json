@@ -42,19 +42,19 @@
         "category": "Race"
     },
     {
-        "name":"Sex by age! Total",
+        "name":"Total",
         "vars":["B01001_001E"],
         "definition": "B01001_001E",
         "category": "Sex by age"
     },
     {
-        "name":"Sex by age! Male",
+        "name":"Male",
         "vars":["B01001_002E"],
         "definition": "B01001_002E",
         "category": "Sex by age"
     },
     {
-        "name":"Sex by age! Female",
+        "name":"Female",
         "vars":["B01001_026E"],
         "definition": "B01001_026E",
         "category": "Sex by age"
@@ -66,76 +66,163 @@
         "category": "Population"
     },
      {
-        "name":"Median Age! Total",
+        "name":"Total",
         "vars":["B01002_001E"],
         "definition": "B01002_001E",
         "category": "Median Age"
     },
          {
-        "name":"Median Age! Male",
+        "name":"Male",
         "vars":["B01002_002E"],
         "definition": "B01002_002E",
         "category": "Median Age"
     },
          {
-        "name":"Median Age! Female",
+        "name":"Female",
         "vars":["B01002_003E"],
         "definition": "B01002_003E",
         "category": "Median Age"
     },
     {
-        "name":"Household Type! In married-couple family",
+        "name":"In married-couple family",
         "vars":["B09005_003E"],
         "definition": "B09005_003E",
         "category": "Household Type"
     },
         {
-        "name":"Household Type! In male householder, no wife present, family",
+        "name":"In male householder, no wife present, family",
         "vars":["B09005_004E"],
         "definition": "B09005_004E",
         "category": "Household Type"
     },
         {
-        "name":"Household Type! In female householder, no husband present, family",
+        "name":"In female householder, no husband present, family",
         "vars":["B09005_005E"],
         "definition": "B09005_005E",
         "category": "Household Type"
     },
         {
-        "name":"Household Type! In nonfamily households",
+        "name":"In nonfamily households",
         "vars":["B09005_006E"],
         "definition": "B09005_006E",
         "category": "Household Type"
     },
         {
-        "name":"School Inrollment! Enrolled in kindergarten",
+        "name":"Enrolled in kindergarten",
         "vars":["B14001_004E"],
         "definition": "B14001_004E",
         "category": "School Inrollment"
     },
         {
-        "name":"School Inrollment! Enrolled in nursery school, preschool'",
+        "name":"Enrolled in nursery school, preschool",
         "vars":["B14001_003E"],
         "definition": "B14001_003E",
         "category": "School Inrollment"
     },
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     {
-        "name":"some_name",
-        "vars":[
-            "B01001_001E",
-            "B19001_001E"
-        ],
-        "definition": "(B01001_001E + B01001_001E) / B19001_001E",
-        "category": "test category"
+        "name":"Speak only English",
+        "vars":["B06007PR_002E"],
+        "definition": "B06007PR_002E",
+        "category": "Languages Spoken at Home"
+    },
+    {
+        "name":"Speak other languages",
+        "vars":["B06007PR_006E"],
+        "definition": "B06007PR_006E",
+        "category": "Languages Spoken at Home"
+    },
+    {
+        "name":"Speak other languages! Speak English very well",
+        "vars":["B06007PR_007E"],
+        "definition": "B06007PR_007E",
+        "category": "Languages Spoken at Home"
+    },
+    {
+        "name":"Speak other languages! Speak English less than very well",
+        "vars":["B06007PR_008E"],
+        "definition": "B06007PR_008E",
+        "category": "Languages Spoken at Home"
+    },
+    {
+        "name":"Has one or more types of computing devices",
+        "vars":["B28010_002E"],
+        "definition": "B28010_002E",
+        "category": "Computers and Internet Use"
+    },
+    {
+        "name":"No Computer",
+        "vars":["B28010_008E"],
+        "definition": "B28010_008E",
+        "category": "Computers and Internet Use"
+    },
+    {
+        "name":"Employed",
+        "vars":["B23025_004E"],
+        "definition": "B23025_004E",
+        "category": "Employment Status"
+    },
+    {
+        "name":"Unemployed",
+        "vars":["B23025_005E"],
+        "definition": "B23025_005E",
+        "category": "Employment Status"
+    },
+    {
+        "name":"Car, truck, or van",
+        "vars":["B08006_002E"],
+        "definition": "B08006_002E",
+        "category": "Commuting to Work"
+    },
+    {
+        "name":"Public transportation",
+        "vars":["B08006_008E"],
+        "definition": "B08006_008E",
+        "category": "Commuting to Work"
+    },
+    {
+        "name":"Bicycle",
+        "vars":["B08006_002E"],
+        "definition": "B08006_014E",
+        "category": "Commuting to Work"
+    },
+    {
+        "name":"Walked",
+        "vars":["B08006_002E"],
+        "definition": "B08006_015E",
+        "category": "Commuting to Work"
+    },
+    {
+        "name":"Taxicab, motorcycle, or other",
+        "vars":["B08006_002E"],
+        "definition": "B08006_016E",
+        "category": "Commuting to Work"
+    },
+    {
+        "name":"Worked at home",
+        "vars":["B08006_002E"],
+        "definition": "B08006_017E",
+        "category": "Commuting to Work"
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+# {
+#     "name": "some_name",
+#     "vars": [
+#         "B01001_001E",
+#         "B19001_001E"
+#     ],
+#     "definition": "(B01001_001E + B01001_001E) / B19001_001E",
+#     "category": "test category"
+# }
+    
+    
 ]
