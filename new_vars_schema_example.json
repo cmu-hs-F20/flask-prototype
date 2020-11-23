@@ -42,6 +42,94 @@
         "category": "Race"
     },
     {
+        "name":"Sex by age! Total",
+        "vars":["B01001_001E"],
+        "definition": "B01001_001E",
+        "category": "Sex by age"
+    },
+    {
+        "name":"Sex by age! Male",
+        "vars":["B01001_002E"],
+        "definition": "B01001_002E",
+        "category": "Sex by age"
+    },
+    {
+        "name":"Sex by age! Female",
+        "vars":["B01001_026E"],
+        "definition": "B01001_026E",
+        "category": "Sex by age"
+    },
+    {
+        "name":"Total Population",
+        "vars":["B01003_001E"],
+        "definition": "B01003_001E",
+        "category": "Population"
+    },
+     {
+        "name":"Median Age! Total",
+        "vars":["B01002_001E"],
+        "definition": "B01002_001E",
+        "category": "Median Age"
+    },
+         {
+        "name":"Median Age! Male",
+        "vars":["B01002_002E"],
+        "definition": "B01002_002E",
+        "category": "Median Age"
+    },
+         {
+        "name":"Median Age! Female",
+        "vars":["B01002_003E"],
+        "definition": "B01002_003E",
+        "category": "Median Age"
+    },
+    {
+        "name":"Household Type! In married-couple family",
+        "vars":["B09005_003E"],
+        "definition": "B09005_003E",
+        "category": "Household Type"
+    },
+        {
+        "name":"Household Type! In male householder, no wife present, family",
+        "vars":["B09005_004E"],
+        "definition": "B09005_004E",
+        "category": "Household Type"
+    },
+        {
+        "name":"Household Type! In female householder, no husband present, family",
+        "vars":["B09005_005E"],
+        "definition": "B09005_005E",
+        "category": "Household Type"
+    },
+        {
+        "name":"Household Type! In nonfamily households",
+        "vars":["B09005_006E"],
+        "definition": "B09005_006E",
+        "category": "Household Type"
+    },
+        {
+        "name":"School Inrollment! Enrolled in kindergarten",
+        "vars":["B14001_004E"],
+        "definition": "B14001_004E",
+        "category": "School Inrollment"
+    },
+        {
+        "name":"School Inrollment! Enrolled in nursery school, preschool'",
+        "vars":["B14001_003E"],
+        "definition": "B14001_003E",
+        "category": "School Inrollment"
+    },
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    {
         "name":"some_name",
         "vars":[
             "B01001_001E",
