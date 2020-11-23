@@ -37,6 +37,34 @@ class GeoDB:
         cur.close()
         return states
 
+    def get_all_counties(self):
+
+        cur = self.db.cursor()
+        cur.execute("select state from states")
+        states = [state[0] for state in cur.fetchall()]
+
+        stateslist = []
+        for state in states:
+            cur.execute(
+                """
+                    select county || ', ' || state 
+                    from counties 
+                    join states using (state)
+                    where state = "{state}"
+                    order by county
+                """.format(
+                    state=state
+                )
+            )
+
+            counties = cur.fetchall()
+
+            counties_tuple = tuple((county[0], county[0]) for county in counties)
+
+            stateslist.append(tuple([state, counties_tuple]))
+
+        return tuple(stateslist)
+
     def get_counties(self, state):
         """
         Gets counties in state
@@ -274,7 +302,18 @@ class CensusViewer:
 
     @property
     def available_vars(self):
-        return self.vars_config
+        # breakpoint()
+
+        var_list = []
+
+        for category in self.available_categories:
+            cat_list = [
+                tuple([var["name"], var["name"]])
+                for var in self.vars_config
+                if var["category"] == category
+            ]
+            var_list.append(tuple([category, tuple(cat_list)]))
+        return var_list
 
     @property
     def available_categories(self):

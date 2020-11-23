@@ -126,3 +126,7 @@ legend {
     font-weight:800;
     background:#fff;
 }
+
+.bootstrap-select > .btn {
+    white-space: normal !important;
+}

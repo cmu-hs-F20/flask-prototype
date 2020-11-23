@@ -1,4 +1,4 @@
-<div id="table"  style="overflow:scroll">
+<div id="table" style="overflow:scroll">
     <table class="pure-table">
         <tr>
             {% for col in column_names %}
@@ -7,7 +7,7 @@
         </tr>
         {% for category in categories %}
         <tr>
-            <th colspan="3" style="text-align: center;">{{ category }}</th>
+            <th colspan="{{ column_names|length }}" style="text-align: left;">{{ category }}</th>
         </tr>
         {% for row in rows[category] %}
 
