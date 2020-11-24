@@ -12,7 +12,7 @@ import secrets
 server = Flask(__name__)
 server.secret_key = secrets.app_secret
 
-with open("new_vars_schema_example.json", "r") as f:
+with open("vars.json", "r") as f:
     vars_config = json.loads(f.read())
 
 geoDB = GeoDB("geos.db")

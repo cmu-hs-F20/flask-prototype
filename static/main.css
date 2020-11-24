@@ -42,6 +42,7 @@
 
 #table {
     width: auto;
+    height: auto;
 }
 
 #left-form {
@@ -137,6 +138,11 @@ legend {
     font-size: x-large;
     font-weight:800;
     background:#fff;
+}
+
+.pure-form {
+    display: grid;
+    justify-content: center;
 }
 
 .bootstrap-select > .btn {

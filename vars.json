@@ -1,124 +1,274 @@
 [
     {
-        "id": "B01001_001E",
-        "name": "Population"
+        "name": "Race Total",
+        "vars": [
+            "B02001_001E"
+        ],
+        "definition": "B02001_001E",
+        "category": "Race"
     },
     {
-        "id": "B19001_001E",
-        "name": "Household Income in the Past 12 Months"
+        "name": "White",
+        "vars": [
+            "B02001_002E"
+        ],
+        "definition": "B02001_002E",
+        "category": "Race"
     },
     {
-        "id": "B01002_001E",
-        "name": "Median Age"
+        "name": "Black or African American",
+        "vars": [
+            "B02001_003E"
+        ],
+        "definition": "B02001_003E",
+        "category": "Race"
     },
     {
-        "id": "B02001_001E",
-        "name": "Total Race"
-    },
-     {
-        "id": "B09005_003E",
-        "name": "Married-couple family"
-    },
-    {
-        "id": "B06009_004E",
-        "name": "College or associate's degree"
+        "name": "American Indian and Alaska Native",
+        "vars": [
+            "B02001_004E"
+        ],
+        "definition": "B02001_004E",
+        "category": "Race"
     },
     {
-        "id": "B06007PR_002E",
-        "name": "Speak only English"
+        "name": " Asian",
+        "vars": [
+            "B02001_005E"
+        ],
+        "definition": "B02001_005E",
+        "category": "Race"
     },
     {
-        "id": "B28010_002E",
-        "name": "Has one or more types of computing devices"
+        "name": "Native Hawaiian and Other Pacific",
+        "vars": [
+            "B02001_006E"
+        ],
+        "definition": "B02001_006E",
+        "category": "Race"
     },
     {
-        "id": "B23025_004E",
-        "name": "Employed"
-    },
-     {
-        "id": "B23025_005E",
-        "name": "Unemployed"
-    },
-    {
-        "id": "B08006_017E",
-        "name": "Worked at home"
+        "name": "Some other race",
+        "vars": [
+            "B02001_007E"
+        ],
+        "definition": "B02001_007E",
+        "category": "Race"
     },
     {
-        "id": "C24070_070E",
-        "name": "Working in public administration"
+        "name": "Total",
+        "vars": [
+            "B01001_001E"
+        ],
+        "definition": "B01001_001E",
+        "category": "Sex by age"
     },
     {
-        "id": "B19001",
-        "name": "Income & Benefits (Total Households)"
+        "name": "Male",
+        "vars": [
+            "B01001_002E"
+        ],
+        "definition": "B01001_002E",
+        "category": "Sex by age"
     },
     {
-        "id": "C27001A-I",
-        "name": "Health Insurance Coverage"
+        "name": "Female",
+        "vars": [
+            "B01001_026E"
+        ],
+        "definition": "B01001_026E",
+        "category": "Sex by age"
     },
     {
-        "id": "B17002_002E",
-        "name": "Total Below Poverty Level"
+        "name": "Total Population",
+        "vars": [
+            "B01003_001E"
+        ],
+        "definition": "B01003_001E",
+        "category": "Population"
     },
     {
-        "id": "B17001_001E",
-        "name": "Total Below Poverty Level, by Age"
+        "name": "Total",
+        "vars": [
+            "B01002_001E"
+        ],
+        "definition": "B01002_001E",
+        "category": "Median Age"
     },
     {
-        "id": "B17001A-I",
-        "name": "Total Below Poverty Level, by Race"
+        "name": "Male",
+        "vars": [
+            "B01002_002E"
+        ],
+        "definition": "B01002_002E",
+        "category": "Median Age"
     },
     {
-        "id": "not found",
-        "name": "Emergency and transitional shelters"
+        "name": "Female",
+        "vars": [
+            "B01002_003E"
+        ],
+        "definition": "B01002_003E",
+        "category": "Median Age"
     },
     {
-        "id": "B25001_001E",
-        "name": "Total Housing Units "
+        "name": "In married-couple family",
+        "vars": [
+            "B09005_003E"
+        ],
+        "definition": "B09005_003E",
+        "category": "Household Type"
     },
     {
-        "id": "C24070_070E",
-        "name": "Occupied Housing Units"
+        "name": "In male householder, no wife present, family",
+        "vars": [
+            "B09005_004E"
+        ],
+        "definition": "B09005_004E",
+        "category": "Household Type"
     },
     {
-        "id": "B25080",
-        "name": "Housing Value"
+        "name": "In female householder, no husband present, family",
+        "vars": [
+            "B09005_005E"
+        ],
+        "definition": "B09005_005E",
+        "category": "Household Type"
     },
     {
-        "id": "B25031",
-        "name": "Gross rent"
+        "name": "In nonfamily households",
+        "vars": [
+            "B09005_006E"
+        ],
+        "definition": "B09005_006E",
+        "category": "Household Type"
     },
     {
-        "id": "B25105",
-        "name": "Median monthly housing cost"
+        "name": "Enrolled in kindergarten",
+        "vars": [
+            "B14001_004E"
+        ],
+        "definition": "B14001_004E",
+        "category": "School Inrollment"
     },
     {
-        "id": "B08201",
-        "name": "Vehicles Available"
+        "name": "Enrolled in nursery school, preschool",
+        "vars": [
+            "B14001_003E"
+        ],
+        "definition": "B14001_003E",
+        "category": "School Inrollment"
     },
     {
-        "id": "B08141",
-        "name": "Commuting to Work"
+        "name": "Speak only English",
+        "vars": [
+            "B06007PR_002E"
+        ],
+        "definition": "B06007PR_002E",
+        "category": "Languages Spoken at Home"
     },
     {
-        "id": "B08303",
-        "name": "Travel Time to Work"
+        "name": "Speak other languages",
+        "vars": [
+            "B06007PR_006E"
+        ],
+        "definition": "B06007PR_006E",
+        "category": "Languages Spoken at Home"
     },
     {
-        "id": "B23008_013E",
-        "name": "Age of Own Children - Under 6"
+        "name": "Speak English very well",
+        "vars": [
+            "B06007PR_007E"
+        ],
+        "definition": "B06007PR_007E",
+        "category": "Languages Spoken at Home"
     },
     {
-        "id": "B19058_001E",
-        "name": "Food Stamps / SNAP"
+        "name": "Speak English less than very well",
+        "vars": [
+            "B06007PR_008E"
+        ],
+        "definition": "B06007PR_008E",
+        "category": "Languages Spoken at Home"
     },
     {
-        "id": "C18130_002E",
-        "name": "Number of children with disabilities"
+        "name": "Has one or more types of computing devices",
+        "vars": [
+            "B28010_002E"
+        ],
+        "definition": "B28010_002E",
+        "category": "Computers and Internet Use"
     },
     {
-        "id": "B19001",
-        "name": "Median income level"
+        "name": "No Computer",
+        "vars": [
+            "B28010_007E"
+        ],
+        "definition": "B28010_007E",
+        "category": "Computers and Internet Use"
+    },
+    {
+        "name": "Employed",
+        "vars": [
+            "B23025_004E"
+        ],
+        "definition": "B23025_004E",
+        "category": "Employment Status"
+    },
+    {
+        "name": "Unemployed",
+        "vars": [
+            "B23025_005E"
+        ],
+        "definition": "B23025_005E",
+        "category": "Employment Status"
+    },
+    {
+        "name": "Car, truck, or van",
+        "vars": [
+            "B08006_002E"
+        ],
+        "definition": "B08006_002E",
+        "category": "Commuting to Work"
+    },
+    {
+        "name": "Public transportation",
+        "vars": [
+            "B08006_008E"
+        ],
+        "definition": "B08006_008E",
+        "category": "Commuting to Work"
+    },
+    {
+        "name": "Bicycle",
+        "vars": [
+            "B08006_014E"
+        ],
+        "definition": "B08006_014E",
+        "category": "Commuting to Work"
+    },
+    {
+        "name": "Walked",
+        "vars": [
+            "B08006_015E"
+        ],
+        "definition": "B08006_015E",
+        "category": "Commuting to Work"
+    },
+    {
+        "name": "Taxicab, motorcycle, or other",
+        "vars": [
+            "B08006_016E"
+        ],
+        "definition": "B08006_016E",
+        "category": "Commuting to Work"
+    },
+    {
+        "name": "Worked at home",
+        "vars": [
+            "B08006_017E"
+        ],
+        "definition": "B08006_017E",
+        "category": "Commuting to Work"
     }
-    
-    
 ]

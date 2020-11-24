@@ -31,45 +31,38 @@
     </div>
     <div class="pure-g">
         <div class="pure-u-1-2" id="left">
-            <legend>Census Controller</legend>
-            <div id="left-form">
-                {% with messages = get_flashed_messages(with_categories = true) %}
-                {% if messages %}
-                <ul>
-                    {% for message in messages %}
-                    <li>{{ message[1] }}</li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-                {% endwith %}
-                <form class="pure-form" id="addgeo" action="" method="post">
-                    <fieldset>
-                        {{ form.csrf_token }}
+            {% with messages = get_flashed_messages(with_categories = true) %}
+            {% if messages %}
+            <ul>
+                {% for message in messages %}
+                <li>{{ message[1] }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% endwith %}
+            <form class="pure-form" id="addgeo" action="" method="post">
+                <fieldset>
+                    {{ form.csrf_token }}
 
-                        <div class="input text">
-                            <div>
-                                <b>
-                                    {{ form.geoSelector.label }}
-                                </b>
-                                <br>
-                                {{ form.geoSelector }}
-                            </div>
-                            <div>
-                                <b>
-                                    {{ form.varSelector.label }}
-                                </b>
-                                <br>
-                                {{ form.varSelector }}
-                            </div>
+                    <div class="input text">
+                        <div>
+                            <b>
+                                {{ form.geoSelector.label }}
+                            </b>
+                            <br>
+                            {{ form.geoSelector }}
                         </div>
-                        <button type="submit" class="pure-button choose-button">View Data</button>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-
-        <div class="pure-u-1-2" id="right">
-            {{ rendered_table }}
+                        <div>
+                            <b>
+                                {{ form.varSelector.label }}
+                            </b>
+                            <br>
+                            {{ form.varSelector }}
+                        </div>
+                    </div>
+                    <button type="submit" class="pure-button choose-button">View Data</button>
+                </fieldset>
+            </form>
             <form class="pure-form pure-form-stacked" action="download-data">
                 <fieldset>
                     <button type="submit" id="download-btn" class="pure-button pure-button-primary"
@@ -77,9 +70,9 @@
                 </fieldset>
             </form>
         </div>
-
-
-
+        <div class="pure-u-1-2" id="right">
+            {{ rendered_table }}
+        </div>
     </div>
 
 
