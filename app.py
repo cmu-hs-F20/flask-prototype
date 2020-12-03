@@ -2,19 +2,14 @@ from flask import (
     Flask,
     render_template,
     request,
-    session,
     Markup,
     json,
     make_response,
     Blueprint,
 )
-from wtforms import Form, TextField, validators
+from wtforms import Form, validators
 from wtforms_components.fields import SelectMultipleField
 from census import CensusViewer, GeoDB
-
-import pandas as pd
-import dash_table
-import dash
 
 import secrets
 
@@ -37,18 +32,6 @@ with open("vars.json", "r") as f:
 geoDB = GeoDB("geos.db")
 censusViewer = CensusViewer(
     geoDB=geoDB, vars_config=vars_config, api_key=secrets.census_key
-)
-
-DataFrame = pd.read_csv("iris.csv")
-
-app = dash.Dash(__name__, server=server, routes_pathname_prefix="/dash/")
-
-app.layout = dash_table.DataTable(
-    id="table",
-    data=DataFrame.to_dict("records"),
-    columns=[{"id": c, "name": c} for c in DataFrame.columns],
-    page_action="none",
-    style_table={"height": "300px", "overflowY": "auto"},
 )
 
 
@@ -129,12 +112,6 @@ def dashboard():
     )
 
 
-# def render_race(selected_counties):
-#     formatted_data, colnames = censusViewer.view(county_names=selected_counties)
-#     print(formatted_data)
-#     return formatted_data
-
-
 @server.route("/download-data", methods=["POST"])
 def return_download():
 
@@ -153,14 +130,6 @@ def return_download():
     response.headers["Content-Type"] = "text/csv"
 
     return response
-
-
-# @server.route("/chart")
-# def return_chart():
-#
-#     # data = censusViewer.build_dataframe()
-#
-#     return render_template("state.html", data=data)
 
 
 def render_output_table(categories, column_names, rows):
