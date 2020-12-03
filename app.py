@@ -48,6 +48,8 @@ class StateForm(Form):
             "data-actions-box": "true",
             "data-multiple-separator": " | ",
             "data-selected-text-format": "count > 4",
+            "data-size": "10",
+            "data-done-button": "true",
         },
     )
 
@@ -70,17 +72,19 @@ def dashboard():
 
     selected_counties = [
         [state.strip(), county]
-        for county, state in [
-            county.split(",") for county in request.form.getlist("geoSelector")
-        ]
+        for county, state in [county.split(",") for county in form.geoSelector.data]
     ]
+
+    selected_vars = [var for var in form.varSelector.data]
 
     if not selected_counties:
         categories = [""]
         colnames = ["No column data!"]
         formatted_data = {"": [["No row data!"]]}
     else:
-        formatted_data, colnames = censusViewer.view(county_names=selected_counties)
+        formatted_data, colnames = censusViewer.view_dict(
+            county_names=selected_counties, selected_var_ids=selected_vars
+        )
         categories = list(formatted_data.keys())
 
     rendered_table = render_output_table(categories, colnames, formatted_data)
@@ -91,16 +95,22 @@ def dashboard():
         "state.html",
         form=form,
         rendered_table=rendered_table,
-        data_available=True if selected_counties else False,
     )
 
 
-@server.route("/download-data")
+@server.route("/download-data", methods=["POST"])
 def return_download():
 
-    data = censusViewer.build_dataframe(
-        [[geo["state_name"], geo["county_name"]] for id, geo in session["geos"].items()]
-    )
+    form = StateForm(request.form)
+
+    selected_counties = [
+        [state.strip(), county]
+        for county, state in [county.split(",") for county in form.geoSelector.data]
+    ]
+
+    selected_vars = [var for var in form.varSelector.data]
+
+    data = censusViewer.view_df(selected_counties, selected_vars)
     response = make_response(data.to_csv(index=False))
     response.headers["Content-Disposition"] = "attachment; filename=county_acs_data.csv"
     response.headers["Content-Type"] = "text/csv"

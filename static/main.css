@@ -9,17 +9,15 @@
     display: table;
 }
 
-    .banner-head {
-        display: table-cell;
-        vertical-align: middle;
-        margin-bottom: 0;
-        font-size: 2em;
-        color: white;
-        font-weight: 500;
-        text-shadow: 0 1px 1px black;
-    }
-
-
+.banner-head {
+    display: table-cell;
+    vertical-align: middle;
+    margin-bottom: 0;
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0 1px 1px black;
+}
 
 .pure-u-1-2 {
     border: solid lightgray 1px;
@@ -33,24 +31,24 @@
     width: auto;
     margin-left: 36px;
     /*text-align: center;*/
+    height: min-content;
 }
 
 #right {
     color: #424242;
     width: 66%;
+    height: 100vh;
 }
 
 #table {
     width: auto;
-    height: auto;
+    height: 100%;
 }
 
 #left-form {
     /*background-color: #b2dfdb;*/
     padding: 8px;
     border: solid #cfd8dc 1px;
-
-
 }
 
 

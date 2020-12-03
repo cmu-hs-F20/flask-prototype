@@ -1,3 +1,4 @@
+from itertools import count
 import json
 import os
 import sqlite3
@@ -40,7 +41,7 @@ class GeoDB:
     def get_all_counties(self):
 
         cur = self.db.cursor()
-        cur.execute("select state from states")
+        cur.execute("select state from states order by state")
         states = [state[0] for state in cur.fetchall()]
 
         stateslist = []
@@ -65,7 +66,7 @@ class GeoDB:
 
         return tuple(stateslist)
 
-    def get_counties(self, state):
+    def get_state_counties(self, state):
         """
         Gets counties in state
 
@@ -140,8 +141,12 @@ class GeoDB:
 class CensusViewer:
     def __init__(self, geoDB, vars_config, api_key):
         self.geoDB = geoDB
-        self.vars_config = vars_config
+        self._vars_config = vars_config
         self.api_key = api_key
+
+    @property
+    def vars_config(self):
+        return [dict(var, id=i) for i, var in enumerate(self._vars_config)]
 
     def build_geos(self, geo_names, geo_type="county"):
         if geo_type != "county":
@@ -208,7 +213,7 @@ class CensusViewer:
         df = plydata.define(df, *definitions).drop(all_vars, axis=1)
         return df
 
-    def build_formatted_dataframe(self, df):
+    def build_formatted_dataframe(self, df, selected_vars):
 
         """
         Formats raw census data:
@@ -223,9 +228,7 @@ class CensusViewer:
 
         """
 
-        column_definitions = [
-            (var["name"], var["definition"]) for var in self.vars_config
-        ]
+        column_definitions = [(var["name"], var["definition"]) for var in selected_vars]
 
         transformed_county_data = self.apply_transforms(df, column_definitions)
 
@@ -238,20 +241,23 @@ class CensusViewer:
         )
         return formatted_data
 
-    def build_dataframe(self, county_names, src="acs5", year=2018):
+    def build_dataframe(self, county_names, selected_vars, src="acs5", year=2018):
         """
         Creates dataframe view of variables in requested counties
         """
 
         all_vars = []
-        for var in self.vars_config:
+        for var in selected_vars:
             all_vars += var["vars"]
         raw_county_data = self.build_raw_dataframe(county_names, all_vars, src, year)
-        formatted_county_data = self.build_formatted_dataframe(raw_county_data)
+        formatted_county_data = self.build_formatted_dataframe(
+            raw_county_data, selected_vars
+        )
 
         return formatted_county_data
 
     def build_dict_view(self, df, categories):
+
         formatted_data_dict = dict()
         for category in categories:
             rows = df.loc[df.category == category].drop("category", axis=1).values
@@ -263,7 +269,7 @@ class CensusViewer:
 
         return formatted_data_dict
 
-    def view(self, county_names, src="acs5", year=2018):
+    def view_dict(self, county_names, selected_var_ids, src="acs5", year=2018):
 
         """
         Builds view of census data stored in a dict that's easily consumed
@@ -271,8 +277,8 @@ class CensusViewer:
 
         Args:
             county_names (list[list(str, str)]): List of county, state name pairs
-            src (str): data.census.gov API source to be used
-            year (int): Year to query census data
+            src (str): data.census.gov API source to be used. (currently unused)
+            year (int): Year to query census data. (currently unused)
 
         returns (dict, list[str]):
         -   dict containing census output formatted to be consumed by renderer.
@@ -286,11 +292,15 @@ class CensusViewer:
         -   List of column names
         """
 
-        county_data = self.build_dataframe(county_names)
+        selected_vars = [
+            var for var in self.vars_config if str(var["id"]) in selected_var_ids
+        ]
 
-        categories = set(var["category"] for var in self.vars_config)
+        county_data = self.build_dataframe(county_names, selected_vars)
 
-        county_data_dict = self.build_dict_view(county_data, categories)
+        county_data_dict = self.build_dict_view(
+            county_data, set([var["category"] for var in selected_vars])
+        )
 
         formatted_county_names = [
             "{county}, {state}".format(state=state, county=county)
@@ -298,17 +308,25 @@ class CensusViewer:
         ]
 
         colnames = ["Column Name"] + formatted_county_names
+
         return county_data_dict, colnames
+
+    def view_df(self, county_names, selected_var_ids):
+
+        selected_vars = [
+            var for var in self.vars_config if str(var["id"]) in selected_var_ids
+        ]
+
+        return self.build_dataframe(county_names, selected_vars)
 
     @property
     def available_vars(self):
-        # breakpoint()
 
         var_list = []
 
         for category in self.available_categories:
             cat_list = [
-                tuple([var["name"], var["name"]])
+                tuple([var["id"], var["name"]])
                 for var in self.vars_config
                 if var["category"] == category
             ]
@@ -318,18 +336,3 @@ class CensusViewer:
     @property
     def available_categories(self):
         return set([var["category"] for var in self.vars_config])
-
-
-if __name__ == "__main__":
-    db = GeoDB("geos.db")
-    import secrets
-
-    # print(db.get_states())
-    # print(db.get_counties('New York'))
-    # print(db.get_state_fips('Pennsylvania'))
-    # print(db.get_county_fips('Pennsylvania', 'Bedford County'))
-    d = get_data(
-        [("Pennsylvania", "Allegheny County")],
-        [{"id": "B01001_001E"}],
-        secrets.census_key,
-    )
