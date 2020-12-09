@@ -32,7 +32,7 @@
         "category": "Race"
     },
     {
-        "name": " sian",
+        "name": " Asian",
         "vars": [
             "B02001_005E"
         ],
@@ -171,6 +171,51 @@
         "tabletype": "profile"
     },
     {
+        "name": "Total under 18 years",
+        "vars": [
+            "S1101_C02_007E"
+        ],
+        "definition": "S1101_C02_007E",
+        "category": "Age of Own Children",
+        "tabletype": "profile"
+    },
+    {
+        "name": "Under 6 years",
+        "vars": [
+            "S1101_C02_006E"
+        ],
+        "definition": "S1101_C02_006E",
+        "category": "Age of Own Children",
+        "tabletype": "profile"
+    },
+    {
+        "name": "6 to 17 years",
+        "vars": [
+            "S1101_C02_008E"
+        ],
+        "definition": "S1101_C02_008E",
+        "category": "Age of Own Children",
+        "tabletype": "profile"
+    },
+    {
+        "name": "Average Family Size",
+        "vars": [
+            "S1101_C05_004E"
+        ],
+        "definition": "S1101_C05_004E",
+        "category": "Average Family Size",
+        "tabletype": "profile"
+    },
+    {
+        "name": "Average Household Size",
+        "vars": [
+            "S1101_C01_002E"
+        ],
+        "definition": "S1101_C01_002E",
+        "category": "Average Household Size",
+        "tabletype": "profile"
+    },
+    {
         "name": "Car, truck, or van -- drove alone",
         "vars": [
             "DP03_0019E"
@@ -241,7 +286,7 @@
         "definition": "DP03_0005E",
         "category": "Employment Status",
         "tabletype": "profile"
-    },
+    },      
     {
         "name": "Armed Forces",
         "vars": [
