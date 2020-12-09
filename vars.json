@@ -1,938 +1,1575 @@
 [
     {
         "name": "Race Total",
-        "vars": ["B02001_001E"],
+        "vars": [
+            "B02001_001E"
+        ],
         "definition": "B02001_001E",
         "category": "Race"
     },
     {
         "name": "White",
-        "vars": ["B02001_002E"],
+        "vars": [
+            "B02001_002E"
+        ],
         "definition": "B02001_002E",
         "category": "Race"
     },
     {
         "name": "Black or African American",
-        "vars": ["B02001_003E"],
+        "vars": [
+            "B02001_003E"
+        ],
         "definition": "B02001_003E",
         "category": "Race"
     },
     {
         "name": "American Indian and Alaska Native",
-        "vars": ["B02001_004E"],
+        "vars": [
+            "B02001_004E"
+        ],
         "definition": "B02001_004E",
         "category": "Race"
-    }, 
+    },
     {
         "name": " sian",
-        "vars": ["B02001_005E"],
+        "vars": [
+            "B02001_005E"
+        ],
         "definition": "B02001_005E",
         "category": "Race"
     },
     {
         "name": "Native Hawaiian and Other Pacific",
-        "vars": ["B02001_006E"],
+        "vars": [
+            "B02001_006E"
+        ],
         "definition": "B02001_006E",
         "category": "Race"
     },
     {
         "name": "Some other race",
-        "vars": ["B02001_007E"],
+        "vars": [
+            "B02001_007E"
+        ],
         "definition": "B02001_007E",
         "category": "Race"
     },
     {
         "name": "2+ races",
-        "vars": ["B02001_008E"],
+        "vars": [
+            "B02001_008E"
+        ],
         "definition": "B02001_008E",
         "category": "Race"
     },
     {
         "name": "Total Population",
-        "vars": ["B01003_001E"],
+        "vars": [
+            "B01003_001E"
+        ],
         "definition": "B01003_001E",
         "category": "Population"
     },
     {
         "name": "Total Family Households (with children under 18)",
-        "vars": ["DP02_0004E"],
+        "vars": [
+            "DP02_0004E"
+        ],
         "definition": "DP02_0004E",
         "category": "Household Type",
         "tabletype": "profile"
     },
     {
         "name": "Married-couple family (with children under 18)",
-        "vars": ["DP02_0005E"],
+        "vars": [
+            "DP02_0005E"
+        ],
         "definition": "DP02_0005E",
         "category": "Household Type",
         "tabletype": "profile"
     },
     {
         "name": "Male householder, no spouse present (with children under 18)",
-        "vars": ["DP02_0007E"],
+        "vars": [
+            "DP02_0007E"
+        ],
         "definition": "DP02_0007E",
         "category": "Household Type",
         "tabletype": "profile"
     },
     {
         "name": "Female householder, no spouse present (with children under 18)",
-        "vars": ["DP02_0009E"],
+        "vars": [
+            "DP02_0009E"
+        ],
         "definition": "DP02_0009E",
         "category": "Household Type",
         "tabletype": "profile"
     },
     {
         "name": "Enrolled in kindergarten",
-        "vars": ["DP02_0054E"],
+        "vars": [
+            "DP02_0054E"
+        ],
         "definition": "DP02_0054E",
         "category": "School Enrollment",
         "tabletype": "profile"
     },
     {
         "name": "Enrolled in nursery school or preschool",
-        "vars": ["DP02_0053E"],
+        "vars": [
+            "DP02_0053E"
+        ],
         "definition": "DP02_0053E",
         "category": "School Enrollment",
         "tabletype": "profile"
     },
     {
         "name": "English Only",
-        "vars": ["DP02_0111E"],
+        "vars": [
+            "DP02_0111E"
+        ],
         "definition": "DP02_0111E",
         "category": "Languages Spoken at Home",
         "tabletype": "profile"
     },
     {
         "name": "Languages other than English",
-        "vars": ["DP02_0112E"],
+        "vars": [
+            "DP02_0112E"
+        ],
         "definition": "DP02_0112E",
         "category": "Languages Spoken at Home",
         "tabletype": "profile"
     },
     {
         "name": "Total Households",
-        "vars": ["DP02_0150E"],
+        "vars": [
+            "DP02_0150E"
+        ],
         "definition": "DP02_0150E",
         "category": "Computers and Internet Use",
         "tabletype": "profile"
     },
     {
         "name": "Households with a computer",
-        "vars": ["DP02_0151E"],
+        "vars": [
+            "DP02_0151E"
+        ],
         "definition": "DP02_0151E",
         "category": "Computers and Internet Use",
         "tabletype": "profile"
     },
     {
         "name": "Households with internet",
-        "vars": ["DP02_0152E"],
+        "vars": [
+            "DP02_0152E"
+        ],
         "definition": "DP02_0152E",
         "category": "Computers and Internet Use",
         "tabletype": "profile"
     },
     {
         "name": "Car, truck, or van -- drove alone",
-        "vars": ["DP03_0019E"],
+        "vars": [
+            "DP03_0019E"
+        ],
         "definition": "DP03_0019E",
         "category": "Commuting to Work",
         "tabletype": "profile"
     },
     {
         "name": "Car, truck, or van -- carpooled",
-        "vars": ["DP03_0020E"],
+        "vars": [
+            "DP03_0020E"
+        ],
         "definition": "DP03_0020E",
         "category": "Commuting to Work",
         "tabletype": "profile"
     },
     {
         "name": "Public transportation",
-        "vars": ["DP03_0021E"],
+        "vars": [
+            "DP03_0021E"
+        ],
         "definition": "DP03_0021E",
         "category": "Commuting to Work",
         "tabletype": "profile"
     },
     {
         "name": "Walked",
-        "vars": ["DP03_0022E"],
+        "vars": [
+            "DP03_0022E"
+        ],
         "definition": "DP03_0022E",
         "category": "Commuting to Work",
         "tabletype": "profile"
     },
     {
         "name": "Worked at home",
-        "vars": ["DP03_0024E"],
+        "vars": [
+            "DP03_0024E"
+        ],
         "definition": "DP03_0024E",
         "category": "Commuting to Work",
         "tabletype": "profile"
     },
     {
         "name": "Other",
-        "vars": ["DP03_0023E"],
+        "vars": [
+            "DP03_0023E"
+        ],
         "definition": "DP03_0023E",
         "category": "Commuting to Work",
         "tabletype": "profile"
     },
     {
         "name": "Employed",
-        "vars": ["DP03_0004E"],
+        "vars": [
+            "DP03_0004E"
+        ],
         "definition": "DP03_0004E",
         "category": "Employment Status",
         "tabletype": "profile"
     },
     {
         "name": "Unemployed",
-        "vars": ["DP03_0005E"],
+        "vars": [
+            "DP03_0005E"
+        ],
         "definition": "DP03_0005E",
         "category": "Employment Status",
         "tabletype": "profile"
     },
     {
         "name": "Armed Forces",
-        "vars": ["DP03_0006E"],
+        "vars": [
+            "DP03_0006E"
+        ],
         "definition": "DP03_0006E",
         "category": "Employment Status",
         "tabletype": "profile"
     },
     {
         "name": "Not in Labor Force",
-        "vars": ["DP03_0007E"],
+        "vars": [
+            "DP03_0007E"
+        ],
         "definition": "DP03_0007E",
         "category": "Employment Status",
         "tabletype": "profile"
     },
     {
+        "name": "Population: Female",
+        "vars": [
+            "B01001_026E"
+        ],
+        "definition": "B01001_026E",
+        "category": "Sex"
+    },
+    {
+        "name": "Population: Male",
+        "vars": [
+            "B01001_002E"
+        ],
+        "definition": "B01001_002E",
+        "category": "Sex"
+    },
+    {
+        "name": "Total Households",
+        "vars": [
+            "S1101_C01_001E"
+        ],
+        "definition": "S1101_C01_001E",
+        "category": "Households and Families",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Average Household Size",
+        "vars": [
+            "S1101_C01_002E"
+        ],
+        "definition": "S1101_C01_002E",
+        "category": "Households and Families",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Total Families",
+        "vars": [
+            "S1101_C01_003E"
+        ],
+        "definition": "S1101_C01_003E",
+        "category": "Households and Families",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Average Family  Size",
+        "vars": [
+            "S1101_C01_004E"
+        ],
+        "definition": "S1101_C01_004E",
+        "category": "Households and Families",
+        "tabletype": "subject"
+    },
+    {
         "name": "Management, business, science, and arts occupations",
-        "vars": ["DP03_0027E"],
+        "vars": [
+            "DP03_0027E"
+        ],
         "definition": "DP03_0027E",
         "category": "Occupation",
         "tabletype": "profile"
     },
     {
         "name": "Service occupations",
-        "vars": ["DP03_0028E"],
+        "vars": [
+            "DP03_0028E"
+        ],
         "definition": "DP03_0028E",
         "category": "Occupation",
         "tabletype": "profile"
     },
     {
         "name": "Sales and office occupations",
-        "vars": ["DP03_0029E"],
+        "vars": [
+            "DP03_0029E"
+        ],
         "definition": "DP03_0029E",
         "category": "Occupation",
         "tabletype": "profile"
     },
     {
         "name": "Natural resources, construction, and maintenence occupations",
-        "vars": ["DP03_0030E"],
+        "vars": [
+            "DP03_0030E"
+        ],
         "definition": "DP03_0030E",
         "category": "Occupation",
         "tabletype": "profile"
     },
     {
         "name": "Production, transportation, and material moving occupations",
-        "vars": ["DP03_0031E"],
+        "vars": [
+            "DP03_0031E"
+        ],
         "definition": "DP03_0031E",
         "category": "Occupation",
         "tabletype": "profile"
     },
     {
         "name": "Agriculture, forestry, fishing, hunting, and mining",
-        "vars": ["DP03_0033E"],
+        "vars": [
+            "DP03_0033E"
+        ],
         "definition": "DP03_0033E",
         "category": "Industry",
         "tabletype": "profile"
     },
     {
         "name": "Construction",
-        "vars": ["DP03_0034E"],
+        "vars": [
+            "DP03_0034E"
+        ],
         "definition": "DP03_0034E",
         "category": "Industry",
         "tabletype": "profile"
     },
     {
         "name": "Manufacturing",
-        "vars": ["DP03_0035E"],
+        "vars": [
+            "DP03_0035E"
+        ],
         "definition": "DP03_0035E",
         "category": "Industry",
         "tabletype": "profile"
     },
     {
         "name": "Wholesale trade",
-        "vars": ["DP03_0036E"],
+        "vars": [
+            "DP03_0036E"
+        ],
         "definition": "DP03_0036E",
         "category": "Industry",
         "tabletype": "profile"
     },
     {
         "name": "Retail Trade",
-        "vars": ["DP03_0037E"],
+        "vars": [
+            "DP03_0037E"
+        ],
         "definition": "DP03_0037E",
         "category": "Industry",
         "tabletype": "profile"
     },
     {
         "name": "Transportation and warehousing, and utilities",
-        "vars": ["DP03_0038E"],
+        "vars": [
+            "DP03_0038E"
+        ],
         "definition": "DP03_0038E",
         "category": "Industry",
         "tabletype": "profile"
     },
     {
         "name": "Information",
-        "vars": ["DP03_0039E"],
+        "vars": [
+            "DP03_0039E"
+        ],
         "definition": "DP03_0039E",
         "category": "Industry",
         "tabletype": "profile"
     },
     {
         "name": "Finance and insurance, and real estate and rental and leasing",
-        "vars": ["DP03_0040E"],
+        "vars": [
+            "DP03_0040E"
+        ],
         "definition": "DP03_0040E",
         "category": "Industry",
         "tabletype": "profile"
     },
     {
         "name": "Professional, scientific, and management, and administrative and waste management services",
-        "vars": ["DP03_0041E"],
+        "vars": [
+            "DP03_0041E"
+        ],
         "definition": "DP03_0041E",
         "category": "Industry",
         "tabletype": "profile"
     },
     {
         "name": "Educational services, and health care and social assistance",
-        "vars": ["DP03_0042E"],
+        "vars": [
+            "DP03_0042E"
+        ],
         "definition": "DP03_0042E",
         "category": "Industry",
         "tabletype": "profile"
     },
     {
         "name": "Arts, entertainment, and recreation, and accomodation and food services",
-        "vars": ["DP03_0043E"],
+        "vars": [
+            "DP03_0043E"
+        ],
         "definition": "DP03_0043E",
         "category": "Industry",
         "tabletype": "profile"
     },
     {
         "name": "Other services, except public administration",
-        "vars": ["DP03_0044E"],
+        "vars": [
+            "DP03_0044E"
+        ],
         "definition": "DP03_0044E",
         "category": "Industry",
         "tabletype": "profile"
     },
     {
         "name": "Public administraiton ",
-        "vars": ["DP03_0045E"],
+        "vars": [
+            "DP03_0045E"
+        ],
         "definition": "DP03_0045E",
         "category": "Industry",
         "tabletype": "profile"
     },
     {
         "name": "Private wage and salary workers",
-        "vars": ["DP03_0047E"],
+        "vars": [
+            "DP03_0047E"
+        ],
         "definition": "DP03_0047E",
         "category": "Class of Worker",
         "tabletype": "profile"
     },
     {
         "name": "Government workers",
-        "vars": ["DP03_0048E"],
+        "vars": [
+            "DP03_0048E"
+        ],
         "definition": "DP03_0048E",
         "category": "Class of Worker",
         "tabletype": "profile"
     },
     {
         "name": "Self-employed in own not incorporated business workers",
-        "vars": ["DP03_0049E"],
+        "vars": [
+            "DP03_0049E"
+        ],
         "definition": "DP03_0049E",
         "category": "Class of Worker",
         "tabletype": "profile"
     },
     {
         "name": "Hispanic or Latino (any race)",
-        "vars": ["DP05_0070E"],
+        "vars": [
+            "DP05_0070E"
+        ],
         "definition": "DP05_0070E",
         "category": "Ethnicity",
         "tabletype": "profile"
     },
     {
         "name": "Not Hispanic or Latino",
-        "vars": ["DP05_0076E"],
+        "vars": [
+            "DP05_0076E"
+        ],
         "definition": "DP05_0076E",
         "category": "Ethnicity",
         "tabletype": "profile"
     },
     {
         "name": "Grandparents responsible for grandchildren under 1",
-        "vars": ["DP02_0045E"],
+        "vars": [
+            "DP02_0045E"
+        ],
         "definition": "DP02_0045E",
         "category": "Grandparents (responsible for grandchildren under 5)",
         "tabletype": "profile"
     },
     {
         "name": "Grandparents responsible for grandchildren ages 1-2",
-        "vars": ["DP02_0046E"],
+        "vars": [
+            "DP02_0046E"
+        ],
         "definition": "DP02_0046E",
         "category": "Grandparents (responsible for grandchildren under 5)",
         "tabletype": "profile"
     },
     {
         "name": "Grandparents responsible for grandchildren ages 3-4",
-        "vars": ["DP02_0047E"],
+        "vars": [
+            "DP02_0047E"
+        ],
         "definition": "DP02_0047E",
         "category": "Grandparents (responsible for grandchildren under 5)",
         "tabletype": "profile"
     },
     {
         "name": "Occupied Housing Units",
-        "vars": ["DP04_0002E"],
+        "vars": [
+            "DP04_0002E"
+        ],
         "definition": "DP04_0002E",
         "category": "Housing Occupancy",
         "tabletype": "profile"
     },
     {
         "name": "Vacant Housing Units",
-        "vars": ["DP04_0003E"],
+        "vars": [
+            "DP04_0003E"
+        ],
         "definition": "DP04_0003E",
         "category": "Housing Occupancy",
         "tabletype": "profile"
     },
     {
         "name": "Homeowner vacancy rate",
-        "vars": ["DP04_0004E"],
+        "vars": [
+            "DP04_0004E"
+        ],
         "definition": "DP04_0004E",
         "category": "Housing Occupancy",
         "tabletype": "profile"
     },
     {
         "name": "Rental vacancy rate",
-        "vars": ["DP04_0005E"],
+        "vars": [
+            "DP04_0005E"
+        ],
         "definition": "DP04_0005E",
         "category": "Housing Occupancy",
         "tabletype": "profile"
     },
     {
         "name": "Owner occupied",
-        "vars": ["DP04_0046E"],
+        "vars": [
+            "DP04_0046E"
+        ],
         "definition": "DP04_0046E",
         "category": "Housing Occupancy",
         "tabletype": "profile"
     },
     {
         "name": "Renter occupied",
-        "vars": ["DP04_0047E"],
+        "vars": [
+            "DP04_0047E"
+        ],
         "definition": "DP04_0047E",
         "category": "Housing Occupancy",
         "tabletype": "profile"
     },
     {
         "name": "Average household size of owner occupied unit",
-        "vars": ["DP04_0048E"],
+        "vars": [
+            "DP04_0048E"
+        ],
         "definition": "",
         "category": "Housing Occupancy",
         "tabletype": "profile"
     },
     {
         "name": "Average household size of renter occupied unit",
-        "vars": ["DP04_0049E"],
+        "vars": [
+            "DP04_0049E"
+        ],
         "definition": "",
         "category": "Housing Occupancy",
         "tabletype": "profile"
     },
     {
         "name": "Total occupied units paying rent",
-        "vars": ["DP04_0126E"],
+        "vars": [
+            "DP04_0126E"
+        ],
         "definition": "DP04_0126E",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
     {
         "name": "Less than $500",
-        "vars": ["DP04_0127E"],
+        "vars": [
+            "DP04_0127E"
+        ],
         "definition": "DP04_0127E",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
     {
         "name": "$500 to $999",
-        "vars": ["DP04_0128E"],
+        "vars": [
+            "DP04_0128E"
+        ],
         "definition": "DP04_0128E",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
     {
         "name": "$1,000 to $1,499",
-        "vars": ["DP04_0129E"],
+        "vars": [
+            "DP04_0129E"
+        ],
         "definition": "DP04_0129E",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
     {
         "name": "$1,500 to $1,999",
-        "vars": ["DP04_0130E"],
+        "vars": [
+            "DP04_0130E"
+        ],
         "definition": "DP04_0130E",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
     {
         "name": "$2,000 to $2,499",
-        "vars": ["DP04_0131E"],
+        "vars": [
+            "DP04_0131E"
+        ],
         "definition": "DP04_0131E",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
     {
         "name": "$2,500 to $2,999",
-        "vars": ["DP04_0132E"],
+        "vars": [
+            "DP04_0132E"
+        ],
         "definition": "DP04_0132E",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
     {
         "name": "$3,000 or more",
-        "vars": ["DP04_0133E"],
+        "vars": [
+            "DP04_0133E"
+        ],
         "definition": "DP04_0133E",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
     {
         "name": "No rent paid",
-        "vars": ["DP04_0135E"],
+        "vars": [
+            "DP04_0135E"
+        ],
         "definition": "DP04_0135E",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
     {
         "name": "Median gross rent (dollars)",
-        "vars": ["DP04_0134E"],
+        "vars": [
+            "DP04_0134E"
+        ],
         "definition": "DP04_0134E",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
     {
         "name": "Less than 15%",
-        "vars": ["DP04_0137E"],
+        "vars": [
+            "DP04_0137E"
+        ],
         "definition": "DP04_0137E",
         "category": "Rent (% of income)",
         "tabletype": "profile"
     },
     {
         "name": "15% - 19.9%",
-        "vars": ["DP04_0138E"],
+        "vars": [
+            "DP04_0138E"
+        ],
         "definition": "DP04_0138E",
         "category": "Rent (% of income)",
         "tabletype": "profile"
     },
     {
         "name": "20% - 24.9%",
-        "vars": ["DP04_0139E"],
+        "vars": [
+            "DP04_0139E"
+        ],
         "definition": "DP04_0139E",
         "category": "Rent (% of income)",
         "tabletype": "profile"
     },
     {
         "name": "25% - 29.9%",
-        "vars": ["DP04_0140E"],
+        "vars": [
+            "DP04_0140E"
+        ],
         "definition": "DP04_0140E",
         "category": "Rent (% of income)",
         "tabletype": "profile"
     },
     {
         "name": "30% - 34.9%",
-        "vars": ["DP04_0141E"],
+        "vars": [
+            "DP04_0141E"
+        ],
         "definition": "DP04_0141E",
         "category": "Rent (% of income)",
         "tabletype": "profile"
     },
     {
         "name": "35% or more",
-        "vars": ["DP04_0142E"],
+        "vars": [
+            "DP04_0142E"
+        ],
         "definition": "DP04_0142E",
         "category": "Rent (% of income)",
         "tabletype": "profile"
     },
     {
         "name": "Total Units Paying Rent",
-        "vars": ["DP04_0136E"],
+        "vars": [
+            "DP04_0136E"
+        ],
         "definition": "DP04_0136E",
         "category": "Rent (% of income)",
         "tabletype": "profile"
     },
     {
         "name": "Total Households",
-        "vars": ["DP04_0057E"],
+        "vars": [
+            "DP04_0057E"
+        ],
         "definition": "DP04_0057E",
         "category": "Vehciles Available",
         "tabletype": "profile"
     },
     {
         "name": "No Vehciles Available",
-        "vars": ["DP04_0058E"],
+        "vars": [
+            "DP04_0058E"
+        ],
         "definition": "DP04_0058E",
         "category": "Vehciles Available",
         "tabletype": "profile"
     },
     {
         "name": "1 vehicle available",
-        "vars": ["DP04_0059E"],
+        "vars": [
+            "DP04_0059E"
+        ],
         "definition": "DP04_0059E",
         "category": "Vehciles Available",
         "tabletype": "profile"
     },
     {
         "name": "2 vehicles available",
-        "vars": ["DP04_0060E"],
+        "vars": [
+            "DP04_0060E"
+        ],
         "definition": "DP04_0060E",
         "category": "Vehciles Available",
         "tabletype": "profile"
     },
     {
         "name": "3+ vehicles available",
-        "vars": ["DP04_0061E"],
+        "vars": [
+            "DP04_0061E"
+        ],
         "definition": "DP04_0061E",
         "category": "Vehciles Available",
         "tabletype": "profile"
     },
     {
         "name": "Total Occupied Housing Units",
-        "vars": ["DP04_0072E"],
+        "vars": [
+            "DP04_0072E"
+        ],
         "definition": "DP04_0072E",
         "category": "Household Utilities",
         "tabletype": "profile"
     },
     {
         "name": "Lacking complete plumbing facilities",
-        "vars": ["DP04_0073E"],
+        "vars": [
+            "DP04_0073E"
+        ],
         "definition": "DP04_0073E",
         "category": "Household Utilities",
         "tabletype": "profile"
     },
     {
         "name": "Lacking complete kitchen facilities",
-        "vars": ["DP04_0074E"],
+        "vars": [
+            "DP04_0074E"
+        ],
         "definition": "DP04_0074E",
         "category": "Household Utilities",
         "tabletype": "profile"
     },
     {
         "name": "No telephone service",
-        "vars": ["DP04_0075E"],
+        "vars": [
+            "DP04_0075E"
+        ],
         "definition": "DP04_0075E",
         "category": "Household Utilities",
         "tabletype": "profile"
     },
     {
         "name": "Households with children under 6",
-        "vars": ["B23008_002E"],
+        "vars": [
+            "B23008_002E"
+        ],
         "definition": "B23008_002E",
         "category": "Household Composition (children under 6)"
     },
     {
         "name": "Living with two parents",
-        "vars": ["B23008_003E"],
+        "vars": [
+            "B23008_003E"
+        ],
         "definition": "B23008_003E",
         "category": "Household Composition (children under 6)"
     },
     {
         "name": "Living with two parents (both in labor force)",
-        "vars": ["B23008_004E"],
+        "vars": [
+            "B23008_004E"
+        ],
         "definition": "B23008_004E",
         "category": "Household Composition (children under 6)"
     },
     {
         "name": "Living with two parents (father only in labor force)",
-        "vars": ["B23008_005E"],
+        "vars": [
+            "B23008_005E"
+        ],
         "definition": "B23008_005E",
         "category": "Household Composition (children under 6)"
     },
     {
         "name": "Living with two parents (mother only in labor force)",
-        "vars": ["B23008_006E"],
+        "vars": [
+            "B23008_006E"
+        ],
         "definition": "B23008_006E",
         "category": "Household Composition (children under 6)"
     },
     {
         "name": "Living with two parents (neither parent in labor force)",
-        "vars": ["B23008_007E"],
+        "vars": [
+            "B23008_007E"
+        ],
         "definition": "B23008_007E",
         "category": "Household Composition (children under 6)"
     },
     {
         "name": "Living with one parent",
-        "vars": ["B23008_008E"],
+        "vars": [
+            "B23008_008E"
+        ],
         "definition": "B23008_008E",
         "category": "Household Composition (children under 6)"
     },
     {
         "name": "Living with father",
-        "vars": ["B23008_009E"],
+        "vars": [
+            "B23008_009E"
+        ],
         "definition": "B23008_009E",
         "category": "Household Composition (children under 6)"
     },
     {
         "name": "Living with father (in labor force)",
-        "vars": ["B23008_010E"],
+        "vars": [
+            "B23008_010E"
+        ],
         "definition": "B23008_010E",
         "category": "Household Composition (children under 6)"
     },
     {
         "name": "Living with father (not in labor force)",
-        "vars": ["B23008_011E"],
+        "vars": [
+            "B23008_011E"
+        ],
         "definition": "B23008_011E",
         "category": "Household Composition (children under 6)"
     },
     {
         "name": "Living with mother",
-        "vars": ["B23008_012E"],
+        "vars": [
+            "B23008_012E"
+        ],
         "definition": "B23008_012E",
         "category": "Household Composition (children under 6)"
     },
     {
         "name": "Living with mother (in labor force)",
-        "vars": ["B23008_013E"],
+        "vars": [
+            "B23008_013E"
+        ],
         "definition": "B23008_013E",
         "category": "Household Composition (children under 6)"
     },
     {
         "name": "Living with mother (not in labor force)",
-        "vars": ["B23008_014E"],
+        "vars": [
+            "B23008_014E"
+        ],
         "definition": "B23008_014E",
         "category": "Household Composition (children under 6)"
-    },  
+    },
     {
         "name": "Family households receiving SSI, cash public assistance, or food stamps",
-        "vars": ["B09010_003E"],
+        "vars": [
+            "B09010_003E"
+        ],
         "definition": "B09010_003E",
         "category": "SSI, Cash Public Assistance, Food Stamps"
-    },    
+    },
     {
         "name": "Number of women 15 to 50 years old who had a birth in the past 12 months",
-        "vars": ["DP02_0036E"],
+        "vars": [
+            "DP02_0036E"
+        ],
         "definition": "DP02_0036E",
         "category": "Fertility",
         "tabletype": "profile"
-    },   
+    },
     {
         "name": "Number of unmarried women who had a birth in the past 12 months",
-        "vars": ["DP02_0037E"],
+        "vars": [
+            "DP02_0037E"
+        ],
         "definition": "DP02_0037E",
         "category": "Fertility",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "Less than 9th grade",
-        "vars": ["DP02_0059E"],
+        "vars": [
+            "DP02_0059E"
+        ],
         "definition": "DP02_0059E",
         "category": "Educational Attainment",
         "tabletype": "profile"
-    },   
+    },
     {
         "name": "9th - 12th grade, no diploma",
-        "vars": ["DP02_0060E"],
+        "vars": [
+            "DP02_0060E"
+        ],
         "definition": "DP02_0060E",
         "category": "Educational Attainment",
         "tabletype": "profile"
-    },   
+    },
     {
         "name": "High school graduate",
-        "vars": ["DP02_0061E"],
+        "vars": [
+            "DP02_0061E"
+        ],
         "definition": "DP02_0061E",
         "category": "Educational Attainment",
         "tabletype": "profile"
-    },   
+    },
     {
         "name": "Some college, no degree",
-        "vars": ["DP02_0062E"],
+        "vars": [
+            "DP02_0062E"
+        ],
         "definition": "DP02_0062E",
         "category": "Educational Attainment",
         "tabletype": "profile"
-    },   
+    },
     {
         "name": "Associate's degree",
-        "vars": ["DP02_0063E"],
+        "vars": [
+            "DP02_0063E"
+        ],
         "definition": "DP02_0063E",
         "category": "Educational Attainment",
         "tabletype": "profile"
-    },   
+    },
     {
         "name": "Bachelor's degree",
-        "vars": ["DP02_0064E"],
+        "vars": [
+            "DP02_0064E"
+        ],
         "definition": "DP02_0064E",
         "category": "Educational Attainment",
         "tabletype": "profile"
-    },   
+    },
     {
         "name": "Graduate or professional degree",
-        "vars": ["DP02_0065E"],
+        "vars": [
+            "DP02_0065E"
+        ],
         "definition": "DP02_0065E",
         "category": "Educational Attainment",
         "tabletype": "profile"
-    },   
+    },
     {
         "name": "Total Population",
-        "vars": ["DP02_0086E"],
+        "vars": [
+            "DP02_0086E"
+        ],
         "definition": "DP02_0086E",
         "category": "Citizenship Status",
         "tabletype": "profile"
-    },   
+    },
     {
         "name": "Born in the US",
-        "vars": ["DP02_0095E"],
+        "vars": [
+            "DP02_0095E"
+        ],
         "definition": "DP02_0095E",
         "category": "Citizenship Status",
         "tabletype": "profile"
-    },   
+    },
     {
         "name": "Born in Puerto Rico, U.S. Island areas, or born abroad to American parent(s)",
-        "vars": ["DP02_0091E"],
+        "vars": [
+            "DP02_0091E"
+        ],
         "definition": "DP02_0091E",
         "category": "Citizenship Status",
         "tabletype": "profile"
-    },   
-        {
+    },
+    {
         "name": "Naturalized US Citizen",
-        "vars": ["DP02_0094E"],
+        "vars": [
+            "DP02_0094E"
+        ],
         "definition": "DP02_0094E",
         "category": "Citizenship Status",
         "tabletype": "profile"
-    },   
+    },
     {
         "name": "Not a US Citizen",
-        "vars": ["DP02_0095E"],
+        "vars": [
+            "DP02_0095E"
+        ],
         "definition": "DP02_0095E",
         "category": "Citizenship Status",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "Total Family Households",
-        "vars": ["DP03_0075E"],
+        "vars": [
+            "DP03_0075E"
+        ],
         "definition": "DP03_0075E",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "Less than $10,000",
-        "vars": ["DP03_0076E"],
+        "vars": [
+            "DP03_0076E"
+        ],
         "definition": "DP03_0076E",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "$10,000 to $14,999",
-        "vars": ["DP03_0077E"],
+        "vars": [
+            "DP03_0077E"
+        ],
         "definition": "DP03_0077E",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "$15,000 to $24,999",
-        "vars": ["DP03_0078E"],
+        "vars": [
+            "DP03_0078E"
+        ],
         "definition": "DP03_0078E",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "$25,000 to $34,999",
-        "vars": ["DP03_0079E"],
+        "vars": [
+            "DP03_0079E"
+        ],
         "definition": "DP03_0079E",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "$35,000 to $49,999",
-        "vars": ["DP03_0080E"],
+        "vars": [
+            "DP03_0080E"
+        ],
         "definition": "DP03_0080E",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "$50,000 to $74,999",
-        "vars": ["DP03_0081E"],
+        "vars": [
+            "DP03_0081E"
+        ],
         "definition": "DP03_0081E",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "$75,000 to $99,999",
-        "vars": ["DP03_0082E"],
+        "vars": [
+            "DP03_0082E"
+        ],
         "definition": "DP03_0082E",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "$100,000 to $149,999",
-        "vars": ["DP03_0083E"],
+        "vars": [
+            "DP03_0083E"
+        ],
         "definition": "DP03_0083E",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "$150,000 to $199,999",
-        "vars": ["DP03_0084E"],
+        "vars": [
+            "DP03_0084E"
+        ],
         "definition": "DP03_0084E",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "$200,000 or more",
-        "vars": ["DP03_0085E"],
+        "vars": [
+            "DP03_0085E"
+        ],
         "definition": "DP03_0085E",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "Median family income",
-        "vars": ["DP03_0086E"],
+        "vars": [
+            "DP03_0086E"
+        ],
         "definition": "DP03_0086E",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "Mean family income",
-        "vars": ["DP03_0087E"],
+        "vars": [
+            "DP03_0087E"
+        ],
         "definition": "DP03_0087E",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "Civilian noninstitutionalized population",
-        "vars": ["DP03_0095E"],
+        "vars": [
+            "DP03_0095E"
+        ],
         "definition": "DP03_0095E",
         "category": "Health Insurance Coverage",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "Civilian noninstitutionalized population with private health insurance coverage",
-        "vars": ["DP03_0097E"],
+        "vars": [
+            "DP03_0097E"
+        ],
         "definition": "DP03_0097E",
         "category": "Health Insurance Coverage",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "Civilian noninstitutionalized population with public health insurance coverage",
-        "vars": ["DP03_0098E"],
+        "vars": [
+            "DP03_0098E"
+        ],
         "definition": "DP03_0098E",
         "category": "Health Insurance Coverage",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "Civilian noninstitutionalized population without health insurance coverage",
-        "vars": ["DP03_0099E"],
+        "vars": [
+            "DP03_0099E"
+        ],
         "definition": "DP03_0099E",
         "category": "Health Insurance Coverage",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "Civilian noninstitutionalized population (under 19)",
-        "vars": ["DP03_0100E"],
+        "vars": [
+            "DP03_0100E"
+        ],
         "definition": "DP03_0100E",
         "category": "Health Insurance Coverage",
         "tabletype": "profile"
-    }, 
+    },
     {
         "name": "Civilian noninstitutionalized population (under 19) without health insurance coverage",
-        "vars": ["DP03_0101E"],
+        "vars": [
+            "DP03_0101E"
+        ],
         "definition": "DP03_0101E",
         "category": "Health Insurance Coverage",
         "tabletype": "profile"
-    }       
+    },
+    {
+        "name": "Below 50% of the poverty level",
+        "vars": [
+            "S1701_C01_038E"
+        ],
+        "definition": "S1701_C01_038E",
+        "category": "Population by poverty level",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Below 125% of the poverty level",
+        "vars": [
+            "S1701_C01_039E"
+        ],
+        "definition": "S1701_C01_039E",
+        "category": "Population by poverty level",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Below 150% of the poverty level",
+        "vars": [
+            "S1701_C01_040E"
+        ],
+        "definition": "S1701_C01_040E",
+        "category": "Population by poverty level",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Below 185% of the poverty level",
+        "vars": [
+            "S1701_C01_041E"
+        ],
+        "definition": "S1701_C01_041E",
+        "category": "Population by poverty level",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Below 200% of the poverty level",
+        "vars": [
+            "S1701_C01_042E"
+        ],
+        "definition": "S1701_C01_042E",
+        "category": "Population by poverty level",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Below 300% of the poverty level",
+        "vars": [
+            "S1701_C01_043E"
+        ],
+        "definition": "S1701_C01_043E",
+        "category": "Population by poverty level",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Below 400% of the poverty level",
+        "vars": [
+            "S1701_C01_044E"
+        ],
+        "definition": "S1701_C01_044E",
+        "category": "Population by poverty level",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Below 500% of the poverty level",
+        "vars": [
+            "S1701_C01_045E"
+        ],
+        "definition": "S1701_C01_045E",
+        "category": "Population by poverty level",
+        "tabletype": "subject"
+    },
+    {
+        "name": "White",
+        "vars": [
+            "S1701_C01_013E"
+        ],
+        "definition": "S1701_C01_013E",
+        "category": "Population in Poverty by Race",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Black or African American",
+        "vars": [
+            "S1701_C01_014E"
+        ],
+        "definition": "S1701_C01_014E",
+        "category": "Population in Poverty by Race",
+        "tabletype": "subject"
+    },
+    {
+        "name": "American Indian and Alaska Native",
+        "vars": [
+            "S1701_C01_015E"
+        ],
+        "definition": "S1701_C01_015E",
+        "category": "Population in Poverty by Race",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Asian",
+        "vars": [
+            "S1701_C01_016E"
+        ],
+        "definition": "S1701_C01_016E",
+        "category": "Population in Poverty by Race",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Native Hawaiian and Other Pacific Islander",
+        "vars": [
+            "S1701_C01_017E"
+        ],
+        "definition": "S1701_C01_017E",
+        "category": "Population in Poverty by Race",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Some other race",
+        "vars": [
+            "S1701_C01_018E"
+        ],
+        "definition": "S1701_C01_018E",
+        "category": "Population in Poverty by Race",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Two or more races",
+        "vars": [
+            "S1701_C01_019E"
+        ],
+        "definition": "S1701_C01_019E",
+        "category": "Population in Poverty by Race",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Hispanic or Latino origin (of any race)",
+        "vars": [
+            "S1701_C01_020E"
+        ],
+        "definition": "S1701_C01_020E",
+        "category": "Population in Poverty by Race",
+        "tabletype": "subject"
+    },
+    {
+        "name": "White, not Hispanic or Latino",
+        "vars": [
+            "S1701_C01_021E"
+        ],
+        "definition": "S1701_C01_021E",
+        "category": "Population in Poverty by Race",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Under 5",
+        "vars": [
+            "S1701_C02_003E"
+        ],
+        "definition": "S1701_C02_003E",
+        "category": "Population in Poverty by Age",
+        "tabletype": "subject"
+    },
+    {
+        "name": "5-17 years ",
+        "vars": [
+            "S1701_C02_004E"
+        ],
+        "definition": "S1701_C02_004E",
+        "category": "Population in Poverty by Age",
+        "tabletype": "subject"
+    },
+    {
+        "name": "18-34 years",
+        "vars": [
+            "S1701_C02_007E"
+        ],
+        "definition": "S1701_C02_007E",
+        "category": "Population in Poverty by Age",
+        "tabletype": "subject"
+    },
+    {
+        "name": "35-64 years",
+        "vars": [
+            "S1701_C02_008E"
+        ],
+        "definition": "S1701_C02_008E",
+        "category": "Population in Poverty by Age",
+        "tabletype": "subject"
+    },
+    {
+        "name": "65 years and older",
+        "vars": [
+            "S1701_C02_010E"
+        ],
+        "definition": "S1701_C02_010E",
+        "category": "Population in Poverty by Age",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Male",
+        "vars": [
+            "S1701_C02_011E"
+        ],
+        "definition": "S1701_C02_011E",
+        "category": "Population in Poverty by Sex",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Female",
+        "vars": [
+            "S1701_C02_012E"
+        ],
+        "definition": "S1701_C02_012E",
+        "category": "Population in Poverty by Age",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Less than 10 minutes",
+        "vars": [
+            "B08135_002E"
+        ],
+        "definition": "B08135_002E",
+        "category": "Population by Commute Length",
+        "tabletype": "subject"
+    },
+    {
+        "name": "10 to 29 minutes",
+        "vars": [
+            "B08135_003E",
+            "B08135_004E",
+            "B08135_005E",
+            "B08135_006E"
+        ],
+        "definition": "B08135_003E + B08135_004E + B08135_005E + B08135_006E",
+        "category": "Population by Commute Length",
+        "tabletype": "subject"
+    },
+    {
+        "name": "30 to 59 minutes",
+        "vars": [
+            "B08135_007E",
+            "B08135_008E",
+            "B08135_009E"
+        ],
+        "definition": "B08135_007E + B08135_008E + B08135_009E",
+        "category": "Population by Commute Length",
+        "tabletype": "subject"
+    },
+    {
+        "name": "60+ minutes",
+        "vars": [
+            "B08135_010E"
+        ],
+        "definition": "B08135_010E",
+        "category": "Population by Commute Length",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Children under 5 with Disabilities (total)",
+        "vars": [
+            "S1810_C02_013E"
+        ],
+        "definition": "S1810_C02_013E",
+        "category": "Population Living With Disabilities",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Children under 5 with hearing difficulty",
+        "vars": [
+            "S1810_C02_021E"
+        ],
+        "definition": "S1810_C02_021E",
+        "category": "Population Living With Disabilities",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Children under 5 with vision difficulty",
+        "vars": [
+            "S1810_C02_031E"
+        ],
+        "definition": "S1810_C02_031E",
+        "category": "Population Living With Disabilities",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Children under 18 with cognitive difficulty",
+        "vars": [
+            "S1810_C01_040E"
+        ],
+        "definition": "S1810_C01_040E",
+        "category": "Population Living With Disabilities",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Children under 18 with ambulatory difficulty",
+        "vars": [
+            "S1810_C01_048E"
+        ],
+        "definition": "S1810_C01_048E",
+        "category": "Population Living With Disabilities",
+        "tabletype": "subject"
+    },
+    {
+        "name": "Children under 18 with self-care difficulty",
+        "vars": [
+            "S1810_C01_056E"
+        ],
+        "definition": "S1810_C01_056E",
+        "category": "Population Living With Disabilities",
+        "tabletype": "subject"
+    }
 ]
