@@ -149,6 +149,7 @@
             "DP02_0150E"
         ],
         "definition": "DP02_0150E",
+        "description":"Total Households",
         "category": "Computers and Internet Use",
         "tabletype": "profile"
     },
@@ -158,6 +159,7 @@
             "DP02_0151E"
         ],
         "definition": "DP02_0151E",
+        "description":"Number of households with a computer",
         "category": "Computers and Internet Use",
         "tabletype": "profile"
     },
@@ -167,6 +169,7 @@
             "DP02_0152E"
         ],
         "definition": "DP02_0152E",
+        "description":"Number of households with internet",
         "category": "Computers and Internet Use",
         "tabletype": "profile"
     },
@@ -176,6 +179,7 @@
             "DP03_0019E"
         ],
         "definition": "DP03_0019E",
+        "description":"Number of workers who commute alone using a car, truck, or van",
         "category": "Commuting to Work",
         "tabletype": "profile"
     },
@@ -185,6 +189,7 @@
             "DP03_0020E"
         ],
         "definition": "DP03_0020E",
+        "description":"Number of workers who commute via carpool using a car, truck, or van",
         "category": "Commuting to Work",
         "tabletype": "profile"
     },
@@ -194,6 +199,7 @@
             "DP03_0021E"
         ],
         "definition": "DP03_0021E",
+        "description":"Number of workers who commute using public transportation",
         "category": "Commuting to Work",
         "tabletype": "profile"
     },
@@ -203,6 +209,7 @@
             "DP03_0022E"
         ],
         "definition": "DP03_0022E",
+        "description":"Number of workers who commute by walking",
         "category": "Commuting to Work",
         "tabletype": "profile"
     },
@@ -212,6 +219,7 @@
             "DP03_0024E"
         ],
         "definition": "DP03_0024E",
+        "description":"Number of workers who work at home",
         "category": "Commuting to Work",
         "tabletype": "profile"
     },
@@ -221,6 +229,7 @@
             "DP03_0023E"
         ],
         "definition": "DP03_0023E",
+        "description":"Number of workers who commute using other transportation methods",
         "category": "Commuting to Work",
         "tabletype": "profile"
     },
@@ -480,6 +489,7 @@
             "DP03_0047E"
         ],
         "definition": "DP03_0047E",
+        "description":"Number of private wage and salary workers",
         "category": "Class of Worker",
         "tabletype": "profile"
     },
@@ -489,6 +499,7 @@
             "DP03_0048E"
         ],
         "definition": "DP03_0048E",
+        "description":"Number of government workers",
         "category": "Class of Worker",
         "tabletype": "profile"
     },
@@ -498,6 +509,7 @@
             "DP03_0049E"
         ],
         "definition": "DP03_0049E",
+        "description":"Number of workers who are self employed in a non-incorporated business",
         "category": "Class of Worker",
         "tabletype": "profile"
     },
@@ -1001,6 +1013,7 @@
             "DP02_0059E"
         ],
         "definition": "DP02_0059E",
+        "description":"Population with less than a 9th grade education",
         "category": "Educational Attainment",
         "tabletype": "profile"
     },
@@ -1010,6 +1023,7 @@
             "DP02_0060E"
         ],
         "definition": "DP02_0060E",
+        "description":"Population with between a 9th grade and 12th grade education",
         "category": "Educational Attainment",
         "tabletype": "profile"
     },
@@ -1019,6 +1033,7 @@
             "DP02_0061E"
         ],
         "definition": "DP02_0061E",
+        "description":"Population with a high school diploma or GED",
         "category": "Educational Attainment",
         "tabletype": "profile"
     },
@@ -1028,6 +1043,7 @@
             "DP02_0062E"
         ],
         "definition": "DP02_0062E",
+        "description":"Population that completed some college",
         "category": "Educational Attainment",
         "tabletype": "profile"
     },
@@ -1037,6 +1053,7 @@
             "DP02_0063E"
         ],
         "definition": "DP02_0063E",
+        "description":"Population with an associate's degree",
         "category": "Educational Attainment",
         "tabletype": "profile"
     },
@@ -1046,6 +1063,7 @@
             "DP02_0064E"
         ],
         "definition": "DP02_0064E",
+        "description":"Population with a bachelor's degree",
         "category": "Educational Attainment",
         "tabletype": "profile"
     },
@@ -1055,6 +1073,7 @@
             "DP02_0065E"
         ],
         "definition": "DP02_0065E",
+        "description":"Population with a graduate or professional degree",
         "category": "Educational Attainment",
         "tabletype": "profile"
     },
@@ -1064,6 +1083,7 @@
             "DP02_0086E"
         ],
         "definition": "DP02_0086E",
+        "description":"Total population",
         "category": "Citizenship Status",
         "tabletype": "profile"
     },
@@ -1073,6 +1093,7 @@
             "DP02_0095E"
         ],
         "definition": "DP02_0095E",
+        "description":"Number of citizens born in the US",
         "category": "Citizenship Status",
         "tabletype": "profile"
     },
@@ -1082,6 +1103,7 @@
             "DP02_0091E"
         ],
         "definition": "DP02_0091E",
+        "description":"Number of citizens born in Puerto Rico, the US islands, or to American parents",
         "category": "Citizenship Status",
         "tabletype": "profile"
     },
@@ -1091,6 +1113,7 @@
             "DP02_0094E"
         ],
         "definition": "DP02_0094E",
+        "description":"Number of naturalized US citizens",
         "category": "Citizenship Status",
         "tabletype": "profile"
     },
@@ -1100,6 +1123,7 @@
             "DP02_0095E"
         ],
         "definition": "DP02_0095E",
+        "description":"Number of residents who are not US citizens",
         "category": "Citizenship Status",
         "tabletype": "profile"
     },
@@ -1537,6 +1561,7 @@
             "S1810_C02_013E"
         ],
         "definition": "S1810_C02_013E",
+        "description":"Number of children under 5 with disabilities",
         "category": "Population Living With Disabilities",
         "tabletype": "subject"
     },
@@ -1546,6 +1571,7 @@
             "S1810_C02_021E"
         ],
         "definition": "S1810_C02_021E",
+        "description":"Number of children under 5 with hearing difficulty",
         "category": "Population Living With Disabilities",
         "tabletype": "subject"
     },
@@ -1555,6 +1581,7 @@
             "S1810_C02_031E"
         ],
         "definition": "S1810_C02_031E",
+        "description":"Number of children under 5 with vision difficulty",
         "category": "Population Living With Disabilities",
         "tabletype": "subject"
     },
@@ -1564,6 +1591,7 @@
             "S1810_C01_040E"
         ],
         "definition": "S1810_C01_040E",
+        "description":"Number of children under 18 with cognitive difficulty",
         "category": "Population Living With Disabilities",
         "tabletype": "subject"
     },
@@ -1573,6 +1601,7 @@
             "S1810_C01_048E"
         ],
         "definition": "S1810_C01_048E",
+        "description":"Number of children under 18 with ambulatory difficulty",
         "category": "Population Living With Disabilities",
         "tabletype": "subject"
     },
@@ -1582,6 +1611,7 @@
             "S1810_C01_056E"
         ],
         "definition": "S1810_C01_056E",
+        "description":"Number of children under 5 with self-care difficulty",
         "category": "Population Living With Disabilities",
         "tabletype": "subject"
     }
