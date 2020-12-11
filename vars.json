@@ -77,6 +77,7 @@
             "DP02_0004E"
         ],
         "definition": "DP02_0004E",
+        "description":"Total number of family households with children under 18",
         "category": "Household Type",
         "tabletype": "profile"
     },
@@ -86,6 +87,7 @@
             "DP02_0005E"
         ],
         "definition": "DP02_0005E",
+        "description":"Number of married couple family households with children under 18",
         "category": "Household Type",
         "tabletype": "profile"
     },
@@ -95,6 +97,7 @@
             "DP02_0007E"
         ],
         "definition": "DP02_0007E",
+        "description":"Number of male householder family households with children under 18",
         "category": "Household Type",
         "tabletype": "profile"
     },
@@ -104,6 +107,7 @@
             "DP02_0009E"
         ],
         "definition": "DP02_0009E",
+        "description":"Number of female householder family households with children under 18",
         "category": "Household Type",
         "tabletype": "profile"
     },
@@ -239,6 +243,7 @@
             "DP03_0004E"
         ],
         "definition": "DP03_0004E",
+        "description":"Employed population",
         "category": "Employment Status",
         "tabletype": "profile"
     },
@@ -248,6 +253,7 @@
             "DP03_0005E"
         ],
         "definition": "DP03_0005E",
+        "description":"Unemployed population",
         "category": "Employment Status",
         "tabletype": "profile"
     },      
@@ -257,6 +263,7 @@
             "DP03_0006E"
         ],
         "definition": "DP03_0006E",
+        "description":"Population enlisted in the armed forces",
         "category": "Employment Status",
         "tabletype": "profile"
     },
@@ -266,6 +273,7 @@
             "DP03_0007E"
         ],
         "definition": "DP03_0007E",
+        "description":"Population that is not in the labor force",
         "category": "Employment Status",
         "tabletype": "profile"
     },
@@ -291,6 +299,7 @@
             "S1101_C01_001E"
         ],
         "definition": "S1101_C01_001E",
+        "description":"Total number of households",
         "category": "Households and Families",
         "tabletype": "subject"
     },
@@ -300,6 +309,7 @@
             "S1101_C01_002E"
         ],
         "definition": "S1101_C01_002E",
+        "description":"Average number of poeple living in 1 household",
         "category": "Households and Families",
         "tabletype": "subject"
     },
@@ -309,6 +319,7 @@
             "S1101_C01_003E"
         ],
         "definition": "S1101_C01_003E",
+        "description":"Number of families",
         "category": "Households and Families",
         "tabletype": "subject"
     },
@@ -318,6 +329,7 @@
             "S1101_C01_004E"
         ],
         "definition": "S1101_C01_004E",
+        "description":"Average family size (average number of people in a family)",
         "category": "Households and Families",
         "tabletype": "subject"
     },
@@ -519,6 +531,7 @@
             "DP05_0070E"
         ],
         "definition": "DP05_0070E",
+        "description":"Hispanic/Latino population",
         "category": "Ethnicity",
         "tabletype": "profile"
     },
@@ -528,6 +541,7 @@
             "DP05_0076E"
         ],
         "definition": "DP05_0076E",
+        "description":"Not-Hispanic/Latino population",
         "category": "Ethnicity",
         "tabletype": "profile"
     },
@@ -537,6 +551,7 @@
             "DP02_0045E"
         ],
         "definition": "DP02_0045E",
+        "description":"Number of grandparents who are responsible for caring for a grandchild under 1",
         "category": "Grandparents (responsible for grandchildren under 5)",
         "tabletype": "profile"
     },
@@ -546,6 +561,7 @@
             "DP02_0046E"
         ],
         "definition": "DP02_0046E",
+        "description":"Number of grandparents who are responsible for caring for a grandchild between the ages of 1 and 2",
         "category": "Grandparents (responsible for grandchildren under 5)",
         "tabletype": "profile"
     },
@@ -555,6 +571,7 @@
             "DP02_0047E"
         ],
         "definition": "DP02_0047E",
+        "description":"Number of grandparents who are responsible for caring for a grandchild between the ages of 3 and 4",
         "category": "Grandparents (responsible for grandchildren under 5)",
         "tabletype": "profile"
     },
@@ -564,6 +581,7 @@
             "DP04_0002E"
         ],
         "definition": "DP04_0002E",
+        "description":"Total number of occupied housing units",
         "category": "Housing Occupancy",
         "tabletype": "profile"
     },
@@ -573,6 +591,7 @@
             "DP04_0003E"
         ],
         "definition": "DP04_0003E",
+        "description":"Total number of vacant housing units",
         "category": "Housing Occupancy",
         "tabletype": "profile"
     },
@@ -582,6 +601,7 @@
             "DP04_0004E"
         ],
         "definition": "DP04_0004E",
+        "description":"The percentage of all available homeowner units that are vacant or unoccupied at a particular time",
         "category": "Housing Occupancy",
         "tabletype": "profile"
     },
@@ -591,6 +611,7 @@
             "DP04_0005E"
         ],
         "definition": "DP04_0005E",
+        "description":"The percentage of all available rental units that are vacant or unoccupied at a particular time",
         "category": "Housing Occupancy",
         "tabletype": "profile"
     },
@@ -600,6 +621,7 @@
             "DP04_0046E"
         ],
         "definition": "DP04_0046E",
+        "description":"Number of owner occupied housing units",
         "category": "Housing Occupancy",
         "tabletype": "profile"
     },
@@ -609,6 +631,7 @@
             "DP04_0047E"
         ],
         "definition": "DP04_0047E",
+        "description":"Number of renter occupied housing units",
         "category": "Housing Occupancy",
         "tabletype": "profile"
     },
@@ -618,6 +641,7 @@
             "DP04_0048E"
         ],
         "definition": "",
+        "description":"Average number of people living in an owner-occupied housing unit",
         "category": "Housing Occupancy",
         "tabletype": "profile"
     },
@@ -627,6 +651,7 @@
             "DP04_0049E"
         ],
         "definition": "",
+        "description":"Average number of people living in a renter-occupied housing unit",
         "category": "Housing Occupancy",
         "tabletype": "profile"
     },
@@ -834,6 +859,7 @@
             "DP04_0072E"
         ],
         "definition": "DP04_0072E",
+        "description":"Total number of occupied housing units",
         "category": "Household Utilities",
         "tabletype": "profile"
     },
@@ -843,6 +869,7 @@
             "DP04_0073E"
         ],
         "definition": "DP04_0073E",
+        "description":"Number of housing units that lack complete plumbing facilities",
         "category": "Household Utilities",
         "tabletype": "profile"
     },
@@ -852,6 +879,7 @@
             "DP04_0074E"
         ],
         "definition": "DP04_0074E",
+        "description":"Number of housing units that lack complete kitchen facilities",
         "category": "Household Utilities",
         "tabletype": "profile"
     },
@@ -861,6 +889,7 @@
             "DP04_0075E"
         ],
         "definition": "DP04_0075E",
+        "description":"Number of housing units that lack telephone service",
         "category": "Household Utilities",
         "tabletype": "profile"
     },
@@ -995,6 +1024,7 @@
             "DP02_0036E"
         ],
         "definition": "DP02_0036E",
+        "description":"Total number of women 15 to 50 years old who had a birth in the past 12 months",
         "category": "Fertility",
         "tabletype": "profile"
     },
@@ -1004,6 +1034,7 @@
             "DP02_0037E"
         ],
         "definition": "DP02_0037E",
+        "description":"Number of unmarried women who had a birth in the past 12 months",
         "category": "Fertility",
         "tabletype": "profile"
     },
@@ -1133,6 +1164,7 @@
             "DP03_0075E"
         ],
         "definition": "DP03_0075E",
+        "description":"Total number of family households",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
     },
@@ -1142,6 +1174,7 @@
             "DP03_0076E"
         ],
         "definition": "DP03_0076E",
+        "description":"Number of family households with an income less than $10,000",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
     },
@@ -1151,6 +1184,7 @@
             "DP03_0077E"
         ],
         "definition": "DP03_0077E",
+        "description":"Number of family households with an income between $10,000 and $14,999",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
     },
@@ -1160,6 +1194,7 @@
             "DP03_0078E"
         ],
         "definition": "DP03_0078E",
+        "description":"Number of family households with an income between $15,000 and $24,999",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
     },
@@ -1169,6 +1204,7 @@
             "DP03_0079E"
         ],
         "definition": "DP03_0079E",
+        "description":"Number of family households with an income between $25,000 and $34,999",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
     },
@@ -1178,6 +1214,7 @@
             "DP03_0080E"
         ],
         "definition": "DP03_0080E",
+        "description":"Number of family households with an income between $35,000 and $49,999",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
     },
@@ -1187,6 +1224,7 @@
             "DP03_0081E"
         ],
         "definition": "DP03_0081E",
+        "description":"Number of family households with an income between $50,000 and $74,999",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
     },
@@ -1196,6 +1234,7 @@
             "DP03_0082E"
         ],
         "definition": "DP03_0082E",
+        "description":"Number of family households with an income between $75,000 and $99,999",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
     },
@@ -1250,6 +1289,7 @@
             "DP03_0095E"
         ],
         "definition": "DP03_0095E",
+        "description":"Civilian noninstitutionalized population",
         "category": "Health Insurance Coverage",
         "tabletype": "profile"
     },
@@ -1259,6 +1299,7 @@
             "DP03_0097E"
         ],
         "definition": "DP03_0097E",
+        "description":"Civilian noninstitutionalized population with private health insurance coverage",
         "category": "Health Insurance Coverage",
         "tabletype": "profile"
     },
@@ -1268,6 +1309,7 @@
             "DP03_0098E"
         ],
         "definition": "DP03_0098E",
+        "description":"Civilian noninstitutionalized population with public health insurance coverage",
         "category": "Health Insurance Coverage",
         "tabletype": "profile"
     },
@@ -1277,6 +1319,7 @@
             "DP03_0099E"
         ],
         "definition": "DP03_0099E",
+        "description":"Civilian noninstitutionalized population without health insurance coverage",
         "category": "Health Insurance Coverage",
         "tabletype": "profile"
     },
@@ -1286,6 +1329,7 @@
             "DP03_0100E"
         ],
         "definition": "DP03_0100E",
+        "description":"Civilian noninstitutionalized population under 19 years",
         "category": "Health Insurance Coverage",
         "tabletype": "profile"
     },
@@ -1295,6 +1339,7 @@
             "DP03_0101E"
         ],
         "definition": "DP03_0101E",
+        "description":"Civilian noninstitutionalized population under 19 years without health insurance coverage",
         "category": "Health Insurance Coverage",
         "tabletype": "profile"
     },
