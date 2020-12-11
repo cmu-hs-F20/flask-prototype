@@ -5,6 +5,7 @@
             "B02001_001E"
         ],
         "definition": "B02001_001E",
+        "description":"Total population",
         "category": "Race"
     },
     {
@@ -13,6 +14,7 @@
             "B02001_002E"
         ],
         "definition": "B02001_002E",
+        "description":"White population",
         "category": "Race"
     },
     {
@@ -21,6 +23,7 @@
             "B02001_003E"
         ],
         "definition": "B02001_003E",
+        "description":"Black/African Americna population",
         "category": "Race"
     },
     {
@@ -29,6 +32,7 @@
             "B02001_004E"
         ],
         "definition": "B02001_004E",
+        "description":"American Indian/Alaskan Native population",
         "category": "Race"
     },
     {
@@ -37,6 +41,7 @@
             "B02001_005E"
         ],
         "definition": "B02001_005E",
+        "description":"Asian population",
         "category": "Race"
     },
     {
@@ -45,6 +50,7 @@
             "B02001_006E"
         ],
         "definition": "B02001_006E",
+        "description":"Native Hawaiian/Other Pacific population",
         "category": "Race"
     },
     {
@@ -53,6 +59,7 @@
             "B02001_007E"
         ],
         "definition": "B02001_007E",
+        "description":"Other racial group population",
         "category": "Race"
     },
     {
@@ -61,15 +68,16 @@
             "B02001_008E"
         ],
         "definition": "B02001_008E",
+        "description":"Biracial/Multiracial population",
         "category": "Race"
     },
-    {
+        {
         "name": "Total Population",
         "vars": [
             "B01003_001E"
         ],
         "definition": "B01003_001E",
-        "category": "Population"
+        "category": "Total population"
     },
     {
         "name": "Total Family Households (with children under 18)",
@@ -117,6 +125,7 @@
             "DP02_0054E"
         ],
         "definition": "DP02_0054E",
+        "description":"Number of children over 3 enrolled in kindergarten",
         "category": "School Enrollment",
         "tabletype": "profile"
     },
@@ -126,6 +135,7 @@
             "DP02_0053E"
         ],
         "definition": "DP02_0053E",
+        "description":"Number of children over 3 enrolled in nursery school or preschool",
         "category": "School Enrollment",
         "tabletype": "profile"
     },
@@ -135,6 +145,7 @@
             "DP02_0111E"
         ],
         "definition": "DP02_0111E",
+        "description":"Number of people who only speak english",
         "category": "Languages Spoken at Home",
         "tabletype": "profile"
     },
@@ -144,6 +155,7 @@
             "DP02_0112E"
         ],
         "definition": "DP02_0112E",
+        "description":"Number of people who speak languages other than english",
         "category": "Languages Spoken at Home",
         "tabletype": "profile"
     },
@@ -283,6 +295,7 @@
             "B01001_026E"
         ],
         "definition": "B01001_026E",
+        "description":"Female population",
         "category": "Sex"
     },
     {
@@ -291,6 +304,7 @@
             "B01001_002E"
         ],
         "definition": "B01001_002E",
+        "description":"Male population",
         "category": "Sex"
     },
     {
@@ -339,6 +353,7 @@
             "DP03_0027E"
         ],
         "definition": "DP03_0027E",
+        "description":"Number of people with occupations in management, science, business, and arts",
         "category": "Occupation",
         "tabletype": "profile"
     },
@@ -348,6 +363,7 @@
             "DP03_0028E"
         ],
         "definition": "DP03_0028E",
+        "description":"Number of people with occupations in service",
         "category": "Occupation",
         "tabletype": "profile"
     },
@@ -357,6 +373,7 @@
             "DP03_0029E"
         ],
         "definition": "DP03_0029E",
+        "description":"Number of people with sales and office occupations",
         "category": "Occupation",
         "tabletype": "profile"
     },
@@ -366,6 +383,7 @@
             "DP03_0030E"
         ],
         "definition": "DP03_0030E",
+        "description":"Number of people with natural resources, construction, and maintenence occupations",
         "category": "Occupation",
         "tabletype": "profile"
     },
@@ -375,6 +393,7 @@
             "DP03_0031E"
         ],
         "definition": "DP03_0031E",
+        "description":"Number of people with production, transportation, and material moving occupations",
         "category": "Occupation",
         "tabletype": "profile"
     },
@@ -384,6 +403,7 @@
             "DP03_0033E"
         ],
         "definition": "DP03_0033E",
+        "description":"Number of people employed in the agriculture, forestry, fishing, hunting, and mining industry",
         "category": "Industry",
         "tabletype": "profile"
     },
@@ -393,6 +413,7 @@
             "DP03_0034E"
         ],
         "definition": "DP03_0034E",
+        "description":"Number of people employed in the construction industry",
         "category": "Industry",
         "tabletype": "profile"
     },
@@ -402,6 +423,7 @@
             "DP03_0035E"
         ],
         "definition": "DP03_0035E",
+        "description":"Number of people employed in the manufacturing industry",
         "category": "Industry",
         "tabletype": "profile"
     },
@@ -411,6 +433,7 @@
             "DP03_0036E"
         ],
         "definition": "DP03_0036E",
+        "description":"Number of people employed in the wholesale trade industry",
         "category": "Industry",
         "tabletype": "profile"
     },
@@ -420,6 +443,7 @@
             "DP03_0037E"
         ],
         "definition": "DP03_0037E",
+        "description":"Number of people employed in the retail trade industry",
         "category": "Industry",
         "tabletype": "profile"
     },
@@ -429,6 +453,7 @@
             "DP03_0038E"
         ],
         "definition": "DP03_0038E",
+        "description":"Number of people employed in the transportation and warehousing, and utilities industry",
         "category": "Industry",
         "tabletype": "profile"
     },
@@ -438,6 +463,7 @@
             "DP03_0039E"
         ],
         "definition": "DP03_0039E",
+        "description":"Number of people employed in the information industry",
         "category": "Industry",
         "tabletype": "profile"
     },
@@ -447,6 +473,7 @@
             "DP03_0040E"
         ],
         "definition": "DP03_0040E",
+        "description":"Number of people employed in the finance and insurance, and real estate and rental and leasing industry",
         "category": "Industry",
         "tabletype": "profile"
     },
@@ -456,6 +483,7 @@
             "DP03_0041E"
         ],
         "definition": "DP03_0041E",
+        "description":"Number of people employed in the professional, scientific, and management, and administrative and waste management services industry",
         "category": "Industry",
         "tabletype": "profile"
     },
@@ -465,6 +493,7 @@
             "DP03_0042E"
         ],
         "definition": "DP03_0042E",
+        "description":"Number of people employed in the educational services, and health care and social assistance industry",
         "category": "Industry",
         "tabletype": "profile"
     },
@@ -474,6 +503,7 @@
             "DP03_0043E"
         ],
         "definition": "DP03_0043E",
+        "description":"Number of people employed in the arts, entertainment, and recreation, and accomodation and food services industry",
         "category": "Industry",
         "tabletype": "profile"
     },
@@ -483,6 +513,7 @@
             "DP03_0044E"
         ],
         "definition": "DP03_0044E",
+        "description":"Number of people employed in other industries, excluding public adminsitration",
         "category": "Industry",
         "tabletype": "profile"
     },
@@ -492,6 +523,7 @@
             "DP03_0045E"
         ],
         "definition": "DP03_0045E",
+        "description":"Number of people employed in the public administration industry",
         "category": "Industry",
         "tabletype": "profile"
     },
@@ -661,6 +693,7 @@
             "DP04_0126E"
         ],
         "definition": "DP04_0126E",
+        "description":"Total number of occupied housing units paying rent",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
@@ -670,6 +703,7 @@
             "DP04_0127E"
         ],
         "definition": "DP04_0127E",
+        "description":"Number of housing units in which rent costs less than $500",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
@@ -679,6 +713,7 @@
             "DP04_0128E"
         ],
         "definition": "DP04_0128E",
+        "description":"Number of housing units in which rent costs between $500 and $999",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
@@ -688,6 +723,7 @@
             "DP04_0129E"
         ],
         "definition": "DP04_0129E",
+        "description":"Number of housing units in which rent costs between $1000and $1499",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
@@ -697,6 +733,7 @@
             "DP04_0130E"
         ],
         "definition": "DP04_0130E",
+        "description":"Number of housing units in which rent costs between $1500 and $1999",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
@@ -706,6 +743,7 @@
             "DP04_0131E"
         ],
         "definition": "DP04_0131E",
+        "description":"Number of housing units in which rent costs between $2000 and $2499",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
@@ -715,6 +753,7 @@
             "DP04_0132E"
         ],
         "definition": "DP04_0132E",
+        "description":"Number of housing units in which rent costs between $2500 and $2999",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
@@ -724,6 +763,7 @@
             "DP04_0133E"
         ],
         "definition": "DP04_0133E",
+        "description":"Number of housing units in which rent costs between $3000 or more",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
@@ -733,6 +773,7 @@
             "DP04_0135E"
         ],
         "definition": "DP04_0135E",
+        "description":"Number of housing units in which rent is due, but not paid",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
@@ -742,6 +783,7 @@
             "DP04_0134E"
         ],
         "definition": "DP04_0134E",
+        "description":"Median rent",
         "category": "Rent (Gross Rent)",
         "tabletype": "profile"
     },
@@ -751,6 +793,7 @@
             "DP04_0137E"
         ],
         "definition": "DP04_0137E",
+        "description":"Number of housing units in which rent costs less than 15% of the renter's income",
         "category": "Rent (% of income)",
         "tabletype": "profile"
     },
@@ -760,6 +803,7 @@
             "DP04_0138E"
         ],
         "definition": "DP04_0138E",
+        "description":"Number of housing units in which rent costs between 15% and 19.9% of the renter's income",
         "category": "Rent (% of income)",
         "tabletype": "profile"
     },
@@ -769,6 +813,7 @@
             "DP04_0139E"
         ],
         "definition": "DP04_0139E",
+        "description":"Number of housing units in which rent costs between 20% and 24.9% of the renter's income",
         "category": "Rent (% of income)",
         "tabletype": "profile"
     },
@@ -778,6 +823,7 @@
             "DP04_0140E"
         ],
         "definition": "DP04_0140E",
+        "description":"Number of housing units in which rent costs between 25% and 29.9% of the renter's income",
         "category": "Rent (% of income)",
         "tabletype": "profile"
     },
@@ -787,6 +833,7 @@
             "DP04_0141E"
         ],
         "definition": "DP04_0141E",
+        "description":"Number of housing units in which rent costs between 30% and 34.9% of the renter's income",
         "category": "Rent (% of income)",
         "tabletype": "profile"
     },
@@ -796,6 +843,7 @@
             "DP04_0142E"
         ],
         "definition": "DP04_0142E",
+        "description":"Number of housing units in which rent costs more than 35% of the renter's income",
         "category": "Rent (% of income)",
         "tabletype": "profile"
     },
@@ -805,51 +853,47 @@
             "DP04_0136E"
         ],
         "definition": "DP04_0136E",
+        "description":"Total number of occupied housing units paying rent",
         "category": "Rent (% of income)",
-        "tabletype": "profile"
-    },
-    {
-        "name": "Total Households",
-        "vars": [
-            "DP04_0057E"
-        ],
-        "definition": "DP04_0057E",
-        "category": "Vehciles Available",
         "tabletype": "profile"
     },
     {
         "name": "No Vehciles Available",
         "vars": [
-            "DP04_0058E"
+            "DP04_0057E"
         ],
-        "definition": "DP04_0058E",
+        "definition": "DP04_0057E",
+        "description":"Number of households with no personal vehicles",
         "category": "Vehciles Available",
         "tabletype": "profile"
     },
     {
         "name": "1 vehicle available",
         "vars": [
-            "DP04_0059E"
+            "DP04_0058E"
         ],
-        "definition": "DP04_0059E",
+        "definition": "DP04_0058E",
+        "description":"Number of households with 1 personal vehicle",
         "category": "Vehciles Available",
         "tabletype": "profile"
     },
     {
         "name": "2 vehicles available",
         "vars": [
-            "DP04_0060E"
+            "DP04_0059E"
         ],
-        "definition": "DP04_0060E",
+        "definition": "DP04_0059E",
+        "description":"Number of households with 2 personal vehicles",
         "category": "Vehciles Available",
         "tabletype": "profile"
     },
     {
         "name": "3+ vehicles available",
         "vars": [
-            "DP04_0061E"
+            "DP04_0060E"
         ],
-        "definition": "DP04_0061E",
+        "definition": "DP04_0060E",
+        "description":"Number of households with 3 or more personal vehicles",
         "category": "Vehciles Available",
         "tabletype": "profile"
     },
@@ -1016,6 +1060,7 @@
             "B09010_003E"
         ],
         "definition": "B09010_003E",
+        "description":"Number of family households receiving SSI, cash public assistance, or food stamps",
         "category": "SSI, Cash Public Assistance, Food Stamps"
     },
     {
@@ -1594,6 +1639,7 @@
             "B08135_002E"
         ],
         "definition": "B08135_002E",
+        "description":"Number of people who have a commute that lasts less than 10 minutes",
         "category": "Population by Commute Length",
         "tabletype": "subject"
     },
@@ -1606,6 +1652,7 @@
             "B08135_006E"
         ],
         "definition": "B08135_003E + B08135_004E + B08135_005E + B08135_006E",
+        "description":"Number of people who have a commute that lasts between 10 and 29 minutes",
         "category": "Population by Commute Length",
         "tabletype": "subject"
     },
@@ -1617,6 +1664,7 @@
             "B08135_009E"
         ],
         "definition": "B08135_007E + B08135_008E + B08135_009E",
+        "description":"Number of people who have a commute that lasts between 30 and 59 minutes",
         "category": "Population by Commute Length",
         "tabletype": "subject"
     },
@@ -1626,6 +1674,7 @@
             "B08135_010E"
         ],
         "definition": "B08135_010E",
+        "description":"Number of people who have a commute that lasts over 1 hour",
         "category": "Population by Commute Length",
         "tabletype": "subject"
     },
