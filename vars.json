@@ -858,6 +858,7 @@
             "B23008_002E"
         ],
         "definition": "B23008_002E",
+        "description":"Number of households with children under the age of 6",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -866,6 +867,7 @@
             "B23008_003E"
         ],
         "definition": "B23008_003E",
+        "description":"Number of children living in a household with two parents present",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -874,6 +876,7 @@
             "B23008_004E"
         ],
         "definition": "B23008_004E",
+        "description":"Number of children living in a household with two parents, both of whom are in the labor force",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -882,6 +885,7 @@
             "B23008_005E"
         ],
         "definition": "B23008_005E",
+        "description":"Number of children living in a household with two parents, with the father in the labor force",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -890,6 +894,7 @@
             "B23008_006E"
         ],
         "definition": "B23008_006E",
+        "description":"Number of children living in a household with two parents, with the mother in the labor force",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -898,6 +903,7 @@
             "B23008_007E"
         ],
         "definition": "B23008_007E",
+        "description":"Number of children living in a household with two parents, with neither parent in the labor force",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -906,6 +912,7 @@
             "B23008_008E"
         ],
         "definition": "B23008_008E",
+        "description":"Number of children living in a household with one parent present",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -914,6 +921,7 @@
             "B23008_009E"
         ],
         "definition": "B23008_009E",
+        "description":"Number of children living in a household with only the father present",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -922,6 +930,7 @@
             "B23008_010E"
         ],
         "definition": "B23008_010E",
+        "description":"Number of children living in a household with only the father, who is in the labor force, present",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -930,6 +939,7 @@
             "B23008_011E"
         ],
         "definition": "B23008_011E",
+        "description":"Number of children living in a household with only the father, who is not in the labor force, present",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -938,6 +948,7 @@
             "B23008_012E"
         ],
         "definition": "B23008_012E",
+        "description":"Number of children living in a household with only the mother present",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -946,6 +957,7 @@
             "B23008_013E"
         ],
         "definition": "B23008_013E",
+        "description":"Number of children living in a household with only the mother, who is in the labor force, present",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -954,6 +966,7 @@
             "B23008_014E"
         ],
         "definition": "B23008_014E",
+        "description":"Number of children living in a household with only the mother, who is not in the labor force, present",
         "category": "Household Composition (children under 6)"
     },
     {
