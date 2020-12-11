@@ -1244,6 +1244,7 @@
             "DP03_0083E"
         ],
         "definition": "DP03_0083E",
+        "description":"Number of family households with an income between $100,000 and $149,999",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
     },
@@ -1253,6 +1254,7 @@
             "DP03_0084E"
         ],
         "definition": "DP03_0084E",
+        "description":"Number of family households with an income between $150,000 and $199,999",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
     },
@@ -1262,6 +1264,7 @@
             "DP03_0085E"
         ],
         "definition": "DP03_0085E",
+        "description":"Number of family households with an income above $200,000",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
     },
@@ -1271,6 +1274,7 @@
             "DP03_0086E"
         ],
         "definition": "DP03_0086E",
+        "description":"Median family income",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
     },
@@ -1280,6 +1284,7 @@
             "DP03_0087E"
         ],
         "definition": "DP03_0087E",
+        "description":"Mean family income",
         "category": "Income & Benefits (Family Households)",
         "tabletype": "profile"
     },
@@ -1349,6 +1354,7 @@
             "S1701_C01_038E"
         ],
         "definition": "S1701_C01_038E",
+        "description":"Population within 50% of poverty level",
         "category": "Population by poverty level",
         "tabletype": "subject"
     },
@@ -1358,6 +1364,7 @@
             "S1701_C01_039E"
         ],
         "definition": "S1701_C01_039E",
+        "description":"Population within 125% of poverty level",
         "category": "Population by poverty level",
         "tabletype": "subject"
     },
@@ -1367,6 +1374,7 @@
             "S1701_C01_040E"
         ],
         "definition": "S1701_C01_040E",
+        "description":"Population within 150% of poverty level",
         "category": "Population by poverty level",
         "tabletype": "subject"
     },
@@ -1376,6 +1384,7 @@
             "S1701_C01_041E"
         ],
         "definition": "S1701_C01_041E",
+        "description":"Population within 185% of poverty level",
         "category": "Population by poverty level",
         "tabletype": "subject"
     },
@@ -1385,6 +1394,7 @@
             "S1701_C01_042E"
         ],
         "definition": "S1701_C01_042E",
+        "description":"Population within 200% of poverty level",
         "category": "Population by poverty level",
         "tabletype": "subject"
     },
@@ -1394,6 +1404,7 @@
             "S1701_C01_043E"
         ],
         "definition": "S1701_C01_043E",
+        "description":"Population within 300% of poverty level",
         "category": "Population by poverty level",
         "tabletype": "subject"
     },
@@ -1403,6 +1414,7 @@
             "S1701_C01_044E"
         ],
         "definition": "S1701_C01_044E",
+        "description":"Population within 400% of poverty level",
         "category": "Population by poverty level",
         "tabletype": "subject"
     },
@@ -1412,6 +1424,7 @@
             "S1701_C01_045E"
         ],
         "definition": "S1701_C01_045E",
+        "description":"Population within 500% of poverty level",
         "category": "Population by poverty level",
         "tabletype": "subject"
     },
@@ -1421,6 +1434,7 @@
             "S1701_C01_013E"
         ],
         "definition": "S1701_C01_013E",
+        "description":"White population in poverty",
         "category": "Population in Poverty by Race",
         "tabletype": "subject"
     },
@@ -1430,6 +1444,7 @@
             "S1701_C01_014E"
         ],
         "definition": "S1701_C01_014E",
+        "description":"Black/African American population in poverty",
         "category": "Population in Poverty by Race",
         "tabletype": "subject"
     },
@@ -1439,6 +1454,7 @@
             "S1701_C01_015E"
         ],
         "definition": "S1701_C01_015E",
+        "description":"American Indian/Alaskan Native population in poverty",
         "category": "Population in Poverty by Race",
         "tabletype": "subject"
     },
@@ -1448,6 +1464,7 @@
             "S1701_C01_016E"
         ],
         "definition": "S1701_C01_016E",
+        "description":"Asian population in poverty",
         "category": "Population in Poverty by Race",
         "tabletype": "subject"
     },
@@ -1457,6 +1474,7 @@
             "S1701_C01_017E"
         ],
         "definition": "S1701_C01_017E",
+        "description":"Native Hawaiian/Other Pacific Population in poverty",
         "category": "Population in Poverty by Race",
         "tabletype": "subject"
     },
@@ -1466,6 +1484,7 @@
             "S1701_C01_018E"
         ],
         "definition": "S1701_C01_018E",
+        "description":"Other racial group population in poverty",
         "category": "Population in Poverty by Race",
         "tabletype": "subject"
     },
@@ -1475,6 +1494,7 @@
             "S1701_C01_019E"
         ],
         "definition": "S1701_C01_019E",
+        "description":"Biracial population in poverty",
         "category": "Population in Poverty by Race",
         "tabletype": "subject"
     },
@@ -1484,6 +1504,7 @@
             "S1701_C01_020E"
         ],
         "definition": "S1701_C01_020E",
+        "description":"Hispanic/Latino population in poverty",
         "category": "Population in Poverty by Race",
         "tabletype": "subject"
     },
@@ -1493,6 +1514,7 @@
             "S1701_C01_021E"
         ],
         "definition": "S1701_C01_021E",
+        "description":"Non-hispanic/Latino population in poverty",
         "category": "Population in Poverty by Race",
         "tabletype": "subject"
     },
@@ -1502,6 +1524,7 @@
             "S1701_C02_003E"
         ],
         "definition": "S1701_C02_003E",
+        "description":"Population under 5 in poverty",
         "category": "Population in Poverty by Age",
         "tabletype": "subject"
     },
@@ -1511,6 +1534,7 @@
             "S1701_C02_004E"
         ],
         "definition": "S1701_C02_004E",
+        "description":"Population between 5 and 7 years old in poverty",
         "category": "Population in Poverty by Age",
         "tabletype": "subject"
     },
@@ -1520,6 +1544,7 @@
             "S1701_C02_007E"
         ],
         "definition": "S1701_C02_007E",
+        "description":"Population between 18 and 34 years old in poverty",
         "category": "Population in Poverty by Age",
         "tabletype": "subject"
     },
@@ -1529,6 +1554,7 @@
             "S1701_C02_008E"
         ],
         "definition": "S1701_C02_008E",
+        "description":"Population between 35 and 64 years old in poverty",
         "category": "Population in Poverty by Age",
         "tabletype": "subject"
     },
@@ -1538,6 +1564,7 @@
             "S1701_C02_010E"
         ],
         "definition": "S1701_C02_010E",
+        "description":"Population over the age of 65 in poverty",
         "category": "Population in Poverty by Age",
         "tabletype": "subject"
     },
@@ -1547,6 +1574,7 @@
             "S1701_C02_011E"
         ],
         "definition": "S1701_C02_011E",
+        "description":"Male population in poverty",
         "category": "Population in Poverty by Sex",
         "tabletype": "subject"
     },
@@ -1556,6 +1584,7 @@
             "S1701_C02_012E"
         ],
         "definition": "S1701_C02_012E",
+        "description":"Female population in poverty",
         "category": "Population in Poverty by Age",
         "tabletype": "subject"
     },
