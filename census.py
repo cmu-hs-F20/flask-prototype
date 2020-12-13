@@ -7,7 +7,7 @@ import pandas as pd
 import plydata
 import censusdata
 
-from states import states, counties
+# from states import states, counties
 
 DB = sqlite3.connect("geos.db")
 
