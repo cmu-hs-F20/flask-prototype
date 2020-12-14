@@ -10,6 +10,7 @@ from flask import (
 from wtforms import Form, validators
 from title_select import SelectMultipleField
 from census import CensusViewer, GeoDB
+from load_config import load_config
 
 import secrets
 
@@ -25,12 +26,10 @@ server.secret_key = secrets.app_secret
 server.register_blueprint(ck, url_prefix="/ck")
 server.jinja_env.add_extension("chartkick.ext.charts")
 
-with open("vars.json", "r") as f:
-    vars_config = json.loads(f.read())
 
 geoDB = GeoDB("geos.db")
 censusViewer = CensusViewer(
-    geoDB=geoDB, vars_config=vars_config, api_key=secrets.census_key
+    geoDB=geoDB, vars_config=load_config("vars.json"), api_key=secrets.census_key
 )
 
 
@@ -91,13 +90,6 @@ def dashboard():
             county_names=selected_counties, selected_var_ids=selected_vars
         )
         categories = list(formatted_data.keys())
-<<<<<<< HEAD
-        race_data = formatted_data.get("Race")
-        emp_data = formatted_data.get("Employment Status")
-        sex_data = formatted_data.get("Sex by age")
-        del sex_data[0]
-        del race_data[0]
-=======
         global data2
         data2 = censusViewer.view_df(selected_counties, selected_vars)
         # race_data = formatted_data["Race"]
@@ -105,7 +97,6 @@ def dashboard():
         # sex_data = formatted_data["Sex by age"]
         # del sex_data[0]
         # del race_data[0]
->>>>>>> d7ed48edff92f83fda47fd4e541dfa4d5c52ea05
         # print(race_data)
 
     rendered_table = render_output_table(categories, colnames, formatted_data)
@@ -160,10 +151,10 @@ def render_chart():
     all_charts = {}
 
     for i in data2.columns:
-        if i == 'name' or i == 'category':
+        if i == "name" or i == "category":
             continue
 
-        cat = data2[i].groupby(data2['category'])
+        cat = data2[i].groupby(data2["category"])
         l_graph_dict = {}
 
         for c in cat:
@@ -183,14 +174,14 @@ def render_chart():
                         # print("i: " + str(i))
                         # print("name: " + str(data2.loc[i, 'name']))
                         # print("v: " + str(v))
-                        graph_dict[str(data2.loc[ii, 'name'])] = v
+                        graph_dict[str(data2.loc[ii, "name"])] = v
                     l_graph.append(graph_dict)
             l_graph_dict[category] = l_graph
         all_charts[i] = l_graph_dict
     print(all_charts)
 
     return render_template(
-        'chart.html',
+        "chart.html",
         all_charts=all_charts,
     )
 
