@@ -1,16 +1,12 @@
 from itertools import count
 import os
 import sqlite3
+from functools import reduce
 
 import pandas as pd
 import plydata
 import censusdata
 
-<<<<<<< HEAD
-=======
-# from states import states, counties
-
->>>>>>> d7ed48edff92f83fda47fd4e541dfa4d5c52ea05
 DB = sqlite3.connect("geos.db")
 
 
@@ -165,7 +161,7 @@ class CensusViewer:
             )
         return geo_fips
 
-    def build_raw_dataframe(self, county_names, var_ids, src, year):
+    def build_raw_dataframe(self, county_names, var_ids, src, year, tabletype):
         """
         Queries census API for county-level data
             geos (list[list[str, str]]): List of state, county name pairs
@@ -186,6 +182,7 @@ class CensusViewer:
                 censusdata.censusgeo([("state", state_), ("county", "*")]),
                 var_ids,
                 key=self.api_key,
+                tabletype=tabletype,
             )
 
             all_state_data = all_state_data.append(state_data)
@@ -253,10 +250,38 @@ class CensusViewer:
         all_vars = []
         for var in selected_vars:
             all_vars += var["vars"]
-        raw_county_data = self.build_raw_dataframe(county_names, all_vars, src, year)
-        formatted_county_data = self.build_formatted_dataframe(
-            raw_county_data, selected_vars
+
+        tabletypes = [
+            ("B", r"detail"),
+            ("S", r"subject"),
+            ("DP", r"profile"),
+            ("CP", r"cprofile"),
+        ]
+
+        raw_dfs = []
+
+        all_vars = []
+        for var in selected_vars:
+            all_vars += var["vars"]
+
+        for table_prefix, tabletype in tabletypes:
+            tabletype_vars = [var for var in all_vars if var.startswith(table_prefix)]
+
+            if not tabletype_vars:
+                break
+
+            raw_tabletype_data = self.build_raw_dataframe(
+                county_names, tabletype_vars, src, year, tabletype
+            )
+            raw_dfs.append(raw_tabletype_data)
+
+        raw_data = reduce(
+            lambda x, y: pd.merge(x, y, left_index=True, right_index=True), raw_dfs
         )
+        # raw_data = pd.concat(raw_dfs)
+
+        formatted_county_data = self.build_formatted_dataframe(raw_data, selected_vars)
+
         if descriptions:
             pass
 

@@ -5,7 +5,7 @@
             "B02001_001E"
         ],
         "definition": "B02001_001E",
-        "description":"Total population",
+        "description": "Total population",
         "category": "Race"
     },
     {
@@ -14,7 +14,7 @@
             "B02001_002E"
         ],
         "definition": "B02001_002E",
-        "description":"White population",
+        "description": "White population",
         "category": "Race"
     },
     {
@@ -23,7 +23,7 @@
             "B02001_003E"
         ],
         "definition": "B02001_003E",
-        "description":"Black/African Americna population",
+        "description": "Black/African Americna population",
         "category": "Race"
     },
     {
@@ -32,7 +32,7 @@
             "B02001_004E"
         ],
         "definition": "B02001_004E",
-        "description":"American Indian/Alaskan Native population",
+        "description": "American Indian/Alaskan Native population",
         "category": "Race"
     },
     {
@@ -41,7 +41,7 @@
             "B02001_005E"
         ],
         "definition": "B02001_005E",
-        "description":"Asian population",
+        "description": "Asian population",
         "category": "Race"
     },
     {
@@ -50,7 +50,7 @@
             "B02001_006E"
         ],
         "definition": "B02001_006E",
-        "description":"Native Hawaiian/Other Pacific population",
+        "description": "Native Hawaiian/Other Pacific population",
         "category": "Race"
     },
     {
@@ -59,7 +59,7 @@
             "B02001_007E"
         ],
         "definition": "B02001_007E",
-        "description":"Other racial group population",
+        "description": "Other racial group population",
         "category": "Race"
     },
     {
@@ -68,10 +68,10 @@
             "B02001_008E"
         ],
         "definition": "B02001_008E",
-        "description":"Biracial/Multiracial population",
+        "description": "Biracial/Multiracial population",
         "category": "Race"
     },
-        {
+    {
         "name": "Total Population",
         "vars": [
             "B01003_001E"
@@ -85,9 +85,8 @@
             "DP02_0004E"
         ],
         "definition": "DP02_0004E",
-        "description":"Total number of family households with children under 18",
-        "category": "Household Type",
-        "tabletype": "profile"
+        "description": "Total number of family households with children under 18",
+        "category": "Household Type"
     },
     {
         "name": "Married-couple family (with children under 18)",
@@ -95,9 +94,8 @@
             "DP02_0005E"
         ],
         "definition": "DP02_0005E",
-        "description":"Number of married couple family households with children under 18",
-        "category": "Household Type",
-        "tabletype": "profile"
+        "description": "Number of married couple family households with children under 18",
+        "category": "Household Type"
     },
     {
         "name": "Male householder, no spouse present (with children under 18)",
@@ -105,9 +103,8 @@
             "DP02_0007E"
         ],
         "definition": "DP02_0007E",
-        "description":"Number of male householder family households with children under 18",
-        "category": "Household Type",
-        "tabletype": "profile"
+        "description": "Number of male householder family households with children under 18",
+        "category": "Household Type"
     },
     {
         "name": "Female householder, no spouse present (with children under 18)",
@@ -115,9 +112,8 @@
             "DP02_0009E"
         ],
         "definition": "DP02_0009E",
-        "description":"Number of female householder family households with children under 18",
-        "category": "Household Type",
-        "tabletype": "profile"
+        "description": "Number of female householder family households with children under 18",
+        "category": "Household Type"
     },
     {
         "name": "Enrolled in kindergarten",
@@ -125,9 +121,8 @@
             "DP02_0054E"
         ],
         "definition": "DP02_0054E",
-        "description":"Number of children over 3 enrolled in kindergarten",
-        "category": "School Enrollment",
-        "tabletype": "profile"
+        "description": "Number of children over 3 enrolled in kindergarten",
+        "category": "School Enrollment"
     },
     {
         "name": "Enrolled in nursery school or preschool",
@@ -135,9 +130,8 @@
             "DP02_0053E"
         ],
         "definition": "DP02_0053E",
-        "description":"Number of children over 3 enrolled in nursery school or preschool",
-        "category": "School Enrollment",
-        "tabletype": "profile"
+        "description": "Number of children over 3 enrolled in nursery school or preschool",
+        "category": "School Enrollment"
     },
     {
         "name": "English Only",
@@ -145,9 +139,8 @@
             "DP02_0111E"
         ],
         "definition": "DP02_0111E",
-        "description":"Number of people who only speak english",
-        "category": "Languages Spoken at Home",
-        "tabletype": "profile"
+        "description": "Number of people who only speak english",
+        "category": "Languages Spoken at Home"
     },
     {
         "name": "Languages other than English",
@@ -155,9 +148,8 @@
             "DP02_0112E"
         ],
         "definition": "DP02_0112E",
-        "description":"Number of people who speak languages other than english",
-        "category": "Languages Spoken at Home",
-        "tabletype": "profile"
+        "description": "Number of people who speak languages other than english",
+        "category": "Languages Spoken at Home"
     },
     {
         "name": "Total Households",
@@ -165,9 +157,8 @@
             "DP02_0150E"
         ],
         "definition": "DP02_0150E",
-        "description":"Total Households",
-        "category": "Computers and Internet Use",
-        "tabletype": "profile"
+        "description": "Total Households",
+        "category": "Computers and Internet Use"
     },
     {
         "name": "Households with a computer",
@@ -175,9 +166,8 @@
             "DP02_0151E"
         ],
         "definition": "DP02_0151E",
-        "description":"Number of households with a computer",
-        "category": "Computers and Internet Use",
-        "tabletype": "profile"
+        "description": "Number of households with a computer",
+        "category": "Computers and Internet Use"
     },
     {
         "name": "Households with internet",
@@ -185,9 +175,8 @@
             "DP02_0152E"
         ],
         "definition": "DP02_0152E",
-        "description":"Number of households with internet",
-        "category": "Computers and Internet Use",
-        "tabletype": "profile"
+        "description": "Number of households with internet",
+        "category": "Computers and Internet Use"
     },
     {
         "name": "Car, truck, or van -- drove alone",
@@ -195,9 +184,8 @@
             "DP03_0019E"
         ],
         "definition": "DP03_0019E",
-        "description":"Number of workers who commute alone using a car, truck, or van",
-        "category": "Commuting to Work",
-        "tabletype": "profile"
+        "description": "Number of workers who commute alone using a car, truck, or van",
+        "category": "Commuting to Work"
     },
     {
         "name": "Car, truck, or van -- carpooled",
@@ -205,9 +193,8 @@
             "DP03_0020E"
         ],
         "definition": "DP03_0020E",
-        "description":"Number of workers who commute via carpool using a car, truck, or van",
-        "category": "Commuting to Work",
-        "tabletype": "profile"
+        "description": "Number of workers who commute via carpool using a car, truck, or van",
+        "category": "Commuting to Work"
     },
     {
         "name": "Public transportation",
@@ -215,9 +202,8 @@
             "DP03_0021E"
         ],
         "definition": "DP03_0021E",
-        "description":"Number of workers who commute using public transportation",
-        "category": "Commuting to Work",
-        "tabletype": "profile"
+        "description": "Number of workers who commute using public transportation",
+        "category": "Commuting to Work"
     },
     {
         "name": "Walked",
@@ -225,9 +211,8 @@
             "DP03_0022E"
         ],
         "definition": "DP03_0022E",
-        "description":"Number of workers who commute by walking",
-        "category": "Commuting to Work",
-        "tabletype": "profile"
+        "description": "Number of workers who commute by walking",
+        "category": "Commuting to Work"
     },
     {
         "name": "Worked at home",
@@ -235,9 +220,8 @@
             "DP03_0024E"
         ],
         "definition": "DP03_0024E",
-        "description":"Number of workers who work at home",
-        "category": "Commuting to Work",
-        "tabletype": "profile"
+        "description": "Number of workers who work at home",
+        "category": "Commuting to Work"
     },
     {
         "name": "Other",
@@ -245,9 +229,8 @@
             "DP03_0023E"
         ],
         "definition": "DP03_0023E",
-        "description":"Number of workers who commute using other transportation methods",
-        "category": "Commuting to Work",
-        "tabletype": "profile"
+        "description": "Number of workers who commute using other transportation methods",
+        "category": "Commuting to Work"
     },
     {
         "name": "Employed",
@@ -255,9 +238,8 @@
             "DP03_0004E"
         ],
         "definition": "DP03_0004E",
-        "description":"Employed population",
-        "category": "Employment Status",
-        "tabletype": "profile"
+        "description": "Employed population",
+        "category": "Employment Status"
     },
     {
         "name": "Unemployed",
@@ -265,19 +247,17 @@
             "DP03_0005E"
         ],
         "definition": "DP03_0005E",
-        "description":"Unemployed population",
-        "category": "Employment Status",
-        "tabletype": "profile"
-    },      
+        "description": "Unemployed population",
+        "category": "Employment Status"
+    },
     {
         "name": "Armed Forces",
         "vars": [
             "DP03_0006E"
         ],
         "definition": "DP03_0006E",
-        "description":"Population enlisted in the armed forces",
-        "category": "Employment Status",
-        "tabletype": "profile"
+        "description": "Population enlisted in the armed forces",
+        "category": "Employment Status"
     },
     {
         "name": "Not in Labor Force",
@@ -285,9 +265,8 @@
             "DP03_0007E"
         ],
         "definition": "DP03_0007E",
-        "description":"Population that is not in the labor force",
-        "category": "Employment Status",
-        "tabletype": "profile"
+        "description": "Population that is not in the labor force",
+        "category": "Employment Status"
     },
     {
         "name": "Population: Female",
@@ -295,7 +274,7 @@
             "B01001_026E"
         ],
         "definition": "B01001_026E",
-        "description":"Female population",
+        "description": "Female population",
         "category": "Sex"
     },
     {
@@ -304,7 +283,7 @@
             "B01001_002E"
         ],
         "definition": "B01001_002E",
-        "description":"Male population",
+        "description": "Male population",
         "category": "Sex"
     },
     {
@@ -313,9 +292,8 @@
             "S1101_C01_001E"
         ],
         "definition": "S1101_C01_001E",
-        "description":"Total number of households",
-        "category": "Households and Families",
-        "tabletype": "subject"
+        "description": "Total number of households",
+        "category": "Households and Families"
     },
     {
         "name": "Average Household Size",
@@ -323,9 +301,8 @@
             "S1101_C01_002E"
         ],
         "definition": "S1101_C01_002E",
-        "description":"Average number of poeple living in 1 household",
-        "category": "Households and Families",
-        "tabletype": "subject"
+        "description": "Average number of poeple living in 1 household",
+        "category": "Households and Families"
     },
     {
         "name": "Total Families",
@@ -333,9 +310,8 @@
             "S1101_C01_003E"
         ],
         "definition": "S1101_C01_003E",
-        "description":"Number of families",
-        "category": "Households and Families",
-        "tabletype": "subject"
+        "description": "Number of families",
+        "category": "Households and Families"
     },
     {
         "name": "Average Family  Size",
@@ -343,9 +319,8 @@
             "S1101_C01_004E"
         ],
         "definition": "S1101_C01_004E",
-        "description":"Average family size (average number of people in a family)",
-        "category": "Households and Families",
-        "tabletype": "subject"
+        "description": "Average family size (average number of people in a family)",
+        "category": "Households and Families"
     },
     {
         "name": "Management, business, science, and arts occupations",
@@ -353,9 +328,8 @@
             "DP03_0027E"
         ],
         "definition": "DP03_0027E",
-        "description":"Number of people with occupations in management, science, business, and arts",
-        "category": "Occupation",
-        "tabletype": "profile"
+        "description": "Number of people with occupations in management, science, business, and arts",
+        "category": "Occupation"
     },
     {
         "name": "Service occupations",
@@ -363,9 +337,8 @@
             "DP03_0028E"
         ],
         "definition": "DP03_0028E",
-        "description":"Number of people with occupations in service",
-        "category": "Occupation",
-        "tabletype": "profile"
+        "description": "Number of people with occupations in service",
+        "category": "Occupation"
     },
     {
         "name": "Sales and office occupations",
@@ -373,9 +346,8 @@
             "DP03_0029E"
         ],
         "definition": "DP03_0029E",
-        "description":"Number of people with sales and office occupations",
-        "category": "Occupation",
-        "tabletype": "profile"
+        "description": "Number of people with sales and office occupations",
+        "category": "Occupation"
     },
     {
         "name": "Natural resources, construction, and maintenence occupations",
@@ -383,9 +355,8 @@
             "DP03_0030E"
         ],
         "definition": "DP03_0030E",
-        "description":"Number of people with natural resources, construction, and maintenence occupations",
-        "category": "Occupation",
-        "tabletype": "profile"
+        "description": "Number of people with natural resources, construction, and maintenence occupations",
+        "category": "Occupation"
     },
     {
         "name": "Production, transportation, and material moving occupations",
@@ -393,9 +364,8 @@
             "DP03_0031E"
         ],
         "definition": "DP03_0031E",
-        "description":"Number of people with production, transportation, and material moving occupations",
-        "category": "Occupation",
-        "tabletype": "profile"
+        "description": "Number of people with production, transportation, and material moving occupations",
+        "category": "Occupation"
     },
     {
         "name": "Agriculture, forestry, fishing, hunting, and mining",
@@ -403,9 +373,8 @@
             "DP03_0033E"
         ],
         "definition": "DP03_0033E",
-        "description":"Number of people employed in the agriculture, forestry, fishing, hunting, and mining industry",
-        "category": "Industry",
-        "tabletype": "profile"
+        "description": "Number of people employed in the agriculture, forestry, fishing, hunting, and mining industry",
+        "category": "Industry"
     },
     {
         "name": "Construction",
@@ -413,9 +382,8 @@
             "DP03_0034E"
         ],
         "definition": "DP03_0034E",
-        "description":"Number of people employed in the construction industry",
-        "category": "Industry",
-        "tabletype": "profile"
+        "description": "Number of people employed in the construction industry",
+        "category": "Industry"
     },
     {
         "name": "Manufacturing",
@@ -423,9 +391,8 @@
             "DP03_0035E"
         ],
         "definition": "DP03_0035E",
-        "description":"Number of people employed in the manufacturing industry",
-        "category": "Industry",
-        "tabletype": "profile"
+        "description": "Number of people employed in the manufacturing industry",
+        "category": "Industry"
     },
     {
         "name": "Wholesale trade",
@@ -433,9 +400,8 @@
             "DP03_0036E"
         ],
         "definition": "DP03_0036E",
-        "description":"Number of people employed in the wholesale trade industry",
-        "category": "Industry",
-        "tabletype": "profile"
+        "description": "Number of people employed in the wholesale trade industry",
+        "category": "Industry"
     },
     {
         "name": "Retail Trade",
@@ -443,9 +409,8 @@
             "DP03_0037E"
         ],
         "definition": "DP03_0037E",
-        "description":"Number of people employed in the retail trade industry",
-        "category": "Industry",
-        "tabletype": "profile"
+        "description": "Number of people employed in the retail trade industry",
+        "category": "Industry"
     },
     {
         "name": "Transportation and warehousing, and utilities",
@@ -453,9 +418,8 @@
             "DP03_0038E"
         ],
         "definition": "DP03_0038E",
-        "description":"Number of people employed in the transportation and warehousing, and utilities industry",
-        "category": "Industry",
-        "tabletype": "profile"
+        "description": "Number of people employed in the transportation and warehousing, and utilities industry",
+        "category": "Industry"
     },
     {
         "name": "Information",
@@ -463,9 +427,8 @@
             "DP03_0039E"
         ],
         "definition": "DP03_0039E",
-        "description":"Number of people employed in the information industry",
-        "category": "Industry",
-        "tabletype": "profile"
+        "description": "Number of people employed in the information industry",
+        "category": "Industry"
     },
     {
         "name": "Finance and insurance, and real estate and rental and leasing",
@@ -473,9 +436,8 @@
             "DP03_0040E"
         ],
         "definition": "DP03_0040E",
-        "description":"Number of people employed in the finance and insurance, and real estate and rental and leasing industry",
-        "category": "Industry",
-        "tabletype": "profile"
+        "description": "Number of people employed in the finance and insurance, and real estate and rental and leasing industry",
+        "category": "Industry"
     },
     {
         "name": "Professional, scientific, and management, and administrative and waste management services",
@@ -483,9 +445,8 @@
             "DP03_0041E"
         ],
         "definition": "DP03_0041E",
-        "description":"Number of people employed in the professional, scientific, and management, and administrative and waste management services industry",
-        "category": "Industry",
-        "tabletype": "profile"
+        "description": "Number of people employed in the professional, scientific, and management, and administrative and waste management services industry",
+        "category": "Industry"
     },
     {
         "name": "Educational services, and health care and social assistance",
@@ -493,9 +454,8 @@
             "DP03_0042E"
         ],
         "definition": "DP03_0042E",
-        "description":"Number of people employed in the educational services, and health care and social assistance industry",
-        "category": "Industry",
-        "tabletype": "profile"
+        "description": "Number of people employed in the educational services, and health care and social assistance industry",
+        "category": "Industry"
     },
     {
         "name": "Arts, entertainment, and recreation, and accomodation and food services",
@@ -503,9 +463,8 @@
             "DP03_0043E"
         ],
         "definition": "DP03_0043E",
-        "description":"Number of people employed in the arts, entertainment, and recreation, and accomodation and food services industry",
-        "category": "Industry",
-        "tabletype": "profile"
+        "description": "Number of people employed in the arts, entertainment, and recreation, and accomodation and food services industry",
+        "category": "Industry"
     },
     {
         "name": "Other services, except public administration",
@@ -513,9 +472,8 @@
             "DP03_0044E"
         ],
         "definition": "DP03_0044E",
-        "description":"Number of people employed in other industries, excluding public adminsitration",
-        "category": "Industry",
-        "tabletype": "profile"
+        "description": "Number of people employed in other industries, excluding public adminsitration",
+        "category": "Industry"
     },
     {
         "name": "Public administraiton ",
@@ -523,9 +481,8 @@
             "DP03_0045E"
         ],
         "definition": "DP03_0045E",
-        "description":"Number of people employed in the public administration industry",
-        "category": "Industry",
-        "tabletype": "profile"
+        "description": "Number of people employed in the public administration industry",
+        "category": "Industry"
     },
     {
         "name": "Private wage and salary workers",
@@ -533,9 +490,8 @@
             "DP03_0047E"
         ],
         "definition": "DP03_0047E",
-        "description":"Number of private wage and salary workers",
-        "category": "Class of Worker",
-        "tabletype": "profile"
+        "description": "Number of private wage and salary workers",
+        "category": "Class of Worker"
     },
     {
         "name": "Government workers",
@@ -543,9 +499,8 @@
             "DP03_0048E"
         ],
         "definition": "DP03_0048E",
-        "description":"Number of government workers",
-        "category": "Class of Worker",
-        "tabletype": "profile"
+        "description": "Number of government workers",
+        "category": "Class of Worker"
     },
     {
         "name": "Self-employed in own not incorporated business workers",
@@ -553,9 +508,8 @@
             "DP03_0049E"
         ],
         "definition": "DP03_0049E",
-        "description":"Number of workers who are self employed in a non-incorporated business",
-        "category": "Class of Worker",
-        "tabletype": "profile"
+        "description": "Number of workers who are self employed in a non-incorporated business",
+        "category": "Class of Worker"
     },
     {
         "name": "Hispanic or Latino (any race)",
@@ -563,9 +517,8 @@
             "DP05_0070E"
         ],
         "definition": "DP05_0070E",
-        "description":"Hispanic/Latino population",
-        "category": "Ethnicity",
-        "tabletype": "profile"
+        "description": "Hispanic/Latino population",
+        "category": "Ethnicity"
     },
     {
         "name": "Not Hispanic or Latino",
@@ -573,9 +526,8 @@
             "DP05_0076E"
         ],
         "definition": "DP05_0076E",
-        "description":"Not-Hispanic/Latino population",
-        "category": "Ethnicity",
-        "tabletype": "profile"
+        "description": "Not-Hispanic/Latino population",
+        "category": "Ethnicity"
     },
     {
         "name": "Grandparents responsible for grandchildren under 1",
@@ -583,9 +535,8 @@
             "DP02_0045E"
         ],
         "definition": "DP02_0045E",
-        "description":"Number of grandparents who are responsible for caring for a grandchild under 1",
-        "category": "Grandparents (responsible for grandchildren under 5)",
-        "tabletype": "profile"
+        "description": "Number of grandparents who are responsible for caring for a grandchild under 1",
+        "category": "Grandparents (responsible for grandchildren under 5)"
     },
     {
         "name": "Grandparents responsible for grandchildren ages 1-2",
@@ -593,9 +544,8 @@
             "DP02_0046E"
         ],
         "definition": "DP02_0046E",
-        "description":"Number of grandparents who are responsible for caring for a grandchild between the ages of 1 and 2",
-        "category": "Grandparents (responsible for grandchildren under 5)",
-        "tabletype": "profile"
+        "description": "Number of grandparents who are responsible for caring for a grandchild between the ages of 1 and 2",
+        "category": "Grandparents (responsible for grandchildren under 5)"
     },
     {
         "name": "Grandparents responsible for grandchildren ages 3-4",
@@ -603,9 +553,8 @@
             "DP02_0047E"
         ],
         "definition": "DP02_0047E",
-        "description":"Number of grandparents who are responsible for caring for a grandchild between the ages of 3 and 4",
-        "category": "Grandparents (responsible for grandchildren under 5)",
-        "tabletype": "profile"
+        "description": "Number of grandparents who are responsible for caring for a grandchild between the ages of 3 and 4",
+        "category": "Grandparents (responsible for grandchildren under 5)"
     },
     {
         "name": "Occupied Housing Units",
@@ -613,9 +562,8 @@
             "DP04_0002E"
         ],
         "definition": "DP04_0002E",
-        "description":"Total number of occupied housing units",
-        "category": "Housing Occupancy",
-        "tabletype": "profile"
+        "description": "Total number of occupied housing units",
+        "category": "Housing Occupancy"
     },
     {
         "name": "Vacant Housing Units",
@@ -623,9 +571,8 @@
             "DP04_0003E"
         ],
         "definition": "DP04_0003E",
-        "description":"Total number of vacant housing units",
-        "category": "Housing Occupancy",
-        "tabletype": "profile"
+        "description": "Total number of vacant housing units",
+        "category": "Housing Occupancy"
     },
     {
         "name": "Homeowner vacancy rate",
@@ -633,9 +580,8 @@
             "DP04_0004E"
         ],
         "definition": "DP04_0004E",
-        "description":"The percentage of all available homeowner units that are vacant or unoccupied at a particular time",
-        "category": "Housing Occupancy",
-        "tabletype": "profile"
+        "description": "The percentage of all available homeowner units that are vacant or unoccupied at a particular time",
+        "category": "Housing Occupancy"
     },
     {
         "name": "Rental vacancy rate",
@@ -643,9 +589,8 @@
             "DP04_0005E"
         ],
         "definition": "DP04_0005E",
-        "description":"The percentage of all available rental units that are vacant or unoccupied at a particular time",
-        "category": "Housing Occupancy",
-        "tabletype": "profile"
+        "description": "The percentage of all available rental units that are vacant or unoccupied at a particular time",
+        "category": "Housing Occupancy"
     },
     {
         "name": "Owner occupied",
@@ -653,9 +598,8 @@
             "DP04_0046E"
         ],
         "definition": "DP04_0046E",
-        "description":"Number of owner occupied housing units",
-        "category": "Housing Occupancy",
-        "tabletype": "profile"
+        "description": "Number of owner occupied housing units",
+        "category": "Housing Occupancy"
     },
     {
         "name": "Renter occupied",
@@ -663,29 +607,26 @@
             "DP04_0047E"
         ],
         "definition": "DP04_0047E",
-        "description":"Number of renter occupied housing units",
-        "category": "Housing Occupancy",
-        "tabletype": "profile"
+        "description": "Number of renter occupied housing units",
+        "category": "Housing Occupancy"
     },
     {
         "name": "Average household size of owner occupied unit",
         "vars": [
             "DP04_0048E"
         ],
-        "definition": "",
-        "description":"Average number of people living in an owner-occupied housing unit",
-        "category": "Housing Occupancy",
-        "tabletype": "profile"
+        "definition": "DP04_0048E",
+        "description": "Average number of people living in an owner-occupied housing unit",
+        "category": "Housing Occupancy"
     },
     {
         "name": "Average household size of renter occupied unit",
         "vars": [
             "DP04_0049E"
         ],
-        "definition": "",
-        "description":"Average number of people living in a renter-occupied housing unit",
-        "category": "Housing Occupancy",
-        "tabletype": "profile"
+        "definition": "DP04_0049E",
+        "description": "Average number of people living in a renter-occupied housing unit",
+        "category": "Housing Occupancy"
     },
     {
         "name": "Total occupied units paying rent",
@@ -693,9 +634,8 @@
             "DP04_0126E"
         ],
         "definition": "DP04_0126E",
-        "description":"Total number of occupied housing units paying rent",
-        "category": "Rent (Gross Rent)",
-        "tabletype": "profile"
+        "description": "Total number of occupied housing units paying rent",
+        "category": "Rent (Gross Rent)"
     },
     {
         "name": "Less than $500",
@@ -703,9 +643,8 @@
             "DP04_0127E"
         ],
         "definition": "DP04_0127E",
-        "description":"Number of housing units in which rent costs less than $500",
-        "category": "Rent (Gross Rent)",
-        "tabletype": "profile"
+        "description": "Number of housing units in which rent costs less than $500",
+        "category": "Rent (Gross Rent)"
     },
     {
         "name": "$500 to $999",
@@ -713,9 +652,8 @@
             "DP04_0128E"
         ],
         "definition": "DP04_0128E",
-        "description":"Number of housing units in which rent costs between $500 and $999",
-        "category": "Rent (Gross Rent)",
-        "tabletype": "profile"
+        "description": "Number of housing units in which rent costs between $500 and $999",
+        "category": "Rent (Gross Rent)"
     },
     {
         "name": "$1,000 to $1,499",
@@ -723,9 +661,8 @@
             "DP04_0129E"
         ],
         "definition": "DP04_0129E",
-        "description":"Number of housing units in which rent costs between $1000and $1499",
-        "category": "Rent (Gross Rent)",
-        "tabletype": "profile"
+        "description": "Number of housing units in which rent costs between $1000and $1499",
+        "category": "Rent (Gross Rent)"
     },
     {
         "name": "$1,500 to $1,999",
@@ -733,9 +670,8 @@
             "DP04_0130E"
         ],
         "definition": "DP04_0130E",
-        "description":"Number of housing units in which rent costs between $1500 and $1999",
-        "category": "Rent (Gross Rent)",
-        "tabletype": "profile"
+        "description": "Number of housing units in which rent costs between $1500 and $1999",
+        "category": "Rent (Gross Rent)"
     },
     {
         "name": "$2,000 to $2,499",
@@ -743,9 +679,8 @@
             "DP04_0131E"
         ],
         "definition": "DP04_0131E",
-        "description":"Number of housing units in which rent costs between $2000 and $2499",
-        "category": "Rent (Gross Rent)",
-        "tabletype": "profile"
+        "description": "Number of housing units in which rent costs between $2000 and $2499",
+        "category": "Rent (Gross Rent)"
     },
     {
         "name": "$2,500 to $2,999",
@@ -753,9 +688,8 @@
             "DP04_0132E"
         ],
         "definition": "DP04_0132E",
-        "description":"Number of housing units in which rent costs between $2500 and $2999",
-        "category": "Rent (Gross Rent)",
-        "tabletype": "profile"
+        "description": "Number of housing units in which rent costs between $2500 and $2999",
+        "category": "Rent (Gross Rent)"
     },
     {
         "name": "$3,000 or more",
@@ -763,9 +697,8 @@
             "DP04_0133E"
         ],
         "definition": "DP04_0133E",
-        "description":"Number of housing units in which rent costs between $3000 or more",
-        "category": "Rent (Gross Rent)",
-        "tabletype": "profile"
+        "description": "Number of housing units in which rent costs between $3000 or more",
+        "category": "Rent (Gross Rent)"
     },
     {
         "name": "No rent paid",
@@ -773,9 +706,8 @@
             "DP04_0135E"
         ],
         "definition": "DP04_0135E",
-        "description":"Number of housing units in which rent is due, but not paid",
-        "category": "Rent (Gross Rent)",
-        "tabletype": "profile"
+        "description": "Number of housing units in which rent is due, but not paid",
+        "category": "Rent (Gross Rent)"
     },
     {
         "name": "Median gross rent (dollars)",
@@ -783,9 +715,8 @@
             "DP04_0134E"
         ],
         "definition": "DP04_0134E",
-        "description":"Median rent",
-        "category": "Rent (Gross Rent)",
-        "tabletype": "profile"
+        "description": "Median rent",
+        "category": "Rent (Gross Rent)"
     },
     {
         "name": "Less than 15%",
@@ -793,9 +724,8 @@
             "DP04_0137E"
         ],
         "definition": "DP04_0137E",
-        "description":"Number of housing units in which rent costs less than 15% of the renter's income",
-        "category": "Rent (% of income)",
-        "tabletype": "profile"
+        "description": "Number of housing units in which rent costs less than 15% of the renter's income",
+        "category": "Rent (% of income)"
     },
     {
         "name": "15% - 19.9%",
@@ -803,9 +733,8 @@
             "DP04_0138E"
         ],
         "definition": "DP04_0138E",
-        "description":"Number of housing units in which rent costs between 15% and 19.9% of the renter's income",
-        "category": "Rent (% of income)",
-        "tabletype": "profile"
+        "description": "Number of housing units in which rent costs between 15% and 19.9% of the renter's income",
+        "category": "Rent (% of income)"
     },
     {
         "name": "20% - 24.9%",
@@ -813,9 +742,8 @@
             "DP04_0139E"
         ],
         "definition": "DP04_0139E",
-        "description":"Number of housing units in which rent costs between 20% and 24.9% of the renter's income",
-        "category": "Rent (% of income)",
-        "tabletype": "profile"
+        "description": "Number of housing units in which rent costs between 20% and 24.9% of the renter's income",
+        "category": "Rent (% of income)"
     },
     {
         "name": "25% - 29.9%",
@@ -823,9 +751,8 @@
             "DP04_0140E"
         ],
         "definition": "DP04_0140E",
-        "description":"Number of housing units in which rent costs between 25% and 29.9% of the renter's income",
-        "category": "Rent (% of income)",
-        "tabletype": "profile"
+        "description": "Number of housing units in which rent costs between 25% and 29.9% of the renter's income",
+        "category": "Rent (% of income)"
     },
     {
         "name": "30% - 34.9%",
@@ -833,9 +760,8 @@
             "DP04_0141E"
         ],
         "definition": "DP04_0141E",
-        "description":"Number of housing units in which rent costs between 30% and 34.9% of the renter's income",
-        "category": "Rent (% of income)",
-        "tabletype": "profile"
+        "description": "Number of housing units in which rent costs between 30% and 34.9% of the renter's income",
+        "category": "Rent (% of income)"
     },
     {
         "name": "35% or more",
@@ -843,9 +769,8 @@
             "DP04_0142E"
         ],
         "definition": "DP04_0142E",
-        "description":"Number of housing units in which rent costs more than 35% of the renter's income",
-        "category": "Rent (% of income)",
-        "tabletype": "profile"
+        "description": "Number of housing units in which rent costs more than 35% of the renter's income",
+        "category": "Rent (% of income)"
     },
     {
         "name": "Total Units Paying Rent",
@@ -853,9 +778,8 @@
             "DP04_0136E"
         ],
         "definition": "DP04_0136E",
-        "description":"Total number of occupied housing units paying rent",
-        "category": "Rent (% of income)",
-        "tabletype": "profile"
+        "description": "Total number of occupied housing units paying rent",
+        "category": "Rent (% of income)"
     },
     {
         "name": "No Vehciles Available",
@@ -863,9 +787,8 @@
             "DP04_0057E"
         ],
         "definition": "DP04_0057E",
-        "description":"Number of households with no personal vehicles",
-        "category": "Vehciles Available",
-        "tabletype": "profile"
+        "description": "Number of households with no personal vehicles",
+        "category": "Vehciles Available"
     },
     {
         "name": "1 vehicle available",
@@ -873,9 +796,8 @@
             "DP04_0058E"
         ],
         "definition": "DP04_0058E",
-        "description":"Number of households with 1 personal vehicle",
-        "category": "Vehciles Available",
-        "tabletype": "profile"
+        "description": "Number of households with 1 personal vehicle",
+        "category": "Vehciles Available"
     },
     {
         "name": "2 vehicles available",
@@ -883,9 +805,8 @@
             "DP04_0059E"
         ],
         "definition": "DP04_0059E",
-        "description":"Number of households with 2 personal vehicles",
-        "category": "Vehciles Available",
-        "tabletype": "profile"
+        "description": "Number of households with 2 personal vehicles",
+        "category": "Vehciles Available"
     },
     {
         "name": "3+ vehicles available",
@@ -893,9 +814,8 @@
             "DP04_0060E"
         ],
         "definition": "DP04_0060E",
-        "description":"Number of households with 3 or more personal vehicles",
-        "category": "Vehciles Available",
-        "tabletype": "profile"
+        "description": "Number of households with 3 or more personal vehicles",
+        "category": "Vehciles Available"
     },
     {
         "name": "Total Occupied Housing Units",
@@ -903,9 +823,8 @@
             "DP04_0072E"
         ],
         "definition": "DP04_0072E",
-        "description":"Total number of occupied housing units",
-        "category": "Household Utilities",
-        "tabletype": "profile"
+        "description": "Total number of occupied housing units",
+        "category": "Household Utilities"
     },
     {
         "name": "Lacking complete plumbing facilities",
@@ -913,9 +832,8 @@
             "DP04_0073E"
         ],
         "definition": "DP04_0073E",
-        "description":"Number of housing units that lack complete plumbing facilities",
-        "category": "Household Utilities",
-        "tabletype": "profile"
+        "description": "Number of housing units that lack complete plumbing facilities",
+        "category": "Household Utilities"
     },
     {
         "name": "Lacking complete kitchen facilities",
@@ -923,9 +841,8 @@
             "DP04_0074E"
         ],
         "definition": "DP04_0074E",
-        "description":"Number of housing units that lack complete kitchen facilities",
-        "category": "Household Utilities",
-        "tabletype": "profile"
+        "description": "Number of housing units that lack complete kitchen facilities",
+        "category": "Household Utilities"
     },
     {
         "name": "No telephone service",
@@ -933,9 +850,8 @@
             "DP04_0075E"
         ],
         "definition": "DP04_0075E",
-        "description":"Number of housing units that lack telephone service",
-        "category": "Household Utilities",
-        "tabletype": "profile"
+        "description": "Number of housing units that lack telephone service",
+        "category": "Household Utilities"
     },
     {
         "name": "Households with children under 6",
@@ -943,7 +859,7 @@
             "B23008_002E"
         ],
         "definition": "B23008_002E",
-        "description":"Number of households with children under the age of 6",
+        "description": "Number of households with children under the age of 6",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -952,7 +868,7 @@
             "B23008_003E"
         ],
         "definition": "B23008_003E",
-        "description":"Number of children living in a household with two parents present",
+        "description": "Number of children living in a household with two parents present",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -961,7 +877,7 @@
             "B23008_004E"
         ],
         "definition": "B23008_004E",
-        "description":"Number of children living in a household with two parents, both of whom are in the labor force",
+        "description": "Number of children living in a household with two parents, both of whom are in the labor force",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -970,7 +886,7 @@
             "B23008_005E"
         ],
         "definition": "B23008_005E",
-        "description":"Number of children living in a household with two parents, with the father in the labor force",
+        "description": "Number of children living in a household with two parents, with the father in the labor force",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -979,7 +895,7 @@
             "B23008_006E"
         ],
         "definition": "B23008_006E",
-        "description":"Number of children living in a household with two parents, with the mother in the labor force",
+        "description": "Number of children living in a household with two parents, with the mother in the labor force",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -988,7 +904,7 @@
             "B23008_007E"
         ],
         "definition": "B23008_007E",
-        "description":"Number of children living in a household with two parents, with neither parent in the labor force",
+        "description": "Number of children living in a household with two parents, with neither parent in the labor force",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -997,7 +913,7 @@
             "B23008_008E"
         ],
         "definition": "B23008_008E",
-        "description":"Number of children living in a household with one parent present",
+        "description": "Number of children living in a household with one parent present",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -1006,7 +922,7 @@
             "B23008_009E"
         ],
         "definition": "B23008_009E",
-        "description":"Number of children living in a household with only the father present",
+        "description": "Number of children living in a household with only the father present",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -1015,7 +931,7 @@
             "B23008_010E"
         ],
         "definition": "B23008_010E",
-        "description":"Number of children living in a household with only the father, who is in the labor force, present",
+        "description": "Number of children living in a household with only the father, who is in the labor force, present",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -1024,7 +940,7 @@
             "B23008_011E"
         ],
         "definition": "B23008_011E",
-        "description":"Number of children living in a household with only the father, who is not in the labor force, present",
+        "description": "Number of children living in a household with only the father, who is not in the labor force, present",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -1033,7 +949,7 @@
             "B23008_012E"
         ],
         "definition": "B23008_012E",
-        "description":"Number of children living in a household with only the mother present",
+        "description": "Number of children living in a household with only the mother present",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -1042,7 +958,7 @@
             "B23008_013E"
         ],
         "definition": "B23008_013E",
-        "description":"Number of children living in a household with only the mother, who is in the labor force, present",
+        "description": "Number of children living in a household with only the mother, who is in the labor force, present",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -1051,7 +967,7 @@
             "B23008_014E"
         ],
         "definition": "B23008_014E",
-        "description":"Number of children living in a household with only the mother, who is not in the labor force, present",
+        "description": "Number of children living in a household with only the mother, who is not in the labor force, present",
         "category": "Household Composition (children under 6)"
     },
     {
@@ -1060,7 +976,7 @@
             "B09010_003E"
         ],
         "definition": "B09010_003E",
-        "description":"Number of family households receiving SSI, cash public assistance, or food stamps",
+        "description": "Number of family households receiving SSI, cash public assistance, or food stamps",
         "category": "SSI, Cash Public Assistance, Food Stamps"
     },
     {
@@ -1069,9 +985,8 @@
             "DP02_0036E"
         ],
         "definition": "DP02_0036E",
-        "description":"Total number of women 15 to 50 years old who had a birth in the past 12 months",
-        "category": "Fertility",
-        "tabletype": "profile"
+        "description": "Total number of women 15 to 50 years old who had a birth in the past 12 months",
+        "category": "Fertility"
     },
     {
         "name": "Number of unmarried women who had a birth in the past 12 months",
@@ -1079,9 +994,8 @@
             "DP02_0037E"
         ],
         "definition": "DP02_0037E",
-        "description":"Number of unmarried women who had a birth in the past 12 months",
-        "category": "Fertility",
-        "tabletype": "profile"
+        "description": "Number of unmarried women who had a birth in the past 12 months",
+        "category": "Fertility"
     },
     {
         "name": "Less than 9th grade",
@@ -1089,9 +1003,8 @@
             "DP02_0059E"
         ],
         "definition": "DP02_0059E",
-        "description":"Population with less than a 9th grade education",
-        "category": "Educational Attainment",
-        "tabletype": "profile"
+        "description": "Population with less than a 9th grade education",
+        "category": "Educational Attainment"
     },
     {
         "name": "9th - 12th grade, no diploma",
@@ -1099,9 +1012,8 @@
             "DP02_0060E"
         ],
         "definition": "DP02_0060E",
-        "description":"Population with between a 9th grade and 12th grade education",
-        "category": "Educational Attainment",
-        "tabletype": "profile"
+        "description": "Population with between a 9th grade and 12th grade education",
+        "category": "Educational Attainment"
     },
     {
         "name": "High school graduate",
@@ -1109,9 +1021,8 @@
             "DP02_0061E"
         ],
         "definition": "DP02_0061E",
-        "description":"Population with a high school diploma or GED",
-        "category": "Educational Attainment",
-        "tabletype": "profile"
+        "description": "Population with a high school diploma or GED",
+        "category": "Educational Attainment"
     },
     {
         "name": "Some college, no degree",
@@ -1119,9 +1030,8 @@
             "DP02_0062E"
         ],
         "definition": "DP02_0062E",
-        "description":"Population that completed some college",
-        "category": "Educational Attainment",
-        "tabletype": "profile"
+        "description": "Population that completed some college",
+        "category": "Educational Attainment"
     },
     {
         "name": "Associate's degree",
@@ -1129,9 +1039,8 @@
             "DP02_0063E"
         ],
         "definition": "DP02_0063E",
-        "description":"Population with an associate's degree",
-        "category": "Educational Attainment",
-        "tabletype": "profile"
+        "description": "Population with an associate's degree",
+        "category": "Educational Attainment"
     },
     {
         "name": "Bachelor's degree",
@@ -1139,9 +1048,8 @@
             "DP02_0064E"
         ],
         "definition": "DP02_0064E",
-        "description":"Population with a bachelor's degree",
-        "category": "Educational Attainment",
-        "tabletype": "profile"
+        "description": "Population with a bachelor's degree",
+        "category": "Educational Attainment"
     },
     {
         "name": "Graduate or professional degree",
@@ -1149,9 +1057,8 @@
             "DP02_0065E"
         ],
         "definition": "DP02_0065E",
-        "description":"Population with a graduate or professional degree",
-        "category": "Educational Attainment",
-        "tabletype": "profile"
+        "description": "Population with a graduate or professional degree",
+        "category": "Educational Attainment"
     },
     {
         "name": "Total Population",
@@ -1159,9 +1066,8 @@
             "DP02_0086E"
         ],
         "definition": "DP02_0086E",
-        "description":"Total population",
-        "category": "Citizenship Status",
-        "tabletype": "profile"
+        "description": "Total population",
+        "category": "Citizenship Status"
     },
     {
         "name": "Born in the US",
@@ -1169,9 +1075,8 @@
             "DP02_0095E"
         ],
         "definition": "DP02_0095E",
-        "description":"Number of citizens born in the US",
-        "category": "Citizenship Status",
-        "tabletype": "profile"
+        "description": "Number of citizens born in the US",
+        "category": "Citizenship Status"
     },
     {
         "name": "Born in Puerto Rico, U.S. Island areas, or born abroad to American parent(s)",
@@ -1179,9 +1084,8 @@
             "DP02_0091E"
         ],
         "definition": "DP02_0091E",
-        "description":"Number of citizens born in Puerto Rico, the US islands, or to American parents",
-        "category": "Citizenship Status",
-        "tabletype": "profile"
+        "description": "Number of citizens born in Puerto Rico, the US islands, or to American parents",
+        "category": "Citizenship Status"
     },
     {
         "name": "Naturalized US Citizen",
@@ -1189,9 +1093,8 @@
             "DP02_0094E"
         ],
         "definition": "DP02_0094E",
-        "description":"Number of naturalized US citizens",
-        "category": "Citizenship Status",
-        "tabletype": "profile"
+        "description": "Number of naturalized US citizens",
+        "category": "Citizenship Status"
     },
     {
         "name": "Not a US Citizen",
@@ -1199,9 +1102,8 @@
             "DP02_0095E"
         ],
         "definition": "DP02_0095E",
-        "description":"Number of residents who are not US citizens",
-        "category": "Citizenship Status",
-        "tabletype": "profile"
+        "description": "Number of residents who are not US citizens",
+        "category": "Citizenship Status"
     },
     {
         "name": "Total Family Households",
@@ -1209,9 +1111,8 @@
             "DP03_0075E"
         ],
         "definition": "DP03_0075E",
-        "description":"Total number of family households",
-        "category": "Income & Benefits (Family Households)",
-        "tabletype": "profile"
+        "description": "Total number of family households",
+        "category": "Income & Benefits (Family Households)"
     },
     {
         "name": "Less than $10,000",
@@ -1219,9 +1120,8 @@
             "DP03_0076E"
         ],
         "definition": "DP03_0076E",
-        "description":"Number of family households with an income less than $10,000",
-        "category": "Income & Benefits (Family Households)",
-        "tabletype": "profile"
+        "description": "Number of family households with an income less than $10,000",
+        "category": "Income & Benefits (Family Households)"
     },
     {
         "name": "$10,000 to $14,999",
@@ -1229,9 +1129,8 @@
             "DP03_0077E"
         ],
         "definition": "DP03_0077E",
-        "description":"Number of family households with an income between $10,000 and $14,999",
-        "category": "Income & Benefits (Family Households)",
-        "tabletype": "profile"
+        "description": "Number of family households with an income between $10,000 and $14,999",
+        "category": "Income & Benefits (Family Households)"
     },
     {
         "name": "$15,000 to $24,999",
@@ -1239,9 +1138,8 @@
             "DP03_0078E"
         ],
         "definition": "DP03_0078E",
-        "description":"Number of family households with an income between $15,000 and $24,999",
-        "category": "Income & Benefits (Family Households)",
-        "tabletype": "profile"
+        "description": "Number of family households with an income between $15,000 and $24,999",
+        "category": "Income & Benefits (Family Households)"
     },
     {
         "name": "$25,000 to $34,999",
@@ -1249,9 +1147,8 @@
             "DP03_0079E"
         ],
         "definition": "DP03_0079E",
-        "description":"Number of family households with an income between $25,000 and $34,999",
-        "category": "Income & Benefits (Family Households)",
-        "tabletype": "profile"
+        "description": "Number of family households with an income between $25,000 and $34,999",
+        "category": "Income & Benefits (Family Households)"
     },
     {
         "name": "$35,000 to $49,999",
@@ -1259,9 +1156,8 @@
             "DP03_0080E"
         ],
         "definition": "DP03_0080E",
-        "description":"Number of family households with an income between $35,000 and $49,999",
-        "category": "Income & Benefits (Family Households)",
-        "tabletype": "profile"
+        "description": "Number of family households with an income between $35,000 and $49,999",
+        "category": "Income & Benefits (Family Households)"
     },
     {
         "name": "$50,000 to $74,999",
@@ -1269,9 +1165,8 @@
             "DP03_0081E"
         ],
         "definition": "DP03_0081E",
-        "description":"Number of family households with an income between $50,000 and $74,999",
-        "category": "Income & Benefits (Family Households)",
-        "tabletype": "profile"
+        "description": "Number of family households with an income between $50,000 and $74,999",
+        "category": "Income & Benefits (Family Households)"
     },
     {
         "name": "$75,000 to $99,999",
@@ -1279,9 +1174,8 @@
             "DP03_0082E"
         ],
         "definition": "DP03_0082E",
-        "description":"Number of family households with an income between $75,000 and $99,999",
-        "category": "Income & Benefits (Family Households)",
-        "tabletype": "profile"
+        "description": "Number of family households with an income between $75,000 and $99,999",
+        "category": "Income & Benefits (Family Households)"
     },
     {
         "name": "$100,000 to $149,999",
@@ -1289,9 +1183,8 @@
             "DP03_0083E"
         ],
         "definition": "DP03_0083E",
-        "description":"Number of family households with an income between $100,000 and $149,999",
-        "category": "Income & Benefits (Family Households)",
-        "tabletype": "profile"
+        "description": "Number of family households with an income between $100,000 and $149,999",
+        "category": "Income & Benefits (Family Households)"
     },
     {
         "name": "$150,000 to $199,999",
@@ -1299,9 +1192,8 @@
             "DP03_0084E"
         ],
         "definition": "DP03_0084E",
-        "description":"Number of family households with an income between $150,000 and $199,999",
-        "category": "Income & Benefits (Family Households)",
-        "tabletype": "profile"
+        "description": "Number of family households with an income between $150,000 and $199,999",
+        "category": "Income & Benefits (Family Households)"
     },
     {
         "name": "$200,000 or more",
@@ -1309,9 +1201,8 @@
             "DP03_0085E"
         ],
         "definition": "DP03_0085E",
-        "description":"Number of family households with an income above $200,000",
-        "category": "Income & Benefits (Family Households)",
-        "tabletype": "profile"
+        "description": "Number of family households with an income above $200,000",
+        "category": "Income & Benefits (Family Households)"
     },
     {
         "name": "Median family income",
@@ -1319,9 +1210,8 @@
             "DP03_0086E"
         ],
         "definition": "DP03_0086E",
-        "description":"Median family income",
-        "category": "Income & Benefits (Family Households)",
-        "tabletype": "profile"
+        "description": "Median family income",
+        "category": "Income & Benefits (Family Households)"
     },
     {
         "name": "Mean family income",
@@ -1329,9 +1219,8 @@
             "DP03_0087E"
         ],
         "definition": "DP03_0087E",
-        "description":"Mean family income",
-        "category": "Income & Benefits (Family Households)",
-        "tabletype": "profile"
+        "description": "Mean family income",
+        "category": "Income & Benefits (Family Households)"
     },
     {
         "name": "Civilian noninstitutionalized population",
@@ -1339,9 +1228,8 @@
             "DP03_0095E"
         ],
         "definition": "DP03_0095E",
-        "description":"Civilian noninstitutionalized population",
-        "category": "Health Insurance Coverage",
-        "tabletype": "profile"
+        "description": "Civilian noninstitutionalized population",
+        "category": "Health Insurance Coverage"
     },
     {
         "name": "Civilian noninstitutionalized population with private health insurance coverage",
@@ -1349,9 +1237,8 @@
             "DP03_0097E"
         ],
         "definition": "DP03_0097E",
-        "description":"Civilian noninstitutionalized population with private health insurance coverage",
-        "category": "Health Insurance Coverage",
-        "tabletype": "profile"
+        "description": "Civilian noninstitutionalized population with private health insurance coverage",
+        "category": "Health Insurance Coverage"
     },
     {
         "name": "Civilian noninstitutionalized population with public health insurance coverage",
@@ -1359,9 +1246,8 @@
             "DP03_0098E"
         ],
         "definition": "DP03_0098E",
-        "description":"Civilian noninstitutionalized population with public health insurance coverage",
-        "category": "Health Insurance Coverage",
-        "tabletype": "profile"
+        "description": "Civilian noninstitutionalized population with public health insurance coverage",
+        "category": "Health Insurance Coverage"
     },
     {
         "name": "Civilian noninstitutionalized population without health insurance coverage",
@@ -1369,9 +1255,8 @@
             "DP03_0099E"
         ],
         "definition": "DP03_0099E",
-        "description":"Civilian noninstitutionalized population without health insurance coverage",
-        "category": "Health Insurance Coverage",
-        "tabletype": "profile"
+        "description": "Civilian noninstitutionalized population without health insurance coverage",
+        "category": "Health Insurance Coverage"
     },
     {
         "name": "Civilian noninstitutionalized population (under 19)",
@@ -1379,9 +1264,8 @@
             "DP03_0100E"
         ],
         "definition": "DP03_0100E",
-        "description":"Civilian noninstitutionalized population under 19 years",
-        "category": "Health Insurance Coverage",
-        "tabletype": "profile"
+        "description": "Civilian noninstitutionalized population under 19 years",
+        "category": "Health Insurance Coverage"
     },
     {
         "name": "Civilian noninstitutionalized population (under 19) without health insurance coverage",
@@ -1389,9 +1273,8 @@
             "DP03_0101E"
         ],
         "definition": "DP03_0101E",
-        "description":"Civilian noninstitutionalized population under 19 years without health insurance coverage",
-        "category": "Health Insurance Coverage",
-        "tabletype": "profile"
+        "description": "Civilian noninstitutionalized population under 19 years without health insurance coverage",
+        "category": "Health Insurance Coverage"
     },
     {
         "name": "Below 50% of the poverty level",
@@ -1399,9 +1282,8 @@
             "S1701_C01_038E"
         ],
         "definition": "S1701_C01_038E",
-        "description":"Population within 50% of poverty level",
-        "category": "Population by poverty level",
-        "tabletype": "subject"
+        "description": "Population within 50% of poverty level",
+        "category": "Population by poverty level"
     },
     {
         "name": "Below 125% of the poverty level",
@@ -1409,9 +1291,8 @@
             "S1701_C01_039E"
         ],
         "definition": "S1701_C01_039E",
-        "description":"Population within 125% of poverty level",
-        "category": "Population by poverty level",
-        "tabletype": "subject"
+        "description": "Population within 125% of poverty level",
+        "category": "Population by poverty level"
     },
     {
         "name": "Below 150% of the poverty level",
@@ -1419,9 +1300,8 @@
             "S1701_C01_040E"
         ],
         "definition": "S1701_C01_040E",
-        "description":"Population within 150% of poverty level",
-        "category": "Population by poverty level",
-        "tabletype": "subject"
+        "description": "Population within 150% of poverty level",
+        "category": "Population by poverty level"
     },
     {
         "name": "Below 185% of the poverty level",
@@ -1429,9 +1309,8 @@
             "S1701_C01_041E"
         ],
         "definition": "S1701_C01_041E",
-        "description":"Population within 185% of poverty level",
-        "category": "Population by poverty level",
-        "tabletype": "subject"
+        "description": "Population within 185% of poverty level",
+        "category": "Population by poverty level"
     },
     {
         "name": "Below 200% of the poverty level",
@@ -1439,9 +1318,8 @@
             "S1701_C01_042E"
         ],
         "definition": "S1701_C01_042E",
-        "description":"Population within 200% of poverty level",
-        "category": "Population by poverty level",
-        "tabletype": "subject"
+        "description": "Population within 200% of poverty level",
+        "category": "Population by poverty level"
     },
     {
         "name": "Below 300% of the poverty level",
@@ -1449,9 +1327,8 @@
             "S1701_C01_043E"
         ],
         "definition": "S1701_C01_043E",
-        "description":"Population within 300% of poverty level",
-        "category": "Population by poverty level",
-        "tabletype": "subject"
+        "description": "Population within 300% of poverty level",
+        "category": "Population by poverty level"
     },
     {
         "name": "Below 400% of the poverty level",
@@ -1459,9 +1336,8 @@
             "S1701_C01_044E"
         ],
         "definition": "S1701_C01_044E",
-        "description":"Population within 400% of poverty level",
-        "category": "Population by poverty level",
-        "tabletype": "subject"
+        "description": "Population within 400% of poverty level",
+        "category": "Population by poverty level"
     },
     {
         "name": "Below 500% of the poverty level",
@@ -1469,9 +1345,8 @@
             "S1701_C01_045E"
         ],
         "definition": "S1701_C01_045E",
-        "description":"Population within 500% of poverty level",
-        "category": "Population by poverty level",
-        "tabletype": "subject"
+        "description": "Population within 500% of poverty level",
+        "category": "Population by poverty level"
     },
     {
         "name": "White",
@@ -1479,9 +1354,8 @@
             "S1701_C01_013E"
         ],
         "definition": "S1701_C01_013E",
-        "description":"White population in poverty",
-        "category": "Population in Poverty by Race",
-        "tabletype": "subject"
+        "description": "White population in poverty",
+        "category": "Population in Poverty by Race"
     },
     {
         "name": "Black or African American",
@@ -1489,9 +1363,8 @@
             "S1701_C01_014E"
         ],
         "definition": "S1701_C01_014E",
-        "description":"Black/African American population in poverty",
-        "category": "Population in Poverty by Race",
-        "tabletype": "subject"
+        "description": "Black/African American population in poverty",
+        "category": "Population in Poverty by Race"
     },
     {
         "name": "American Indian and Alaska Native",
@@ -1499,9 +1372,8 @@
             "S1701_C01_015E"
         ],
         "definition": "S1701_C01_015E",
-        "description":"American Indian/Alaskan Native population in poverty",
-        "category": "Population in Poverty by Race",
-        "tabletype": "subject"
+        "description": "American Indian/Alaskan Native population in poverty",
+        "category": "Population in Poverty by Race"
     },
     {
         "name": "Asian",
@@ -1509,9 +1381,8 @@
             "S1701_C01_016E"
         ],
         "definition": "S1701_C01_016E",
-        "description":"Asian population in poverty",
-        "category": "Population in Poverty by Race",
-        "tabletype": "subject"
+        "description": "Asian population in poverty",
+        "category": "Population in Poverty by Race"
     },
     {
         "name": "Native Hawaiian and Other Pacific Islander",
@@ -1519,9 +1390,8 @@
             "S1701_C01_017E"
         ],
         "definition": "S1701_C01_017E",
-        "description":"Native Hawaiian/Other Pacific Population in poverty",
-        "category": "Population in Poverty by Race",
-        "tabletype": "subject"
+        "description": "Native Hawaiian/Other Pacific Population in poverty",
+        "category": "Population in Poverty by Race"
     },
     {
         "name": "Some other race",
@@ -1529,9 +1399,8 @@
             "S1701_C01_018E"
         ],
         "definition": "S1701_C01_018E",
-        "description":"Other racial group population in poverty",
-        "category": "Population in Poverty by Race",
-        "tabletype": "subject"
+        "description": "Other racial group population in poverty",
+        "category": "Population in Poverty by Race"
     },
     {
         "name": "Two or more races",
@@ -1539,9 +1408,8 @@
             "S1701_C01_019E"
         ],
         "definition": "S1701_C01_019E",
-        "description":"Biracial population in poverty",
-        "category": "Population in Poverty by Race",
-        "tabletype": "subject"
+        "description": "Biracial population in poverty",
+        "category": "Population in Poverty by Race"
     },
     {
         "name": "Hispanic or Latino origin (of any race)",
@@ -1549,9 +1417,8 @@
             "S1701_C01_020E"
         ],
         "definition": "S1701_C01_020E",
-        "description":"Hispanic/Latino population in poverty",
-        "category": "Population in Poverty by Race",
-        "tabletype": "subject"
+        "description": "Hispanic/Latino population in poverty",
+        "category": "Population in Poverty by Race"
     },
     {
         "name": "White, not Hispanic or Latino",
@@ -1559,9 +1426,8 @@
             "S1701_C01_021E"
         ],
         "definition": "S1701_C01_021E",
-        "description":"Non-hispanic/Latino population in poverty",
-        "category": "Population in Poverty by Race",
-        "tabletype": "subject"
+        "description": "Non-hispanic/Latino population in poverty",
+        "category": "Population in Poverty by Race"
     },
     {
         "name": "Under 5",
@@ -1569,9 +1435,8 @@
             "S1701_C02_003E"
         ],
         "definition": "S1701_C02_003E",
-        "description":"Population under 5 in poverty",
-        "category": "Population in Poverty by Age",
-        "tabletype": "subject"
+        "description": "Population under 5 in poverty",
+        "category": "Population in Poverty by Age"
     },
     {
         "name": "5-17 years ",
@@ -1579,9 +1444,8 @@
             "S1701_C02_004E"
         ],
         "definition": "S1701_C02_004E",
-        "description":"Population between 5 and 7 years old in poverty",
-        "category": "Population in Poverty by Age",
-        "tabletype": "subject"
+        "description": "Population between 5 and 7 years old in poverty",
+        "category": "Population in Poverty by Age"
     },
     {
         "name": "18-34 years",
@@ -1589,9 +1453,8 @@
             "S1701_C02_007E"
         ],
         "definition": "S1701_C02_007E",
-        "description":"Population between 18 and 34 years old in poverty",
-        "category": "Population in Poverty by Age",
-        "tabletype": "subject"
+        "description": "Population between 18 and 34 years old in poverty",
+        "category": "Population in Poverty by Age"
     },
     {
         "name": "35-64 years",
@@ -1599,9 +1462,8 @@
             "S1701_C02_008E"
         ],
         "definition": "S1701_C02_008E",
-        "description":"Population between 35 and 64 years old in poverty",
-        "category": "Population in Poverty by Age",
-        "tabletype": "subject"
+        "description": "Population between 35 and 64 years old in poverty",
+        "category": "Population in Poverty by Age"
     },
     {
         "name": "65 years and older",
@@ -1609,9 +1471,8 @@
             "S1701_C02_010E"
         ],
         "definition": "S1701_C02_010E",
-        "description":"Population over the age of 65 in poverty",
-        "category": "Population in Poverty by Age",
-        "tabletype": "subject"
+        "description": "Population over the age of 65 in poverty",
+        "category": "Population in Poverty by Age"
     },
     {
         "name": "Male",
@@ -1619,9 +1480,8 @@
             "S1701_C02_011E"
         ],
         "definition": "S1701_C02_011E",
-        "description":"Male population in poverty",
-        "category": "Population in Poverty by Sex",
-        "tabletype": "subject"
+        "description": "Male population in poverty",
+        "category": "Population in Poverty by Sex"
     },
     {
         "name": "Female",
@@ -1629,9 +1489,8 @@
             "S1701_C02_012E"
         ],
         "definition": "S1701_C02_012E",
-        "description":"Female population in poverty",
-        "category": "Population in Poverty by Age",
-        "tabletype": "subject"
+        "description": "Female population in poverty",
+        "category": "Population in Poverty by Age"
     },
     {
         "name": "Less than 10 minutes",
@@ -1639,9 +1498,8 @@
             "B08135_002E"
         ],
         "definition": "B08135_002E",
-        "description":"Number of people who have a commute that lasts less than 10 minutes",
-        "category": "Population by Commute Length",
-        "tabletype": "subject"
+        "description": "Number of people who have a commute that lasts less than 10 minutes",
+        "category": "Population by Commute Length"
     },
     {
         "name": "10 to 29 minutes",
@@ -1652,9 +1510,8 @@
             "B08135_006E"
         ],
         "definition": "B08135_003E + B08135_004E + B08135_005E + B08135_006E",
-        "description":"Number of people who have a commute that lasts between 10 and 29 minutes",
-        "category": "Population by Commute Length",
-        "tabletype": "subject"
+        "description": "Number of people who have a commute that lasts between 10 and 29 minutes",
+        "category": "Population by Commute Length"
     },
     {
         "name": "30 to 59 minutes",
@@ -1664,9 +1521,8 @@
             "B08135_009E"
         ],
         "definition": "B08135_007E + B08135_008E + B08135_009E",
-        "description":"Number of people who have a commute that lasts between 30 and 59 minutes",
-        "category": "Population by Commute Length",
-        "tabletype": "subject"
+        "description": "Number of people who have a commute that lasts between 30 and 59 minutes",
+        "category": "Population by Commute Length"
     },
     {
         "name": "60+ minutes",
@@ -1674,9 +1530,8 @@
             "B08135_010E"
         ],
         "definition": "B08135_010E",
-        "description":"Number of people who have a commute that lasts over 1 hour",
-        "category": "Population by Commute Length",
-        "tabletype": "subject"
+        "description": "Number of people who have a commute that lasts over 1 hour",
+        "category": "Population by Commute Length"
     },
     {
         "name": "Children under 5 with Disabilities (total)",
@@ -1684,9 +1539,8 @@
             "S1810_C02_013E"
         ],
         "definition": "S1810_C02_013E",
-        "description":"Number of children under 5 with disabilities",
-        "category": "Population Living With Disabilities",
-        "tabletype": "subject"
+        "description": "Number of children under 5 with disabilities",
+        "category": "Population Living With Disabilities"
     },
     {
         "name": "Children under 5 with hearing difficulty",
@@ -1694,9 +1548,8 @@
             "S1810_C02_021E"
         ],
         "definition": "S1810_C02_021E",
-        "description":"Number of children under 5 with hearing difficulty",
-        "category": "Population Living With Disabilities",
-        "tabletype": "subject"
+        "description": "Number of children under 5 with hearing difficulty",
+        "category": "Population Living With Disabilities"
     },
     {
         "name": "Children under 5 with vision difficulty",
@@ -1704,9 +1557,8 @@
             "S1810_C02_031E"
         ],
         "definition": "S1810_C02_031E",
-        "description":"Number of children under 5 with vision difficulty",
-        "category": "Population Living With Disabilities",
-        "tabletype": "subject"
+        "description": "Number of children under 5 with vision difficulty",
+        "category": "Population Living With Disabilities"
     },
     {
         "name": "Children under 18 with cognitive difficulty",
@@ -1714,9 +1566,8 @@
             "S1810_C01_040E"
         ],
         "definition": "S1810_C01_040E",
-        "description":"Number of children under 18 with cognitive difficulty",
-        "category": "Population Living With Disabilities",
-        "tabletype": "subject"
+        "description": "Number of children under 18 with cognitive difficulty",
+        "category": "Population Living With Disabilities"
     },
     {
         "name": "Children under 18 with ambulatory difficulty",
@@ -1724,9 +1575,8 @@
             "S1810_C01_048E"
         ],
         "definition": "S1810_C01_048E",
-        "description":"Number of children under 18 with ambulatory difficulty",
-        "category": "Population Living With Disabilities",
-        "tabletype": "subject"
+        "description": "Number of children under 18 with ambulatory difficulty",
+        "category": "Population Living With Disabilities"
     },
     {
         "name": "Children under 18 with self-care difficulty",
@@ -1734,8 +1584,7 @@
             "S1810_C01_056E"
         ],
         "definition": "S1810_C01_056E",
-        "description":"Number of children under 5 with self-care difficulty",
-        "category": "Population Living With Disabilities",
-        "tabletype": "subject"
+        "description": "Number of children under 5 with self-care difficulty",
+        "category": "Population Living With Disabilities"
     }
 ]
