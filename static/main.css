@@ -3,9 +3,9 @@
     text-align: center;
     background-size: cover;
     opacity: 77%;
-    height: 200px;
+    height: 146px;
     width: 100%;
-    margin-bottom: 3em;
+    margin-bottom: 0em;
     display: table;
 }
 
@@ -22,9 +22,8 @@
 .pure-u-1-2 {
     border: solid lightgray 1px;
     border-radius: 8px;
-    margin: 6px;
+    margin: 5px;
     padding: 16px;
-
 }
 
 #left {
@@ -37,7 +36,7 @@
 #right {
     color: #424242;
     width: 66%;
-    height: 100vh;
+    height: 80vh;
 }
 
 #table {

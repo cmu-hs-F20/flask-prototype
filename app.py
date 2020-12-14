@@ -19,7 +19,6 @@ ck = Blueprint(
     "ck_page", __name__, static_folder=chartkick.js(), static_url_path="/static"
 )
 
-
 server = Flask(__name__)
 server.secret_key = secrets.app_secret
 
@@ -66,6 +65,9 @@ class StateForm(Form):
     )
 
 
+data2 = None
+
+
 @server.route("/", methods=["GET", "POST"])
 def dashboard():
     form = StateForm(request.form)
@@ -81,24 +83,33 @@ def dashboard():
         categories = [""]
         colnames = ["No column data!"]
         formatted_data = {"": [["No row data!"]]}
-        race_data = {}
-        emp_data = {}
-        sex_data = {}
+        # race_data = {}
+        # emp_data = {}
+        # sex_data = {}
     else:
         formatted_data, colnames = censusViewer.view_dict(
             county_names=selected_counties, selected_var_ids=selected_vars
         )
         categories = list(formatted_data.keys())
+<<<<<<< HEAD
         race_data = formatted_data.get("Race")
         emp_data = formatted_data.get("Employment Status")
         sex_data = formatted_data.get("Sex by age")
         del sex_data[0]
         del race_data[0]
+=======
+        global data2
+        data2 = censusViewer.view_df(selected_counties, selected_vars)
+        # race_data = formatted_data["Race"]
+        # emp_data = formatted_data["Employment Status"]
+        # sex_data = formatted_data["Sex by age"]
+        # del sex_data[0]
+        # del race_data[0]
+>>>>>>> d7ed48edff92f83fda47fd4e541dfa4d5c52ea05
         # print(race_data)
 
     rendered_table = render_output_table(categories, colnames, formatted_data)
-
-    # race_data = render_race(selected_counties)
+    # print(formatted_data)
 
     print(form.errors)
 
@@ -107,15 +118,14 @@ def dashboard():
         form=form,
         rendered_table=rendered_table,
         data_available=True if selected_counties else False,
-        race_data=race_data,
-        emp_data=emp_data,
-        sex_data=sex_data,
+        # race_data=race_data,
+        # emp_data=emp_data,
+        # sex_data=sex_data,
     )
 
 
 @server.route("/download-data", methods=["POST"])
 def return_download():
-
     form = StateForm(request.form)
 
     selected_counties = [
@@ -131,6 +141,58 @@ def return_download():
     response.headers["Content-Type"] = "text/csv"
 
     return response
+
+
+@server.route("/chart")
+def render_chart():
+    global data2
+    form = StateForm(request.form)
+
+    selected_counties = [
+        [state.strip(), county]
+        for county, state in [county.split(",") for county in form.geoSelector.data]
+    ]
+
+    selected_vars = [var for var in form.varSelector.data]
+
+    print(data2)
+
+    all_charts = {}
+
+    for i in data2.columns:
+        if i == 'name' or i == 'category':
+            continue
+
+        cat = data2[i].groupby(data2['category'])
+        l_graph_dict = {}
+
+        for c in cat:
+            l_graph = []
+            category = ""
+            for index, row in enumerate(c):
+
+                print("index: " + str(index))
+                # print("content: " + str(type(row)))
+                # print("content: " + str(row))
+                if index == 0:
+                    category = str(row)
+                    print("category: " + str(row))
+                else:
+                    graph_dict = {}
+                    for ii, v in row.items():
+                        # print("i: " + str(i))
+                        # print("name: " + str(data2.loc[i, 'name']))
+                        # print("v: " + str(v))
+                        graph_dict[str(data2.loc[ii, 'name'])] = v
+                    l_graph.append(graph_dict)
+            l_graph_dict[category] = l_graph
+        all_charts[i] = l_graph_dict
+    print(all_charts)
+
+    return render_template(
+        'chart.html',
+        all_charts=all_charts,
+    )
 
 
 def render_output_table(categories, column_names, rows):

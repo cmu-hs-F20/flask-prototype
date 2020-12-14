@@ -6,6 +6,11 @@ import pandas as pd
 import plydata
 import censusdata
 
+<<<<<<< HEAD
+=======
+# from states import states, counties
+
+>>>>>>> d7ed48edff92f83fda47fd4e541dfa4d5c52ea05
 DB = sqlite3.connect("geos.db")
 
 

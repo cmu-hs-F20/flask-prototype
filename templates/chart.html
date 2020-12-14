@@ -1,12 +1,56 @@
-
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/chart.css">
+    <link rel="stylesheet" href="http://cdn.staticfile.org/pure/1.0.0/pure-min.css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
+    {# <link href="https://code.jquery.com/ui/1.12.1/themes/blitzer/jquery-ui.css" rel="stylesheet"> #}
+    {# <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> #}
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="/static/chartkick.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="/ck/static/chartkick.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="/ck/static/chartkick.js"></script>
+
+    <title>Charts</title>
 </head>
 
 <body>
-<div>
-    {% pie_chart data%}
+
+<div class="banner">
+    <h1 class="banner-head"> Charts Dashboard </h1>
 </div>
+
+<div id="charts">
+    {% for country in all_charts %}
+        <h1 class="text-box-head">{{ country }}: </h1>
+        <div class="county pure-g">
+        {% for category in all_charts[country] %}
+            <div class="title-and-chart pure-u-3-8">
+                <p class="text-box-subhead"> {{ category }} </p>
+{#            <p>pie_chart: {{ dict(all_charts[country][category][0]) }}</p>#}
+                <div class="chart-box"> {% pie_chart all_charts[country][category][0] %} </div>
+            </div>
+        {% endfor %}
+        </div>
+
+    {% endfor %}
+</div>
+
+
 </body>
+</html>

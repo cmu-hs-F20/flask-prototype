@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+}
+
+.county {
+    text-align: center;
+    border: solid gray 1px;
+    border-radius: 6px;
+    margin: 3px;
+    padding: 6px;
+}
+
+#charts {
+    text-align: center;
+    padding: 22px;
+    margin: 16px;
+}
+
+.title-and-chart {
+    border: solid lightgrey 1px;
+    border-radius: 6px;
+    margin: 3px;
+}
+
+
+.text-box-head {
+    padding-bottom: 0.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 36px;
+}
+
+.text-box-subhead {
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+
