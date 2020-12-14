@@ -1,13 +1,10 @@
 from itertools import count
-import json
 import os
 import sqlite3
 
 import pandas as pd
 import plydata
 import censusdata
-
-from states import states, counties
 
 DB = sqlite3.connect("geos.db")
 
@@ -241,7 +238,9 @@ class CensusViewer:
         )
         return formatted_data
 
-    def build_dataframe(self, county_names, selected_vars, src="acs5", year=2018):
+    def build_dataframe(
+        self, county_names, selected_vars, descriptions=False, src="acs5", year=2018
+    ):
         """
         Creates dataframe view of variables in requested counties
         """
@@ -253,6 +252,8 @@ class CensusViewer:
         formatted_county_data = self.build_formatted_dataframe(
             raw_county_data, selected_vars
         )
+        if descriptions:
+            pass
 
         return formatted_county_data
 
@@ -266,7 +267,6 @@ class CensusViewer:
             else:
                 rows = rows.tolist()
             formatted_data_dict[category] = rows
-
         return formatted_data_dict
 
     def view_dict(self, county_names, selected_var_ids, src="acs5", year=2018):
@@ -321,12 +321,26 @@ class CensusViewer:
 
     @property
     def available_vars(self):
+        """
+        Returns available variables. Partially constructs html for each option's
+        tooltip.
+        """
 
         var_list = []
 
         for category in self.available_categories:
             cat_list = [
-                tuple([var["id"], var["name"]])
+                tuple(
+                    [
+                        {
+                            "value": var["id"],
+                            "data-content": '<a data-toggle="tooltip" title="{}">{}</a>'.format(
+                                var.get("description", ""), var["name"]
+                            ),
+                        },
+                        var["name"],
+                    ]
+                )
                 for var in self.vars_config
                 if var["category"] == category
             ]

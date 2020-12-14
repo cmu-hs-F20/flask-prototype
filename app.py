@@ -8,7 +8,7 @@ from flask import (
     Blueprint,
 )
 from wtforms import Form, validators
-from wtforms_components.fields import SelectMultipleField
+from title_select import SelectMultipleField
 from census import CensusViewer, GeoDB
 
 import secrets
@@ -59,6 +59,7 @@ class StateForm(Form):
         render_kw={
             "class": "selectpicker",
             "multiple": "true",
+            "data-live-search": "true",
             "data-actions-box": "true",
             "data-selected-text-format": "count > 2",
         },
@@ -88,9 +89,9 @@ def dashboard():
             county_names=selected_counties, selected_var_ids=selected_vars
         )
         categories = list(formatted_data.keys())
-        race_data = formatted_data["Race"]
-        emp_data = formatted_data["Employment Status"]
-        sex_data = formatted_data["Sex by age"]
+        race_data = formatted_data.get("Race")
+        emp_data = formatted_data.get("Employment Status")
+        sex_data = formatted_data.get("Sex by age")
         del sex_data[0]
         del race_data[0]
         # print(race_data)

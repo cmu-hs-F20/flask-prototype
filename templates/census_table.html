@@ -7,11 +7,11 @@
         </tr>
         {% for category in categories %}
         <tr>
-            <th colspan="{{ column_names|length }}" style="text-align: left;">{{ category }}</th>
+            <th colspan="{{ column_names|length }}" style="text-align: left;" data-toggle="tooltip" title=>{{ category }}</th>
         </tr>
         {% for row in rows[category] %}
-
         <tr>
+            
             {% for col, row_ in zip(column_names, row) %}
             <td>{{ row_ }}</td>
             {% endfor %}
