@@ -1,17 +1,20 @@
-from itertools import count
+from itertools import product
 import os
 import sqlite3
 from functools import reduce
 
+from multiprocessing import Pool
 import pandas as pd
 import plydata
 import censusdata
 
 DB = sqlite3.connect("geos.db")
+N_PROCESSES = 4
 
 
 class GeoDB:
     def __init__(self, db_path):
+
         if os.path.isfile(db_path):
             self.db = sqlite3.connect(db_path, check_same_thread=False)
         else:
@@ -161,7 +164,8 @@ class CensusViewer:
             )
         return geo_fips
 
-    def build_raw_dataframe(self, county_names, var_ids, src, year, tabletype):
+    @staticmethod
+    def build_state_dataframe(state_fips, var_ids, src, year, tabletype, api_key):
         """
         Queries census API for county-level data
             geos (list[list[str, str]]): List of state, county name pairs
@@ -171,30 +175,19 @@ class CensusViewer:
 
         # build list of var ids, and dict of id-name mappings
 
-        states = set(state for state, _ in county_names)
-        state_fips = [self.geoDB.get_state_fips(state) for state in states]
-
-        all_state_data = pd.DataFrame()
-        for state_ in state_fips:
-            state_data = censusdata.download(
-                src,
-                year,
-                censusdata.censusgeo([("state", state_), ("county", "*")]),
-                var_ids,
-                key=self.api_key,
-                tabletype=tabletype,
-            )
-
-            all_state_data = all_state_data.append(state_data)
-
-        # filtering to queried counties only
-        all_county_data = (
-            all_state_data.assign(county=all_state_data.index.map(lambda x: x.name))
-            .set_index("county")
-            .filter([f"{county}, {state}" for state, county in county_names], axis=0)
+        state_data = censusdata.download(
+            src,
+            year,
+            censusdata.censusgeo([("state", state_fips), ("county", "*")]),
+            var_ids,
+            key=api_key,
+            tabletype=tabletype,
         )
 
-        return all_county_data
+        # we'll need this
+        #     all_state_data = all_state_data.append(state_data)
+
+        return state_fips, state_data
 
     @staticmethod
     def apply_transforms(df, definitions):
@@ -258,27 +251,72 @@ class CensusViewer:
             ("CP", r"cprofile"),
         ]
 
-        raw_dfs = []
-
         all_vars = []
         for var in selected_vars:
             all_vars += var["vars"]
 
+        # one call to censusdata.download for each state x tabletype. So:
+        # 1. build list of states
+
+        states = set(state for state, _ in county_names)
+        state_fips = [self.geoDB.get_state_fips(state) for state in states]
+
+        # 2. build list of tabletypes (& corresponding vars)
+
+        tabletype_jobs = []
         for table_prefix, tabletype in tabletypes:
+
             tabletype_vars = [var for var in all_vars if var.startswith(table_prefix)]
 
-            if not tabletype_vars:
-                break
+            if tabletype_vars:
+                tabletype_jobs.append([tabletype_vars, tabletype])
 
-            raw_tabletype_data = self.build_raw_dataframe(
-                county_names, tabletype_vars, src, year, tabletype
+        # 3. cross product: states x tabletypes
+
+        census_jobs = []
+
+        for state_fips, (tabletype_vars, tabletype) in product(
+            state_fips, tabletype_jobs
+        ):
+            census_jobs.append(
+                [state_fips, tabletype_vars, src, year, tabletype, self.api_key]
             )
-            raw_dfs.append(raw_tabletype_data)
 
-        raw_data = reduce(
-            lambda x, y: pd.merge(x, y, left_index=True, right_index=True), raw_dfs
+        # 4. run all of the downloads (in parallel)
+
+        pool = Pool(N_PROCESSES)
+
+        raw_dfs = pool.starmap(self.build_state_dataframe, census_jobs)
+
+        # 4. merge all
+
+        merged_state_dfs = []
+        for state in set(state for state, _ in raw_dfs):
+            raw_state_dfs = [
+                state_data for state_, state_data in raw_dfs if state_ == state
+            ]
+            merged_state_df = reduce(
+                lambda x, y: pd.merge(
+                    x, y, left_index=True, right_index=True, how="outer"
+                ),
+                raw_state_dfs,
+            )
+
+            merged_state_dfs.append(merged_state_df)
+
+        merged_dfs = pd.concat(
+            merged_state_dfs,
         )
-        # raw_data = pd.concat(raw_dfs)
+
+        # 5. filter on counties
+
+        raw_data = (
+            merged_dfs.assign(county=merged_dfs.index.map(lambda x: x.name))
+            .set_index("county")
+            .filter([f"{county}, {state}" for state, county in county_names], axis=0)
+        )
+
+        # 6. format (apply column definitions)
 
         formatted_county_data = self.build_formatted_dataframe(raw_data, selected_vars)
 
@@ -329,7 +367,7 @@ class CensusViewer:
         county_data = self.build_dataframe(county_names, selected_vars)
 
         county_data_dict = self.build_dict_view(
-            county_data, set([var["category"] for var in selected_vars])
+            county_data, sorted(list(set([var["category"] for var in selected_vars])))
         )
 
         formatted_county_names = [
@@ -379,4 +417,4 @@ class CensusViewer:
 
     @property
     def available_categories(self):
-        return set([var["category"] for var in self.vars_config])
+        return sorted(list(set([var["category"] for var in self.vars_config])))
