@@ -97,10 +97,8 @@ def dashboard():
         # sex_data = formatted_data["Sex by age"]
         # del sex_data[0]
         # del race_data[0]
-        # print(race_data)
 
     rendered_table = render_output_table(categories, colnames, formatted_data)
-    # print(formatted_data)
 
     print(form.errors)
 
@@ -134,7 +132,7 @@ def return_download():
     return response
 
 
-@server.route("/chart")
+@server.route("/chart", methods=["POST"])
 def render_chart():
     global data2
     form = StateForm(request.form)
@@ -145,8 +143,6 @@ def render_chart():
     ]
 
     selected_vars = [var for var in form.varSelector.data]
-
-    print(data2)
 
     all_charts = {}
 
@@ -162,23 +158,15 @@ def render_chart():
             category = ""
             for index, row in enumerate(c):
 
-                print("index: " + str(index))
-                # print("content: " + str(type(row)))
-                # print("content: " + str(row))
                 if index == 0:
                     category = str(row)
-                    print("category: " + str(row))
                 else:
                     graph_dict = {}
                     for ii, v in row.items():
-                        # print("i: " + str(i))
-                        # print("name: " + str(data2.loc[i, 'name']))
-                        # print("v: " + str(v))
                         graph_dict[str(data2.loc[ii, "name"])] = v
                     l_graph.append(graph_dict)
             l_graph_dict[category] = l_graph
         all_charts[i] = l_graph_dict
-    print(all_charts)
 
     return render_template(
         "chart.html",
@@ -193,6 +181,7 @@ def render_output_table(categories, column_names, rows):
         column_names=column_names,
         rows=rows,
         zip=zip,
+        enum=enumerate,
     )
 
     return Markup(rendered)
