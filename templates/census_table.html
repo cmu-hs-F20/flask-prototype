@@ -11,7 +11,6 @@
         </tr>
         {% for row in rows[category] %}
         <tr>
-            
             {% for col, row_ in zip(column_names, row) %}
             <td>{{ row_ }}</td>
             {% endfor %}
