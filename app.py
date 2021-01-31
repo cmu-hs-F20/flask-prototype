@@ -69,6 +69,10 @@ data2 = None
 
 @server.route("/", methods=["GET", "POST"])
 def dashboard():
+    '''
+    Main dashboard view. Includes forms for selecting geographies (counties) and 
+    variables to display.
+    '''
     form = StateForm(request.form)
 
     selected_counties = [
@@ -97,7 +101,6 @@ def dashboard():
         # sex_data = formatted_data["Sex by age"]
         # del sex_data[0]
         # del race_data[0]
-
     rendered_table = render_output_table(categories, colnames, formatted_data)
 
     print(form.errors)
@@ -113,8 +116,40 @@ def dashboard():
     )
 
 
+def render_output_table(categories, column_names, rows):
+    '''
+    Helper function that renders selected data in HTML.
+
+    Args:
+        categories (List[str]): List of category names
+        column_names (List[str]): List of column names (usually county names)
+        rows (Dict[str: List[List[str]]]): Dict with one key/value pair
+            for each category. Example:
+
+                {"Sex": [
+                    [['Population: Female', 28326.0, 106919.0, 24411.0], 
+                    ['Population: Male', 26874.0, 101188.0, 24200.0]]
+                ]}
+            
+            Data in this format is produced by CensusViewer.view_dict()
+    '''
+    rendered = render_template(
+        "census_table.html",
+        categories=categories,
+        column_names=column_names,
+        rows=rows,
+        zip=zip,
+        enum=enumerate,
+    )
+
+    return Markup(rendered)
+
+
 @server.route("/download-data", methods=["POST"])
 def return_download():
+    '''
+    Endpoint for downloading csv containing selected data
+    '''
     form = StateForm(request.form)
 
     selected_counties = [
@@ -174,17 +209,6 @@ def render_chart():
     )
 
 
-def render_output_table(categories, column_names, rows):
-    rendered = render_template(
-        "census_table.html",
-        categories=categories,
-        column_names=column_names,
-        rows=rows,
-        zip=zip,
-        enum=enumerate,
-    )
-
-    return Markup(rendered)
 
 
 if __name__ == "__main__":
